@@ -1,1147 +1,2537 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<title>Shegere Curtains – Premium Window Treatments</title>
-<!-- Preconnect only to what we actually use -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Load only 2 weights per font, subset to latin -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=Noto+Sans+Ethiopic:wght@400;600&display=swap&subset=latin" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Weynua Interiors – Premium Interior Design & Home Comfort</title>
+  <!-- Preconnect only to what we actually use -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Load only 2 weights per font, subset to latin -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=Noto+Sans+Ethiopic:wght@400;600&display=swap&subset=latin"
+    rel="stylesheet">
 
-<!-- ═══ INLINE CRITICAL SVG ICONS (zero network, zero layout shift) ═══ -->
-<!-- Icons referenced via <use> from hidden sprite -->
-<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="ic-logo" viewBox="0 0 24 24"><path d="M12 2C7 2 3 7 3 12c0 2 .8 4 2 5.5L12 22l7-4.5c1.2-1.5 2-3.5 2-5.5 0-5-4-10-9-10z"/></symbol>
-  <symbol id="ic-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></symbol>
-  <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
-  <symbol id="ic-chev-down" viewBox="0 0 16 16"><polyline points="4,6 8,10 12,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-chev-right" viewBox="0 0 16 16"><polyline points="6,4 10,8 6,12" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-arrow-ne" viewBox="0 0 16 16"><path d="M5 11L11 5M11 5H6M11 5v5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-arrow-right" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-arrow-left" viewBox="0 0 16 16"><path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <!-- Feature icons -->
-  <symbol id="ic-ruler" viewBox="0 0 24 24"><path d="M21.3 8.7L8.7 21.3a2.83 2.83 0 0 1-4-4L17.3 4.7a2.83 2.83 0 0 1 4 4zM11 8l2 2M14 5l2 2M8 11l2 2M5 14l2 2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-truck" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 8h4l3 3v5h-7V8z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="5.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="18.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
-  <symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
-  <symbol id="ic-measure" viewBox="0 0 24 24"><path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
-  <symbol id="ic-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
-  <symbol id="ic-home" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" fill="none"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
-  <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
-  <symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-tw" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
-  <symbol id="ic-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <!-- Bottom nav icons -->
-  <symbol id="ic-nav-home" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
-  <symbol id="ic-nav-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="8" x2="12.01" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
-  <symbol id="ic-nav-shop" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/><path d="M16 10a4 4 0 0 1-8 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
-  <symbol id="ic-nav-gallery" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2" fill="none"/><polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-nav-contact" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
-  <symbol id="ic-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
-  <symbol id="ic-star" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" stroke="currentColor" stroke-width="1.5" fill="currentColor"/></symbol>
-  <symbol id="ic-check" viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="ic-tag" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" stroke="currentColor" stroke-width="2" fill="none"/><line x1="7" y1="7" x2="7.01" y2="7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></symbol>
-  <symbol id="ic-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
-</svg>
+  <!-- ═══ INLINE CRITICAL SVG ICONS (zero network, zero layout shift) ═══ -->
+  <!-- Icons referenced via <use> from hidden sprite -->
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="ic-logo" viewBox="0 0 24 24">
+      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-moon" viewBox="0 0 24 24">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+      <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </g>
+    </symbol>
+    <symbol id="ic-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"
+        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+    </symbol>
+    <symbol id="ic-chev-down" viewBox="0 0 16 16">
+      <polyline points="4,6 8,10 12,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-chev-right" viewBox="0 0 16 16">
+      <polyline points="6,4 10,8 6,12" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-arrow-ne" viewBox="0 0 16 16">
+      <path d="M5 11L11 5M11 5H6M11 5v5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-arrow-right" viewBox="0 0 16 16">
+      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-arrow-left" viewBox="0 0 16 16">
+      <path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <!-- Feature icons -->
+    <symbol id="ic-ruler" viewBox="0 0 24 24">
+      <path d="M21.3 8.7L8.7 21.3a2.83 2.83 0 0 1-4-4L17.3 4.7a2.83 2.83 0 0 1 4 4zM11 8l2 2M14 5l2 2M8 11l2 2M5 14l2 2"
+        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-truck" viewBox="0 0 24 24">
+      <rect x="1" y="3" width="15" height="13" rx="1" stroke="currentColor" stroke-width="2" fill="none" />
+      <path d="M16 8h4l3 3v5h-7V8z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round" />
+      <circle cx="5.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none" />
+      <circle cx="18.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none" />
+    </symbol>
+    <symbol id="ic-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+      <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="ic-measure" viewBox="0 0 24 24">
+      <path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linecap="round" />
+    </symbol>
+    <symbol id="ic-scissors" viewBox="0 0 24 24">
+      <circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="2" fill="none" />
+      <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2" fill="none" />
+      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linecap="round" />
+    </symbol>
+    <symbol id="ic-home" viewBox="0 0 24 24">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linejoin="round" />
+      <polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24">
+      <path
+        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z"
+        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-mail" viewBox="0 0 24 24">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor"
+        stroke-width="2" fill="none" />
+      <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none" />
+    </symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" fill="none" />
+      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none" />
+    </symbol>
+    <symbol id="ic-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+      <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-fb" viewBox="0 0 24 24">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2"
+        fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-tw" viewBox="0 0 24 24">
+      <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-ig" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" fill="none" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="ic-wa" viewBox="0 0 24 24">
+      <path
+        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <!-- Bottom nav icons -->
+    <symbol id="ic-nav-home" viewBox="0 0 24 24">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none" />
+    </symbol>
+    <symbol id="ic-nav-info" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+      <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <line x1="12" y1="8" x2="12.01" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="ic-nav-shop" viewBox="0 0 24 24">
+      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" stroke="currentColor" stroke-width="2" fill="none"
+        stroke-linejoin="round" />
+      <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+      <path d="M16 10a4 4 0 0 1-8 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+    </symbol>
+    <symbol id="ic-nav-gallery" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none" />
+      <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2" fill="none" />
+      <polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ic-nav-contact" viewBox="0 0 24 24">
+      <path
+        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z"
+        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+    </symbol>
+    <!-- Interior design icons -->
+    <symbol id="ic-bed" viewBox="0 0 24 24">
+      <path d="M2 7v14M2 7h20M22 7v14M2 11h20M6 7V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-sofa" viewBox="0 0 24 24">
+      <path d="M4 18v3M20 18v3M2 8h2a2 2 0 0 1 2 2v4H4a2 2 0 0 1-2-2V8zM20 8h2a2 2 0 0 1 2 2v4h-2a2 2 0 0 1-2-2V8zM6 14h12M6 10a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4H6v-4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-light" viewBox="0 0 24 24">
+      <path d="M9 18h6M10 22h4M12 2v1M12 22v-4M4.22 4.22l.71.71M19.07 19.07l.71.71M2 12h1M21 12h1M4.22 19.78l.71-.71M19.07 4.93l.71-.71" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+    </symbol>
+    <symbol id="ic-floor" viewBox="0 0 24 24">
+      <path d="M3 21h18M5 21V10l7-4 7 4v11M12 6V3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-pillow" viewBox="0 0 24 24">
+      <rect x="4" y="6" width="16" height="12" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M8 10h.01M16 10h.01M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-grass" viewBox="0 0 24 24">
+      <path d="M12 22v-8M8 22v-6M16 22v-6M6 22v-4M18 22v-4M4 22v-2M20 22v-2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M12 14c0-4 4-8 4-8s-2 4-2 8M12 14c0-4-4-8-4-8s2 4 2 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </svg>
 
-<style>
-/* ═══ CSS CUSTOM PROPERTIES ═══ */
-:root{
-  --lh:#D2C3F6;--lh2:#e6ddfb;--lh3:#f3eefd;
-  --vg:#36255C;--vg2:#2b1d4a;--vg3:#4a3575;
-  --td:#1a1124;--tm:#5e4d7a;--tl:#9882be;
-  --w:#fdfcff;--bd:rgba(54,37,92,.12);
-  --sh:0 4px 24px rgba(54,37,92,.13);
-  --shd:0 16px 60px rgba(54,37,92,.22);
-  --r:12px;--rl:24px;--rx:40px;
-  --bar-h:33px;
-}
-
-/* ═══ RESET ═══ */
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans','Noto Sans Ethiopic',sans-serif;background:var(--lh3);color:var(--td);overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeSpeed}
-::-webkit-scrollbar{width:5px}
-::-webkit-scrollbar-track{background:var(--lh3)}
-::-webkit-scrollbar-thumb{background:var(--lh);border-radius:3px}
-
-/* ═══ CSS-ONLY IMAGE PLACEHOLDERS (no network) ═══ */
-.img-curtain-hero1{background:linear-gradient(135deg,#c9b8f0 0%,#8b6db5 40%,#5a3d8a 100%)}
-.img-curtain-hero2{background:linear-gradient(160deg,#e8deff 0%,#b89ee0 50%,#7a55a8 100%)}
-.img-curtain-hero3{background:linear-gradient(120deg,#d4c4f8 0%,#9b7dcf 60%,#4a2d7a 100%)}
-.img-about{background:linear-gradient(145deg,#ede5ff 0%,#c4aef0 40%,#7a55b0 100%)}
-.img-p1{background:linear-gradient(135deg,#3a2060,#6b4ba0)}
-.img-p2{background:linear-gradient(135deg,#f0ebff,#c8b8f2)}
-.img-p3{background:linear-gradient(135deg,#1e1535,#4a3070)}
-.img-p4{background:linear-gradient(135deg,#e8dff8,#a890d8)}
-.img-p5{background:linear-gradient(135deg,#5a3590,#9060c0)}
-.img-p6{background:linear-gradient(135deg,#2d1f4a,#5a4080)}
-.img-p7{background:linear-gradient(135deg,#ece4ff,#b8a0e0)}
-.img-p8{background:linear-gradient(135deg,#4a3070,#8060b0)}
-.img-p9{background:linear-gradient(135deg,#d8ccf8,#9878d0)}
-.img-p10{background:linear-gradient(135deg,#6040a0,#a080d0)}
-.img-p11{background:linear-gradient(135deg,#2a1c45,#503878)}
-.img-p12{background:linear-gradient(135deg,#f0e8ff,#c0a8e8)}
-.img-p13{background:linear-gradient(135deg,#1a1230,#402d68)}
-.img-p14{background:linear-gradient(135deg,#38255a,#7050a8)}
-.img-p15{background:linear-gradient(135deg,#483070,#8468b0)}
-.img-p16{background:linear-gradient(135deg,#c8b8f0,#8060c0)}
-.img-p17{background:linear-gradient(135deg,#201540,#4a3278)}
-.img-p18{background:linear-gradient(135deg,#eee8ff,#c8b4f0)}
-.img-p19{background:linear-gradient(135deg,#5a3888,#9068c0)}
-.img-p20{background:linear-gradient(135deg,#2c1e4a,#603890)}
-.img-g1{background:linear-gradient(160deg,#d0c0f0,#7048a8,#3a2460)}
-.img-g2{background:linear-gradient(160deg,#200f3a,#4a3070,#8060b0)}
-.img-g3{background:linear-gradient(160deg,#f0eaff,#c0a8e8,#8060b8)}
-.img-g4{background:linear-gradient(160deg,#3a2868,#7858a8,#a888d0)}
-
-/* Curtain texture overlay — pure CSS, composited layer */
-.curtain-pattern{contain:strict}
-.curtain-pattern::after{
-  content:'';position:absolute;inset:0;
-  background:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0px,rgba(255,255,255,.04) 2px,transparent 2px,transparent 18px);
-  pointer-events:none;will-change:auto
-}
-.img-block{position:relative;overflow:hidden;width:100%;height:100%}
-.img-block .drape{
-  position:absolute;inset:0;
-  background:repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0,rgba(0,0,0,.06) 3px,transparent 3px,transparent 22px)
-}
-.img-block .sheen{
-  position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(255,255,255,.18) 0%,transparent 60%,rgba(0,0,0,.15) 100%)
-}
-
-/* ═══ ICON HELPER ═══ */
-.ico{display:inline-block;width:1em;height:1em;stroke:currentColor;fill:none;vertical-align:middle;flex-shrink:0}
-.ico-16{width:16px;height:16px}
-.ico-18{width:18px;height:18px}
-.ico-20{width:20px;height:20px}
-.ico-22{width:22px;height:22px}
-.ico-fill{fill:currentColor;stroke:none}
-
-/* ═══ TOP BAR ═══ */
-.top-bar{
-  position:fixed;top:0;left:0;right:0;z-index:1002;
-  background:var(--vg2);padding:7px 28px;
-  display:flex;justify-content:flex-end;align-items:center;gap:10px
-}
-.ctrl-btn{
-  display:flex;align-items:center;gap:7px;
-  background:rgba(210,195,246,.12);border:1px solid rgba(210,195,246,.25);
-  color:var(--lh);padding:5px 13px;border-radius:20px;
-  cursor:pointer;font-size:12px;font-weight:500;font-family:inherit;
-  transition:background .2s,border-color .2s
-}
-.ctrl-btn:hover{background:rgba(210,195,246,.22);border-color:var(--lh)}
-.lang-wrap{position:relative}
-.lang-drop{
-  position:absolute;top:calc(100% + 6px);right:0;background:var(--vg2);
-  border:1px solid rgba(210,195,246,.2);border-radius:var(--r);padding:6px 0;
-  min-width:160px;opacity:0;visibility:hidden;transform:translateY(-6px);
-  transition:opacity .2s,transform .2s,visibility .2s;z-index:1003;box-shadow:var(--shd)
-}
-.lang-drop.open{opacity:1;visibility:visible;transform:translateY(0)}
-.lang-opt{display:block;padding:9px 16px;color:var(--lh);font-size:13px;cursor:pointer;transition:background .15s;font-family:inherit}
-.lang-opt:hover{background:rgba(210,195,246,.1)}
-.lang-opt.active::before{content:"✓ "}
-
-/* ═══ NAVBAR ═══ */
-.navbar{
-  position:fixed;top:var(--bar-h);left:0;right:0;z-index:1001;
-  padding:13px 28px;display:flex;justify-content:space-between;align-items:center;
-  background:rgba(253,252,255,.94);backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--bd);transition:padding .3s,box-shadow .3s
-}
-.navbar.sc{padding:9px 28px;box-shadow:var(--sh)}
-.logo{
-  display:flex;align-items:center;gap:10px;text-decoration:none;
-  color:var(--vg);font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700
-}
-.logo-mark{
-  width:32px;height:32px;background:var(--vg);border-radius:9px;
-  display:flex;align-items:center;justify-content:center;flex-shrink:0
-}
-.logo-mark svg{width:16px;height:16px;fill:var(--lh)}
-.nav-links{display:flex;gap:2px;list-style:none}
-.nav-item{position:relative}
-.nav-link{
-  display:flex;align-items:center;gap:5px;padding:8px 13px;border-radius:var(--r);
-  color:var(--tm);font-size:13px;font-weight:500;text-decoration:none;
-  cursor:pointer;transition:background .2s,color .2s;background:none;border:none;
-  font-family:inherit;white-space:nowrap
-}
-.chev{display:flex;align-items:center;transition:transform .3s}
-.nav-item:hover .chev{transform:rotate(180deg)}
-.nav-link:hover{background:var(--lh3);color:var(--vg)}
-.dropdown{
-  position:absolute;top:100%;left:0;background:var(--w);border:1px solid var(--bd);
-  border-radius:var(--rl);padding:8px 0;min-width:195px;opacity:0;visibility:hidden;
-  transform:translateY(6px);transition:opacity .2s,transform .2s,visibility .2s;
-  box-shadow:var(--shd);z-index:200
-}
-.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
-.drop-item{
-  display:block;padding:10px 20px;color:var(--tm);text-decoration:none;
-  font-size:13px;transition:color .18s,padding .18s,background .18s;position:relative
-}
-.drop-item::before{
-  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
-  background:var(--vg);transform:scaleY(0);transition:transform .2s;border-radius:0 2px 2px 0
-}
-.drop-item:hover{color:var(--vg);padding-left:26px;background:var(--lh3)}
-.drop-item:hover::before{transform:scaleY(1)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px;background:none;border:none}
-.hamburger span{width:22px;height:2px;background:var(--vg);border-radius:2px;transition:transform .3s,opacity .3s;display:block}
-.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.hamburger.open span:nth-child(2){opacity:0}
-.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
-/* ═══ MOBILE DRAWER ═══ */
-.mob-menu{
-  position:fixed;top:0;left:0;right:0;bottom:0;background:var(--vg2);z-index:1000;
-  padding:105px 28px 40px;transform:translateX(100%);
-  transition:transform .38s cubic-bezier(.4,0,.2,1);display:flex;
-  flex-direction:column;overflow-y:auto
-}
-.mob-menu.open{transform:translateX(0)}
-.mob-link{
-  display:flex;align-items:center;justify-content:space-between;padding:15px 0;
-  color:var(--lh);font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;
-  text-decoration:none;border-bottom:1px solid rgba(210,195,246,.1);cursor:pointer;
-  background:none;border-top:none;border-left:none;border-right:none;width:100%;
-  transition:color .2s;border-bottom:1px solid rgba(210,195,246,.1)
-}
-.mob-link:hover{color:#fff}
-.mob-sub{max-height:0;overflow:hidden;transition:max-height .3s}
-.mob-sub.open{max-height:300px}
-.mob-sub-item{display:block;padding:10px 14px;color:rgba(210,195,246,.65);font-size:15px;text-decoration:none;transition:color .2s}
-.mob-sub-item:hover{color:var(--lh)}
-.mob-social{display:flex;gap:14px;margin-top:36px}
-.mob-social a{
-  width:40px;height:40px;border:1px solid rgba(210,195,246,.25);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;color:var(--lh);
-  text-decoration:none;transition:background .2s,color .2s
-}
-.mob-social a:hover{background:var(--lh);color:var(--vg)}
-
-/* ═══ SIDEBAR ═══ */
-.sidebar{
-  position:fixed;left:0;top:0;bottom:0;width:44px;background:var(--w);
-  border-right:1px solid var(--bd);display:flex;flex-direction:column;
-  align-items:center;padding:115px 0 22px;z-index:999
-}
-.sidebar-text{
-  writing-mode:vertical-rl;transform:rotate(180deg);font-size:9px;
-  color:var(--tl);letter-spacing:2px;margin-bottom:auto;white-space:nowrap
-}
-.sidebar-icons{display:flex;flex-direction:column;gap:15px;margin-top:auto}
-.sidebar-icons a{color:var(--tl);text-decoration:none;transition:color .2s;display:flex;align-items:center;justify-content:center}
-.sidebar-icons a:hover{color:var(--vg)}
-
-/* ═══ BUTTONS ═══ */
-.btn-p{
-  display:inline-flex;align-items:center;gap:9px;padding:13px 26px;
-  background:var(--vg);color:var(--lh);border:none;border-radius:var(--r);
-  font-size:14px;font-weight:600;font-family:inherit;cursor:pointer;
-  text-decoration:none;transition:background .28s,transform .28s,box-shadow .28s
-}
-.btn-p:hover{background:var(--vg2);transform:translateY(-2px);box-shadow:0 10px 36px rgba(54,37,92,.3)}
-.btn-o{
-  display:inline-flex;align-items:center;gap:9px;padding:13px 26px;
-  background:transparent;border:1.5px solid var(--vg);color:var(--vg);
-  border-radius:var(--r);font-size:14px;font-weight:600;font-family:inherit;
-  cursor:pointer;text-decoration:none;transition:background .28s,color .28s,transform .28s
-}
-.btn-o:hover{background:var(--vg);color:var(--lh);transform:translateY(-2px)}
-
-/* ═══ SECTION HELPERS ═══ */
-.sec-label{
-  display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;
-  letter-spacing:3px;text-transform:uppercase;color:var(--vg3);margin-bottom:12px
-}
-.sec-label::before{content:'';width:22px;height:2px;background:var(--lh);border-radius:1px;flex-shrink:0}
-.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4.5vw,50px);font-weight:700;line-height:1.08;color:var(--vg);margin-bottom:16px}
-.sec-sub{color:var(--tm);font-size:15px;line-height:1.75}
-section{padding:84px 40px 84px calc(44px + 36px)}
-
-/* ═══ HERO ═══ */
-#home{
-  min-height:100vh;display:flex;align-items:center;
-  padding:100px 40px 60px calc(44px + 36px);position:relative;overflow:hidden;
-  background:linear-gradient(135deg,var(--lh3) 0%,#ebe5fd 100%)
-}
-#home::before{
-  content:'';position:absolute;width:480px;height:480px;
-  background:radial-gradient(circle,rgba(210,195,246,.45) 0%,transparent 70%);
-  top:-80px;right:-80px;pointer-events:none
-}
-.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;width:100%;position:relative;z-index:2}
-.hero-tag{
-  display:inline-block;background:var(--vg);color:var(--lh);font-size:11px;
-  font-weight:600;letter-spacing:3px;text-transform:uppercase;
-  padding:6px 15px;border-radius:20px;margin-bottom:22px
-}
-.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5.5vw,68px);font-weight:700;line-height:1.0;color:var(--vg);margin-bottom:18px}
-.hero-h1 em{font-style:italic;color:var(--vg3)}
-.hero-price{font-size:17px;color:var(--tm);font-weight:500;margin-bottom:32px}
-.hero-price strong{color:var(--vg);font-size:22px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.sl-ctrl{display:flex;gap:10px;margin-top:36px}
-.sl-btn{
-  width:44px;height:44px;border:1.5px solid var(--bd);border-radius:50%;
-  background:var(--w);color:var(--tm);cursor:pointer;display:flex;
-  align-items:center;justify-content:center;transition:border-color .22s,color .22s
-}
-.sl-btn:hover{border-color:var(--vg);color:var(--vg)}
-.hero-img-wrap{position:relative;height:500px}
-.hero-slide{
-  position:absolute;inset:0;border-radius:50% 20% 50% 20% / 30% 50% 30% 50%;
-  overflow:hidden;opacity:0;transform:scale(.94) translateX(24px);
-  transition:opacity .75s cubic-bezier(.4,0,.2,1),transform .75s cubic-bezier(.4,0,.2,1);
-  box-shadow:var(--shd);will-change:opacity,transform
-}
-.hero-slide.active{opacity:1;transform:scale(1) translateX(0)}
-.hero-slide .img-block{height:100%;position:relative}
-.hero-badge{
-  position:absolute;bottom:36px;left:-16px;background:var(--vg);color:var(--lh);
-  padding:16px 22px;border-radius:var(--rl);box-shadow:var(--shd);
-  animation:floatY 3s ease-in-out infinite;z-index:10
-}
-.hb-num{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:700;line-height:1}
-.hb-lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:.7;margin-top:3px}
-@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-
-/* ═══ ABOUT ═══ */
-#about{background:var(--w)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.about-img-box{position:relative}
-.about-img{border-radius:40% 20% 40% 20% / 20% 40% 20% 40%;overflow:hidden;height:400px;position:relative;box-shadow:var(--shd)}
-.about-stat{position:absolute;top:24px;right:-18px;background:var(--lh);border-radius:var(--rl);padding:18px 22px;box-shadow:var(--shd);text-align:center}
-.as-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;color:var(--vg);line-height:1}
-.as-txt{font-size:10px;letter-spacing:2px;color:var(--vg3);text-transform:uppercase;margin-top:3px}
-.svc-list{display:flex;flex-direction:column;gap:16px;margin:24px 0}
-.svc-item{
-  display:flex;gap:14px;align-items:flex-start;padding:16px;
-  border-radius:var(--r);border:1px solid var(--bd);background:var(--lh3);
-  transition:border-color .28s,box-shadow .28s,transform .28s
-}
-.svc-item:hover{border-color:var(--lh);box-shadow:var(--sh);transform:translateX(4px)}
-.svc-ico{
-  width:42px;height:42px;background:var(--vg);border-radius:10px;
-  display:flex;align-items:center;justify-content:center;color:var(--lh);flex-shrink:0
-}
-.svc-ico.lt{background:var(--lh);color:var(--vg)}
-.svc-info h4{font-size:14px;font-weight:600;color:var(--vg);margin-bottom:3px}
-.svc-info p{font-size:13px;color:var(--tm);line-height:1.6}
-
-/* ═══ HOW IT WORKS ═══ */
-#works{background:linear-gradient(155deg,var(--lh3) 0%,#ede8fc 100%)}
-.works-head{text-align:center;margin-bottom:52px}
-.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.step-card{
-  background:var(--w);border-radius:var(--rl);padding:28px 20px;text-align:center;
-  border:1px solid var(--bd);transition:transform .32s,box-shadow .32s;
-  position:relative;overflow:hidden
-}
-.step-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:4px;
-  background:linear-gradient(90deg,var(--lh),var(--vg));
-  transform:scaleX(0);transition:transform .35s;transform-origin:left
-}
-.step-card:hover::before{transform:scaleX(1)}
-.step-card:hover{transform:translateY(-5px);box-shadow:var(--shd)}
-.step-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:var(--lh);line-height:1;margin-bottom:14px}
-.step-ico{
-  width:56px;height:56px;margin:0 auto 16px;background:var(--vg);border-radius:var(--r);
-  display:flex;align-items:center;justify-content:center;color:var(--lh);
-  transition:transform .28s
-}
-.step-card:hover .step-ico{transform:scale(1.1) rotate(6deg)}
-.step-card h3{font-size:15px;font-weight:700;color:var(--vg);margin-bottom:8px}
-.step-card p{font-size:13px;color:var(--tm);line-height:1.65}
-
-/* ═══ PRODUCTS ═══ */
-#products{background:var(--w)}
-.prod-head{text-align:center;margin-bottom:48px}
-.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px}
-.p-card{
-  background:var(--lh3);border-radius:var(--rl);overflow:hidden;
-  border:1px solid var(--bd);transition:transform .35s,box-shadow .35s,border-color .35s
-}
-.p-card:hover{transform:translateY(-7px);box-shadow:var(--shd);border-color:var(--lh)}
-.p-img{height:200px;position:relative;overflow:hidden}
-.p-badge{
-  position:absolute;top:11px;left:11px;background:var(--vg);color:var(--lh);
-  font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
-  padding:4px 11px;border-radius:20px;z-index:2
-}
-.p-body{padding:20px}
-.p-body h3{font-size:15px;font-weight:700;color:var(--vg);margin-bottom:6px;line-height:1.3}
-.p-body p{font-size:13px;color:var(--tm);line-height:1.6;margin-bottom:12px}
-.p-foot{display:flex;justify-content:space-between;align-items:center}
-.p-price{font-size:19px;font-weight:700;color:var(--vg3)}
-.p-arrow{
-  width:32px;height:32px;border:1.5px solid var(--bd);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;color:var(--tl);
-  cursor:pointer;transition:background .28s,border-color .28s,color .28s,transform .28s;
-  background:var(--w)
-}
-.p-card:hover .p-arrow{background:var(--vg);border-color:var(--vg);color:var(--lh);transform:rotate(45deg)}
-
-/* ═══ MARQUEE ═══ */
-.mq-sec{padding:28px 0;background:var(--vg);overflow:hidden;white-space:nowrap}
-.mq-track{display:inline-flex;gap:44px;animation:mq 28s linear infinite}
-.mq-word{
-  font-family:'Cormorant Garamond',serif;font-size:clamp(38px,6vw,68px);font-weight:700;
-  color:transparent;-webkit-text-stroke:1px rgba(210,195,246,.3);
-  text-transform:uppercase;letter-spacing:4px;cursor:default;
-  transition:color .25s,-webkit-text-stroke-color .25s
-}
-.mq-word:hover{-webkit-text-stroke-color:var(--lh);color:var(--lh);-webkit-text-fill-color:var(--lh)}
-@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* ═══ GALLERY ═══ */
-#gallery{background:var(--lh3)}
-.gall-head{text-align:center;margin-bottom:44px}
-.gall-flex{display:flex;gap:14px;height:460px}
-.g-card{flex:1;border-radius:var(--rl);overflow:hidden;position:relative;cursor:pointer;transition:flex .48s cubic-bezier(.4,0,.2,1)}
-.g-card:hover{flex:2.2}
-.g-card .img-block{height:100%}
-.g-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(54,37,92,.8) 0%,transparent 55%);
-  display:flex;flex-direction:column;justify-content:flex-end;padding:24px;
-  opacity:0;transition:opacity .28s
-}
-.g-card:hover .g-overlay{opacity:1}
-.g-tag{font-size:10px;color:var(--lh);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px}
-.g-name{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;color:#fff}
-
-/* ═══ CONTACT ═══ */
-#contact{background:var(--w)}
-.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-.ct-details{display:flex;flex-direction:column;gap:18px;margin-top:28px}
-.ct-item{display:flex;gap:13px;align-items:flex-start}
-.ct-ico{width:44px;height:44px;background:var(--lh);border-radius:11px;display:flex;align-items:center;justify-content:center;color:var(--vg);flex-shrink:0}
-.ct-item h4{font-size:14px;font-weight:600;color:var(--vg);margin-bottom:2px}
-.ct-item span{font-size:13px;color:var(--tm)}
-.ct-form{background:var(--lh3);padding:32px;border-radius:var(--rx);border:1px solid var(--bd)}
-.f-grp{margin-bottom:16px}
-.f-grp label{display:block;font-size:12px;font-weight:600;color:var(--vg);margin-bottom:6px}
-.f-grp input,.f-grp textarea,.f-grp select{
-  width:100%;padding:11px 14px;border:1.5px solid var(--bd);border-radius:var(--r);
-  font-size:14px;font-family:inherit;background:var(--w);color:var(--td);
-  transition:border-color .22s,box-shadow .22s;outline:none
-}
-.f-grp input:focus,.f-grp textarea:focus,.f-grp select:focus{border-color:var(--vg);box-shadow:0 0 0 3px rgba(54,37,92,.07)}
-.f-grp textarea{resize:vertical;min-height:100px}
-.f-sub{
-  width:100%;padding:14px;background:var(--vg);color:var(--lh);border:none;
-  border-radius:var(--r);font-size:15px;font-weight:600;font-family:inherit;
-  cursor:pointer;transition:background .28s,transform .28s,box-shadow .28s
-}
-.f-sub:hover{background:var(--vg2);transform:translateY(-2px);box-shadow:var(--shd)}
-
-/* ═══ FOOTER ═══ */
-footer{background:var(--vg2);padding:54px 40px 26px calc(44px + 36px)}
-.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:44px}
-.f-brand .logo{color:var(--lh);margin-bottom:14px}
-.f-brand p{color:rgba(210,195,246,.6);font-size:13px;line-height:1.8;margin-bottom:20px}
-.f-social{display:flex;gap:11px}
-.f-social a{
-  width:36px;height:36px;border:1px solid rgba(210,195,246,.2);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  color:rgba(210,195,246,.55);text-decoration:none;
-  transition:background .22s,border-color .22s,color .22s,transform .22s
-}
-.f-social a:hover{background:var(--lh);border-color:var(--lh);color:var(--vg);transform:translateY(-3px)}
-.f-col h4{font-size:14px;font-weight:700;color:var(--lh);margin-bottom:18px}
-.f-links{list-style:none;display:flex;flex-direction:column;gap:9px}
-.f-links a{color:rgba(210,195,246,.55);text-decoration:none;font-size:13px;transition:color .18s}
-.f-links a:hover{color:var(--lh)}
-.f-bot{display:flex;justify-content:space-between;align-items:center;padding-top:22px;border-top:1px solid rgba(210,195,246,.1);flex-wrap:wrap;gap:8px}
-.f-bot p{color:rgba(210,195,246,.4);font-size:12px}
-
-/* ═══ TOAST ═══ */
-.toast{
-  position:fixed;bottom:26px;right:26px;background:var(--vg);color:var(--lh);
-  padding:13px 20px;border-radius:var(--r);font-size:14px;font-weight:500;
-  box-shadow:var(--shd);transform:translateY(70px);opacity:0;
-  transition:transform .35s,opacity .35s;z-index:9999
-}
-.toast.show{transform:translateY(0);opacity:1}
-
-/* ═══ ANIMATIONS ═══ */
-.fade-in{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
-.fade-in.vis{opacity:1;transform:translateY(0)}
-.fade-l{opacity:0;transform:translateX(-24px);transition:opacity .65s ease,transform .65s ease}
-.fade-l.vis{opacity:1;transform:translateX(0)}
-.fade-r{opacity:0;transform:translateX(24px);transition:opacity .7s ease .1s,transform .7s ease .1s}
-.fade-r.vis{opacity:1;transform:translateX(0)}
-
-/* ═══ MOBILE BOTTOM NAV ═══ */
-.mob-bot-nav{
-  display:none;position:fixed;bottom:0;left:0;right:0;z-index:1001;
-  background:rgba(253,252,255,.96);backdrop-filter:blur(18px);
-  border-top:1px solid var(--bd);
-  padding:9px 0 max(9px,env(safe-area-inset-bottom))
-}
-.mob-bot-nav ul{display:flex;list-style:none}
-.mob-bot-nav li{flex:1}
-.mbn{
-  display:flex;flex-direction:column;align-items:center;gap:3px;background:none;
-  border:none;width:100%;padding:5px 3px;color:var(--tl);font-size:9.5px;
-  font-weight:500;font-family:inherit;cursor:pointer;text-decoration:none;
-  transition:color .18s
-}
-.mbn.act,.mbn:hover{color:var(--vg)}
-
-/* ═══ RESPONSIVE ═══ */
-@media(max-width:1050px){
-  .f-grid{grid-template-columns:1fr 1fr}
-  .steps-grid{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:900px){
-  .about-grid,.ct-grid{grid-template-columns:1fr}
-  .hero-inner{grid-template-columns:1fr}
-  .hero-img-wrap{height:320px}
-  .gall-flex{height:300px}
-}
-@media(max-width:768px){
-  .top-bar{padding:6px 14px}
-  .navbar{top:29px;padding:9px 14px}
-  .nav-links,.sidebar{display:none}
-  .hamburger{display:flex}
-  #home{padding:95px 18px 70px 18px}
-  section{padding:56px 18px 56px 18px}
-  footer{padding:44px 18px 24px 18px}
-  .f-grid{grid-template-columns:1fr;gap:26px}
-  .gall-flex{flex-direction:column;height:auto}
-  .g-card{height:200px;flex:none}
-  .g-card:hover{flex:none}
-  .g-overlay{opacity:1}
-  .mob-bot-nav{display:block}
-  body{padding-bottom:68px}
-  .hero-badge{left:0;bottom:18px}
-}
-@media(max-width:480px){
-  .hero-actions{flex-direction:column}
-  .btn-p,.btn-o{width:100%;justify-content:center}
-  .ct-form{padding:22px}
-}
-
-/* ═══ PRODUCT DETAIL MODAL ═══ */
-.modal-overlay{
-  position:fixed;inset:0;z-index:2000;
-  background:rgba(26,17,36,.72);backdrop-filter:blur(8px);
-  display:flex;align-items:center;justify-content:center;
-  padding:20px;opacity:0;visibility:hidden;
-  transition:opacity .35s,visibility .35s
-}
-.modal-overlay.open{opacity:1;visibility:visible}
-.modal-box{
-  background:var(--w);border-radius:var(--rx);
-  width:100%;max-width:820px;max-height:90vh;overflow:hidden;
-  display:grid;grid-template-columns:1fr 1fr;
-  box-shadow:0 32px 80px rgba(26,17,36,.45);
-  transform:translateY(28px) scale(.96);
-  transition:transform .38s cubic-bezier(.4,0,.2,1)
-}
-.modal-overlay.open .modal-box{transform:translateY(0) scale(1)}
-.modal-img-side{position:relative;min-height:360px;overflow:hidden}
-.modal-img-side .img-block{height:100%;position:relative}
-.modal-img-side .curtain-pattern::after{content:''} /* keep pattern */
-.modal-close{
-  position:absolute;top:14px;right:14px;z-index:10;
-  width:36px;height:36px;border-radius:50%;
-  background:rgba(253,252,255,.9);border:none;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  color:var(--vg);transition:background .2s,transform .2s;box-shadow:var(--sh)
-}
-.modal-close:hover{background:var(--w);transform:rotate(90deg)}
-.modal-content{
-  padding:32px 28px;overflow-y:auto;display:flex;
-  flex-direction:column;gap:0
-}
-.modal-badge{
-  display:inline-flex;align-items:center;gap:6px;
-  background:var(--lh);color:var(--vg);font-size:10px;font-weight:700;
-  letter-spacing:2px;text-transform:uppercase;padding:4px 12px;
-  border-radius:20px;margin-bottom:12px;width:fit-content
-}
-.modal-name{
-  font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,30px);
-  font-weight:700;color:var(--vg);line-height:1.15;margin-bottom:8px
-}
-.modal-stars{display:flex;gap:3px;color:#f0b429;margin-bottom:10px}
-.modal-price-row{
-  display:flex;align-items:baseline;gap:12px;
-  margin-bottom:16px;padding-bottom:16px;
-  border-bottom:1px solid var(--bd)
-}
-.modal-price{font-size:28px;font-weight:700;color:var(--vg3)}
-.modal-price-note{font-size:13px;color:var(--tl)}
-.modal-desc{font-size:14px;color:var(--tm);line-height:1.75;margin-bottom:18px}
-.modal-specs{
-  display:grid;grid-template-columns:1fr 1fr;gap:10px;
-  margin-bottom:18px
-}
-.modal-spec{
-  background:var(--lh3);border-radius:var(--r);padding:11px 13px;
-  border:1px solid var(--bd)
-}
-.modal-spec-label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--tl);margin-bottom:3px}
-.modal-spec-val{font-size:13px;font-weight:600;color:var(--vg)}
-.modal-features{margin-bottom:20px}
-.modal-features h4{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--vg3);margin-bottom:10px}
-.modal-feat-list{display:flex;flex-direction:column;gap:7px}
-.modal-feat-item{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--tm)}
-.modal-feat-item .ico{color:var(--vg3);flex-shrink:0}
-.modal-actions{display:flex;gap:10px;margin-top:auto;padding-top:4px}
-.modal-actions .btn-p{flex:1;justify-content:center}
-.modal-actions .btn-o{width:44px;padding:13px;justify-content:center;flex-shrink:0}
-@media(max-width:700px){
-  .modal-box{grid-template-columns:1fr;max-height:95vh}
-  .modal-img-side{min-height:220px}
-  .modal-content{padding:22px 18px}
-  .modal-specs{grid-template-columns:1fr 1fr}
-}
-@media(max-width:400px){
-  .modal-specs{grid-template-columns:1fr}
-}
-</style>
-</head>
-<body>
-<div class="toast" id="toast"></div>
-
-<!-- SVG SPRITE: inlined at top of body (already in <head> above) -->
-
-<!-- TOP BAR -->
-<div class="top-bar">
-  <button class="ctrl-btn" onclick="toggleTheme()" id="themeBtn">
-    <svg class="ico ico-16"><use href="#ic-moon" id="themeIco"/></svg>
-    <span id="themeLabel">Dark</span>
-  </button>
-  <div class="lang-wrap">
-    <button class="ctrl-btn" onclick="toggleLang(event)">
-      <svg class="ico ico-16"><use href="#ic-globe"/></svg>
-      <span id="curLang">English</span>
-      <svg class="ico ico-16"><use href="#ic-chev-down"/></svg>
-    </button>
-    <div class="lang-drop" id="langDrop">
-      <div class="lang-opt active" onclick="setLang('en')" data-l="en">English</div>
-      <div class="lang-opt" onclick="setLang('am')" data-l="am">Amharic (አማርኛ)</div>
-      <div class="lang-opt" onclick="setLang('om')" data-l="om">Afaan Oromo</div>
-    </div>
-  </div>
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <a href="#home" class="logo">
-    <div class="logo-mark">
-      <svg width="16" height="16" fill="var(--lh)" viewBox="0 0 24 24"><use href="#ic-logo"/></svg>
-    </div>
-    <span id="brandName">Shegere</span>
-  </a>
-  <ul class="nav-links">
-    <li class="nav-item">
-      <button class="nav-link">Home <span class="chev"><svg class="ico ico-16"><use href="#ic-chev-down"/></svg></span></button>
-      <div class="dropdown">
-        <a href="#home" class="drop-item">Home</a>
-        <a href="#about" class="drop-item">About Section</a>
-        <a href="#works" class="drop-item">How It Works</a>
-      </div>
-    </li>
-    <li class="nav-item"><a href="#about" class="nav-link" id="navAbout">About Us</a></li>
-    <li class="nav-item">
-      <button class="nav-link" id="navServices">Services <span class="chev"><svg class="ico ico-16"><use href="#ic-chev-down"/></svg></span></button>
-      <div class="dropdown">
-        <a href="#products" class="drop-item">Custom Curtains</a>
-        <a href="#products" class="drop-item">Blinds &amp; Shades</a>
-        <a href="#products" class="drop-item">Curtain Rods</a>
-        <a href="#works" class="drop-item">Installation</a>
-        <a href="#contact" class="drop-item">Consultation</a>
-        <a href="#contact" class="drop-item">Repair</a>
-      </div>
-    </li>
-    <li class="nav-item"><a href="#products" class="nav-link" id="navProducts">Products</a></li>
-    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-    <li class="nav-item"><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
-  </ul>
-  <button class="hamburger" id="ham" onclick="toggleMenu()"><span></span><span></span><span></span></button>
-</nav>
-
-<!-- MOBILE DRAWER -->
-<div class="mob-menu" id="mobMenu">
-  <button class="mob-link" onclick="toggleSub('sh')"><span id="mobHome">Home</span> <svg class="ico ico-16"><use href="#ic-chev-down"/></svg></button>
-  <div class="mob-sub" id="sh">
-    <a href="#home" class="mob-sub-item" onclick="closeMob()">Home</a>
-    <a href="#about" class="mob-sub-item" onclick="closeMob()">About Section</a>
-    <a href="#works" class="mob-sub-item" onclick="closeMob()">How It Works</a>
-  </div>
-  <a href="#about" class="mob-link" onclick="closeMob()" id="mobAbout">About Us</a>
-  <button class="mob-link" onclick="toggleSub('ss')"><span id="mobServices">Services</span> <svg class="ico ico-16"><use href="#ic-chev-down"/></svg></button>
-  <div class="mob-sub" id="ss">
-    <a href="#products" class="mob-sub-item" onclick="closeMob()">Custom Curtains</a>
-    <a href="#products" class="mob-sub-item" onclick="closeMob()">Blinds &amp; Shades</a>
-    <a href="#works" class="mob-sub-item" onclick="closeMob()">Installation</a>
-    <a href="#contact" class="mob-sub-item" onclick="closeMob()">Consultation</a>
-  </div>
-  <a href="#products" class="mob-link" onclick="closeMob()" id="mobProducts">Products</a>
-  <a href="#gallery" class="mob-link" onclick="closeMob()">Gallery</a>
-  <a href="#contact" class="mob-link" onclick="closeMob()" id="mobContact">Contact</a>
-  <div class="mob-social">
-    <a href="#" aria-label="Facebook"><svg class="ico ico-18"><use href="#ic-fb"/></svg></a>
-    <a href="#" aria-label="Twitter"><svg class="ico ico-18"><use href="#ic-tw"/></svg></a>
-    <a href="#" aria-label="Instagram"><svg class="ico ico-18"><use href="#ic-ig"/></svg></a>
-    <a href="#" aria-label="WhatsApp"><svg class="ico ico-18"><use href="#ic-wa"/></svg></a>
-  </div>
-</div>
-
-<!-- SIDEBAR -->
-<aside class="sidebar">
-  <p class="sidebar-text">+251 911 234 567 · info@shegerecurtains.com</p>
-  <div class="sidebar-icons">
-    <a href="#" aria-label="Facebook"><svg class="ico ico-16"><use href="#ic-fb"/></svg></a>
-    <a href="#" aria-label="Twitter"><svg class="ico ico-16"><use href="#ic-tw"/></svg></a>
-    <a href="#" aria-label="Instagram"><svg class="ico ico-16"><use href="#ic-ig"/></svg></a>
-    <a href="#" aria-label="WhatsApp"><svg class="ico ico-16"><use href="#ic-wa"/></svg></a>
-  </div>
-</aside>
-
-<!-- HERO -->
-<section id="home">
-  <div class="hero-inner">
-    <div class="fade-l">
-      <span class="hero-tag" id="heroTag">Premium Window Treatments</span>
-      <h1 class="hero-h1" id="heroH1">Elegance<br>for Your <em>Windows</em></h1>
-      <p class="hero-price" id="heroPrice">Starting from <strong>$45</strong></p>
-      <div class="hero-actions">
-        <a href="#products" class="btn-p" id="heroBtn">Shop Collection <svg class="ico ico-16"><use href="#ic-arrow-right"/></svg></a>
-        <a href="#contact" class="btn-o" id="heroBtn2">Free Consultation</a>
-      </div>
-      <div class="sl-ctrl">
-        <button class="sl-btn" onclick="prevSlide()" aria-label="Previous slide"><svg class="ico ico-16"><use href="#ic-arrow-left"/></svg></button>
-        <button class="sl-btn" onclick="nextSlide()" aria-label="Next slide"><svg class="ico ico-16"><use href="#ic-arrow-right"/></svg></button>
-      </div>
-    </div>
-    <div class="hero-img-wrap fade-r">
-      <div class="hero-slide active">
-        <div class="img-block img-curtain-hero1 curtain-pattern"><div class="drape"></div><div class="sheen"></div></div>
-      </div>
-      <div class="hero-slide">
-        <div class="img-block img-curtain-hero2 curtain-pattern"><div class="drape"></div><div class="sheen"></div></div>
-      </div>
-      <div class="hero-slide">
-        <div class="img-block img-curtain-hero3 curtain-pattern"><div class="drape"></div><div class="sheen"></div></div>
-      </div>
-      <div class="hero-badge">
-        <div class="hb-num" id="hbNum">0</div>
-        <div class="hb-lbl" id="hbLbl">Happy Clients</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-grid">
-    <div class="about-img-box fade-l">
-      <div class="about-img img-about curtain-pattern"><div class="drape"></div><div class="sheen"></div></div>
-      <div class="about-stat">
-        <div class="as-num">12+</div>
-        <div class="as-txt" id="asLbl">Years of Excellence</div>
-      </div>
-    </div>
-    <div class="fade-r">
-      <span class="sec-label" id="aboutLabel">About Us</span>
-      <h2 class="sec-title" id="aboutTitle">Welcome to Shegere Curtains</h2>
-      <p class="sec-sub" id="aboutText">We craft beautiful, high-quality curtains and window treatments that transform your living spaces. From luxurious velvet to sheer elegance, our designs bring warmth, privacy, and style.</p>
-      <div class="svc-list">
-        <div class="svc-item">
-          <div class="svc-ico"><svg class="ico ico-22"><use href="#ic-ruler"/></svg></div>
-          <div class="svc-info"><h4 id="svcT1">Custom Measurements</h4><p id="svcD1">Precise fitting for every window size with professional measurement services.</p></div>
-        </div>
-        <div class="svc-item">
-          <div class="svc-ico lt"><svg class="ico ico-22"><use href="#ic-truck"/></svg></div>
-          <div class="svc-info"><h4 id="svcT2">Free Installation</h4><p id="svcD2">Expert installation included with every purchase across Addis Ababa.</p></div>
-        </div>
-      </div>
-      <a href="#products" class="btn-p" style="margin-top:20px" id="aboutBtn">View Collection <svg class="ico ico-16"><use href="#ic-arrow-right"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section id="works">
-  <div class="works-head fade-in">
-    <span class="sec-label" id="worksLabel">Process</span>
-    <h2 class="sec-title" id="worksTitle">How It Works</h2>
-  </div>
-  <div class="steps-grid">
-    <div class="step-card fade-in" style="transition-delay:.05s">
-      <div class="step-num">01</div>
-      <div class="step-ico"><svg class="ico ico-22"><use href="#ic-search"/></svg></div>
-      <h3 id="stT1">Choose Your Style</h3>
-      <p id="stD1">Browse our collection and select the perfect curtain style for your space.</p>
-    </div>
-    <div class="step-card fade-in" style="transition-delay:.12s">
-      <div class="step-num">02</div>
-      <div class="step-ico"><svg class="ico ico-22"><use href="#ic-measure"/></svg></div>
-      <h3 id="stT2">Custom Measure</h3>
-      <p id="stD2">We take precise measurements to ensure a perfect fit for your windows.</p>
-    </div>
-    <div class="step-card fade-in" style="transition-delay:.2s">
-      <div class="step-num">03</div>
-      <div class="step-ico"><svg class="ico ico-22"><use href="#ic-scissors"/></svg></div>
-      <h3 id="stT3">Professional Make</h3>
-      <p id="stD3">Our artisans craft your curtains with premium fabrics and meticulous care.</p>
-    </div>
-    <div class="step-card fade-in" style="transition-delay:.28s">
-      <div class="step-num">04</div>
-      <div class="step-ico"><svg class="ico ico-22"><use href="#ic-home"/></svg></div>
-      <h3 id="stT4">Free Installation</h3>
-      <p id="stD4">We deliver and install your curtains perfectly, hassle-free.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCTS -->
-<section id="products">
-  <div class="prod-head fade-in">
-    <span class="sec-label" id="prodLabel">Collection</span>
-    <h2 class="sec-title" id="prodTitle">Our Curtain Collection</h2>
-    <p class="sec-sub" style="max-width:480px;margin:0 auto;text-align:center" id="prodSub">Over 20 styles of premium curtains for every room</p>
-  </div>
-  <div class="prod-grid" id="prodGrid"></div>
-</section>
-
-<!-- PRODUCT DETAIL MODAL -->
-<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
-  <div class="modal-box" id="modalBox">
-    <div class="modal-img-side">
-      <div class="img-block curtain-pattern" id="modalImg"><div class="drape"></div><div class="sheen"></div></div>
-      <button class="modal-close" onclick="closeModal()" aria-label="Close">
-        <svg class="ico ico-18"><use href="#ic-close"/></svg>
-      </button>
-    </div>
-    <div class="modal-content">
-      <div class="modal-badge" id="modalBadge"></div>
-      <h2 class="modal-name" id="modalName"></h2>
-      <div class="modal-stars" id="modalStars"></div>
-      <div class="modal-price-row">
-        <div class="modal-price" id="modalPrice"></div>
-        <div class="modal-price-note">Free installation included</div>
-      </div>
-      <p class="modal-desc" id="modalDesc"></p>
-      <div class="modal-specs" id="modalSpecs"></div>
-      <div class="modal-features">
-        <h4>Features</h4>
-        <div class="modal-feat-list" id="modalFeats"></div>
-      </div>
-      <div class="modal-actions">
-        <a href="#contact" class="btn-p" onclick="closeModal()">
-          Request Quote <svg class="ico ico-16"><use href="#ic-arrow-right"/></svg>
-        </a>
-        <button class="btn-o" id="modalWish" onclick="toggleWish(this)" aria-label="Add to wishlist" title="Save to wishlist">
-          <svg class="ico ico-16"><use href="#ic-heart"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- MARQUEE -->
-<div class="mq-sec">
-  <div class="mq-track">
-    <span class="mq-word">SHEGERE CURTAINS</span><span class="mq-word">·</span>
-    <span class="mq-word">PREMIUM QUALITY</span><span class="mq-word">·</span>
-    <span class="mq-word">CUSTOM DESIGNS</span><span class="mq-word">·</span>
-    <span class="mq-word">SHEGERE CURTAINS</span><span class="mq-word">·</span>
-    <span class="mq-word">PREMIUM QUALITY</span><span class="mq-word">·</span>
-    <span class="mq-word">CUSTOM DESIGNS</span><span class="mq-word">·</span>
-  </div>
-</div>
-
-<!-- GALLERY -->
-<section id="gallery">
-  <div class="gall-head fade-in">
-    <span class="sec-label" id="gallLabel">Gallery</span>
-    <h2 class="sec-title" id="gallTitle">Installation Gallery</h2>
-    <p class="sec-sub" style="max-width:480px;margin:0 auto;text-align:center" id="gallSub">See how our curtains transform real homes</p>
-  </div>
-  <div class="gall-flex">
-    <div class="g-card fade-in">
-      <div class="img-block img-g1 curtain-pattern"><div class="drape"></div></div>
-      <div class="g-overlay"><div class="g-tag">Living Room</div><div class="g-name">Velvet Drapes</div></div>
-    </div>
-    <div class="g-card fade-in" style="transition-delay:.08s">
-      <div class="img-block img-g2 curtain-pattern"><div class="drape"></div></div>
-      <div class="g-overlay"><div class="g-tag">Bedroom</div><div class="g-name">Blackout Panels</div></div>
-    </div>
-    <div class="g-card fade-in" style="transition-delay:.16s">
-      <div class="img-block img-g3 curtain-pattern"><div class="drape"></div></div>
-      <div class="g-overlay"><div class="g-tag">Kitchen</div><div class="g-name">Sheer Curtains</div></div>
-    </div>
-    <div class="g-card fade-in" style="transition-delay:.24s">
-      <div class="img-block img-g4 curtain-pattern"><div class="drape"></div></div>
-      <div class="g-overlay"><div class="g-tag">Dining</div><div class="g-name">Silk Drapery</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="ct-grid">
-    <div class="fade-l">
-      <span class="sec-label" id="ctLabel">Get In Touch</span>
-      <h2 class="sec-title" id="ctTitle">Ready to Transform Your Windows?</h2>
-      <p class="sec-sub" id="ctText">Contact us for a free consultation and measurement. Our team is here to help you find the perfect curtains for your home.</p>
-      <div class="ct-details">
-        <div class="ct-item"><div class="ct-ico"><svg class="ico ico-20"><use href="#ic-phone"/></svg></div><div><h4 id="ctPhone">Phone</h4><span>+251 911 234 567 / +251 911 234 568</span></div></div>
-        <div class="ct-item"><div class="ct-ico"><svg class="ico ico-20"><use href="#ic-mail"/></svg></div><div><h4 id="ctEmail">Email</h4><span>info@shegerecurtains.com</span></div></div>
-        <div class="ct-item"><div class="ct-ico"><svg class="ico ico-20"><use href="#ic-pin"/></svg></div><div><h4 id="ctAddr">Address</h4><span>Bole Road, Addis Ababa, Ethiopia</span></div></div>
-        <div class="ct-item"><div class="ct-ico"><svg class="ico ico-20"><use href="#ic-clock"/></svg></div><div><h4 id="ctHours">Working Hours</h4><span>Mon – Sat: 8:00 AM – 6:00 PM</span></div></div>
-      </div>
-    </div>
-    <div class="fade-r">
-      <div class="ct-form">
-        <form onsubmit="submitForm(event)">
-          <div class="f-grp"><label id="lName">Full Name</label><input type="text" placeholder="Your name" required></div>
-          <div class="f-grp"><label id="lEmail">Email Address</label><input type="email" placeholder="your@email.com" required></div>
-          <div class="f-grp"><label id="lPhone">Phone Number</label><input type="tel" placeholder="+251 9XX XXX XXX"></div>
-          <div class="f-grp"><label id="lProduct">Product Interest</label>
-            <select>
-              <option value="">Select a product type</option>
-              <option>Velvet Curtains</option><option>Sheer Curtains</option>
-              <option>Blackout Curtains</option><option>Linen Curtains</option>
-              <option>Silk Drapes</option><option>Bamboo Shades</option>
-              <option>Roman Shades</option><option>Motorized Curtains</option>
-            </select>
-          </div>
-          <div class="f-grp"><label id="lMsg">Message</label><textarea placeholder="Tell us about your project..."></textarea></div>
-          <button type="submit" class="f-sub" id="fSubmit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="f-grid">
-    <div class="f-brand">
-      <a href="#home" class="logo">
-        <div class="logo-mark"><svg width="16" height="16" fill="var(--lh)" viewBox="0 0 24 24"><use href="#ic-logo"/></svg></div>
-        <span id="footBrand">Shegere</span>
-      </a>
-      <p id="footDesc">A team of passionate curtain makers dedicated to creating beautiful window treatments across Ethiopia.</p>
-      <div class="f-social">
-        <a href="#" aria-label="Facebook"><svg class="ico ico-16"><use href="#ic-fb"/></svg></a>
-        <a href="#" aria-label="Twitter"><svg class="ico ico-16"><use href="#ic-tw"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg class="ico ico-16"><use href="#ic-ig"/></svg></a>
-        <a href="#" aria-label="WhatsApp"><svg class="ico ico-16"><use href="#ic-wa"/></svg></a>
-      </div>
-    </div>
-    <div class="f-col"><h4>Quick Links</h4><ul class="f-links"><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#products">Products</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li></ul></div>
-    <div class="f-col"><h4>Services</h4><ul class="f-links"><li><a href="#products">Custom Curtains</a></li><li><a href="#products">Blinds &amp; Shades</a></li><li><a href="#works">Installation</a></li><li><a href="#contact">Consultation</a></li></ul></div>
-    <div class="f-col"><h4>Contact</h4><ul class="f-links"><li><a href="tel:+251911234567">+251 911 234 567</a></li><li><a href="mailto:info@shegerecurtains.com">info@shegerecurtains.com</a></li><li><a href="#contact">Addis Ababa, Ethiopia</a></li></ul></div>
-  </div>
-  <div class="f-bot">
-    <p id="fCopy">© 2024 Shegere Curtains. All rights reserved.</p>
-    <p id="fTag">Designed with passion for beautiful windows</p>
-  </div>
-</footer>
-
-<!-- MOBILE BOTTOM NAV -->
-<nav class="mob-bot-nav">
-  <ul>
-    <li><a href="#home" class="mbn act" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-home"/></svg><span id="mn1">Home</span></a></li>
-    <li><a href="#about" class="mbn" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-info"/></svg><span id="mn2">About</span></a></li>
-    <li><a href="#products" class="mbn" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-shop"/></svg><span id="mn3">Products</span></a></li>
-    <li><a href="#gallery" class="mbn" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-gallery"/></svg><span id="mn4">Gallery</span></a></li>
-    <li><a href="#contact" class="mbn" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-contact"/></svg><span id="mn5">Contact</span></a></li>
-  </ul>
-</nav>
-
-<!-- DEFERRED JS — parsed after HTML is rendered -->
-<script>
-/* ── INTERSECTION OBSERVER — defined first so IIFE below can use it ── */
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('vis');
-      startCounter();
-      obs.unobserve(e.target);
+  <style>
+    /* ═══ CSS CUSTOM PROPERTIES ═══ */
+    :root {
+      --lh: #D2C3F6;
+      --lh2: #e6ddfb;
+      --lh3: #f3eefd;
+      --vg: #36255C;
+      --vg2: #2b1d4a;
+      --vg3: #4a3575;
+      --td: #1a1124;
+      --tm: #5e4d7a;
+      --tl: #9882be;
+      --w: #fdfcff;
+      --bd: rgba(54, 37, 92, .12);
+      --sh: 0 4px 24px rgba(54, 37, 92, .13);
+      --shd: 0 16px 60px rgba(54, 37, 92, .22);
+      --r: 12px;
+      --rl: 24px;
+      --rx: 40px;
+      --bar-h: 33px;
     }
-  });
-},{threshold:0.08}); /* no negative rootMargin — would block above-fold elements */
 
-/* ── PRODUCTS DATA (enriched with detail info) ── */
-const PRODS=[
-  {cls:'img-p1',badge:'Bestseller',name:'Luxury Velvet Curtains',desc:'Rich, plush velvet drapes that add warmth and sophistication to any living room or bedroom.',price:'$120',rating:5,material:'Premium Velvet',width:'140cm',height:'250cm',care:'Dry clean only',weight:'Heavy',features:['Thermal insulating lining','Triple pinch pleat heading','Fade-resistant dye','Available in 12 colours','Blackout option available']},
-  {cls:'img-p2',badge:'Popular',name:'Sheer White Curtains',desc:'Light, airy panels that filter natural light beautifully while maintaining privacy and openness.',price:'$45',rating:4,material:'Polyester Voile',width:'140cm',height:'230cm',care:'Machine washable 30°',weight:'Light',features:['Rod pocket heading','UV light filtering','Easy-iron fabric','Sold as pair','Custom sizes available']},
-  {cls:'img-p3',badge:'',name:'Blackout Bedroom Curtains',desc:'Complete light-blocking panels for restful sleep, energy efficiency, and noise reduction.',price:'$85',rating:5,material:'Blackout Polyester',width:'140cm',height:'260cm',care:'Machine washable 40°',weight:'Medium',features:['100% light blocking','Noise reduction layer','Energy efficient','Eyelet heading','Thermal backing']},
-  {cls:'img-p4',badge:'Natural',name:'Natural Linen Curtains',desc:'Breathable, textured linen drapes with a relaxed, organic aesthetic perfect for Scandinavian interiors.',price:'$95',rating:4,material:'60% Linen 40% Cotton',width:'140cm',height:'240cm',care:'Hand wash cold',weight:'Medium',features:['Natural breathable fabric','Pencil pleat heading','Pre-washed for softness','Sustainable sourcing','Slight texture variation (natural)']},
-  {cls:'img-p5',badge:'Premium',name:'Elegant Silk Drapes',desc:'Luxurious silk panels with a luminous sheen that catches the light beautifully in formal rooms.',price:'$180',rating:5,material:'100% Pure Silk',width:'140cm',height:'280cm',care:'Dry clean only',weight:'Medium',features:['Natural temperature regulation','Lustrous sheen finish','French pleat heading','Hand-finished hems','Certificate of authenticity']},
-  {cls:'img-p6',badge:'',name:'Bamboo Woven Shades',desc:'Eco-friendly natural bamboo roller blinds that bring warmth, texture, and an earthy character.',price:'$70',rating:4,material:'Natural Bamboo',width:'Custom',height:'Custom',care:'Wipe with damp cloth',weight:'Light',features:['Eco-certified bamboo','Light filtering','Chain mechanism','Cordless option','Custom cut to size']},
-  {cls:'img-p7',badge:'',name:'Fabric Roman Shades',desc:'Classic folded fabric shades that stack neatly when raised, offering a clean tailored look.',price:'$110',rating:4,material:'Woven Fabric',width:'Custom',height:'Custom',care:'Spot clean',weight:'Medium',features:['Smooth fold mechanism','Blackout lining option','Child-safe cord system','Custom fabric choices','Professional installation']},
-  {cls:'img-p8',badge:'Hardware',name:'Gold Curtain Rods',desc:'Elegant brushed gold finish hardware with ornate decorative finials, solid construction.',price:'$55',rating:5,material:'Solid Steel + Gold Finish',width:'120–300cm',height:'N/A',care:'Wipe clean',weight:'Heavy',features:['Adjustable width 120–300cm','Includes wall brackets','Matching rings & finials','Max load 15kg','Available in silver & black']},
-  {cls:'img-p9',badge:'',name:'Decorative Tiebacks',desc:'Beautiful rope and tassel tiebacks that elegantly hold your curtains for a polished, styled look.',price:'$25',rating:4,material:'Cotton Rope & Tassels',width:'N/A',height:'N/A',care:'Spot clean',weight:'Light',features:['Sold as a pair','Adjustable length','Multiple colour options','Easy wall-hook installation','Suits all curtain weights']},
-  {cls:'img-p10',badge:'New',name:'Floral Pattern Curtains',desc:'Vibrant botanical floral prints that bring energy, colour, and personality to living spaces.',price:'$75',rating:4,material:'Printed Polyester',width:'140cm',height:'230cm',care:'Machine washable 30°',weight:'Medium',features:['Vibrant print colours','Rod pocket heading','Fade-resistant print','Sold as pair','Lined version available']},
-  {cls:'img-p11',badge:'',name:'Modern Gray Curtains',desc:'Sleek, minimalist solid-grey panels that complement contemporary and industrial interiors.',price:'$65',rating:4,material:'Linen-Look Polyester',width:'140cm',height:'240cm',care:'Machine washable 40°',weight:'Medium',features:['Textured weave finish','Eyelet heading','Thermal lining included','3 grey tones available','Blackout version available']},
-  {cls:'img-p12',badge:'Classic',name:'Curtain Pelmet Valance',desc:'Elegant box valances that add a polished, finished look above your curtains or blinds.',price:'$90',rating:4,material:'Padded Fabric Board',width:'Custom',height:'15–25cm drop',care:'Spot clean',weight:'Medium',features:['Custom width available','Fabric covered finish','Hides curtain tracks/rods','Professional fitting service','Matches curtain collection']},
-  {cls:'img-p13',badge:'',name:'Day & Night Curtains',desc:'Dual-layer system combining sheer and blackout for fully versatile, adjustable light control.',price:'$140',rating:5,material:'Sheer + Blackout Layers',width:'140cm',height:'250cm',care:'Machine washable 30°',weight:'Medium',features:['Two independent layers','Full privacy at night','Light filtering by day','Modern ripple fold','Single track system']},
-  {cls:'img-p14',badge:'Smart',name:'Motorized Smart Curtains',desc:'Remote-controlled electric curtains compatible with Alexa, Google Home, and smartphone apps.',price:'$350',rating:5,material:'Polyester + Motor System',width:'Up to 400cm',height:'Up to 300cm',care:'Spot clean',weight:'Heavy',features:['App + voice control','Works with Alexa & Google','Programmable timer','Whisper-quiet motor','2-year motor warranty']},
-  {cls:'img-p15',badge:'',name:'Outdoor Patio Curtains',desc:'Waterproof, UV-resistant curtains for gazebos, patios, and outdoor entertaining areas.',price:'$110',rating:4,material:'Solution-Dyed Acrylic',width:'140cm',height:'240cm',care:'Hose down / machine wash',weight:'Heavy',features:['100% waterproof','UV fade-resistant','Mould & mildew resistant','Eyelet heading','Weighted hem for wind']},
-  {cls:'img-p16',badge:'Accessory',name:'Metal Curtain Rings',desc:'Durable brushed metal rings with integrated clips for smooth, effortless gliding on any rod.',price:'$18',rating:4,material:'Zinc Alloy Metal',width:'N/A',height:'N/A',care:'Wipe clean',weight:'Light',features:['Set of 10 rings','Smooth glide coating','Compatible with all rods','Clip-on attachment','Available in 4 finishes']},
-  {cls:'img-p17',badge:'Winter',name:'Thermal Insulated Curtains',desc:'Thick multi-layer insulated panels that keep warmth in during winter and heat out in summer.',price:'$100',rating:5,material:'Triple-Layer Thermal Weave',width:'140cm',height:'250cm',care:'Machine washable 40°',weight:'Heavy',features:['Triple thermal layer','Up to 40% energy saving','Noise reduction rating','Eyelet or pencil pleat','Tested to EN 13773']},
-  {cls:'img-p18',badge:'',name:'Ivory Voile Curtains',desc:'Ultra-light translucent voile panels that create an ethereal, softly glowing atmosphere.',price:'$40',rating:4,material:'Polyester Voile',width:'140cm',height:'230cm',care:'Machine washable 30°',weight:'Light',features:['Gossamer-light fabric','Rod pocket heading','Sold as pair','Easy iron','Suitable for layering']},
-  {cls:'img-p19',badge:'Elegant',name:'Curtain Swags & Jabots',desc:'Ornate waterfall-style swags with cascading jabot side panels for a luxurious, royal look.',price:'$150',rating:5,material:'Damask Polyester Blend',width:'Custom',height:'Custom',care:'Dry clean recommended',weight:'Medium',features:['Hand-draped finish','Ornate tassel trim','Custom sizing','Coordinates with valances','Professional install included']},
-  {cls:'img-p20',badge:'System',name:'Ceiling Curtain Tracks',desc:'Sleek ceiling-mounted aluminium rail systems for modern, seamless, bracket-free curtain hanging.',price:'$80',rating:4,material:'Anodised Aluminium',width:'Up to 500cm',height:'N/A',care:'Wipe clean',weight:'Medium',features:['Ceiling or wall mount','Silent glide runners','Cut to any length','Suitable for bay windows','Max load 20kg per metre']},
-];
+    /* ═══ RESET ═══ */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-/* ── TRANSLATIONS ── */
-const T={
-  en:{brandName:'Shegere',navAbout:'About Us',navServices:'Services',navProducts:'Products',navContact:'Contact',heroTag:'Premium Window Treatments',heroH1:'Elegance<br>for Your <em>Windows</em>',heroPrice:'Starting from <strong>$45</strong>',heroBtn:'Shop Collection',heroBtn2:'Free Consultation',hbLbl:'Happy Clients',aboutLabel:'About Us',aboutTitle:'Welcome to Shegere Curtains',aboutText:'We craft beautiful, high-quality curtains and window treatments that transform your living spaces. From luxurious velvet to sheer elegance.',svcT1:'Custom Measurements',svcD1:'Precise fitting for every window size with professional measurement services.',svcT2:'Free Installation',svcD2:'Expert installation included with every purchase across Addis Ababa.',aboutBtn:'View Collection',asLbl:'Years of Excellence',worksLabel:'Process',worksTitle:'How It Works',stT1:'Choose Your Style',stD1:'Browse and select the perfect curtain style for your space.',stT2:'Custom Measure',stD2:'We take precise measurements to ensure a perfect fit.',stT3:'Professional Make',stD3:'Our artisans craft curtains with premium fabrics and care.',stT4:'Free Installation',stD4:'We deliver and install your curtains perfectly, hassle-free.',prodLabel:'Collection',prodTitle:'Our Curtain Collection',prodSub:'Over 20 styles of premium curtains for every room',gallLabel:'Gallery',gallTitle:'Installation Gallery',gallSub:'See how our curtains transform real homes',ctLabel:'Get In Touch',ctTitle:'Ready to Transform Your Windows?',ctText:'Contact us for a free consultation and measurement.',ctPhone:'Phone',ctEmail:'Email',ctAddr:'Address',ctHours:'Working Hours',lName:'Full Name',lEmail:'Email Address',lPhone:'Phone Number',lProduct:'Product Interest',lMsg:'Message',fSubmit:'Send Message',footBrand:'Shegere',footDesc:'A team of passionate curtain makers dedicated to creating beautiful window treatments across Ethiopia.',fCopy:'© 2024 Shegere Curtains. All rights reserved.',fTag:'Designed with passion for beautiful windows',mn1:'Home',mn2:'About',mn3:'Products',mn4:'Gallery',mn5:'Contact',mobHome:'Home',mobAbout:'About Us',mobServices:'Services',mobProducts:'Products',mobContact:'Contact',toastSent:'Message sent successfully!',thDark:'Dark',thLight:'Light'},
-  am:{brandName:'ሸገሬ',navAbout:'ስለኛ',navServices:'አገልግሎቶች',navProducts:'ምርቶች',navContact:'ያግኙን',heroTag:'የፕሪሚየም መስኮት ዕቃዎች',heroH1:'ለመስኮቶችዎ <em>ውበት</em>',heroPrice:'ከ <strong>$45</strong> ጀምሮ',heroBtn:'ምርቶች ይመልከቱ',heroBtn2:'ነፃ ምክር',hbLbl:'ደስተኛ ደንበኞች',aboutLabel:'ስለኛ',aboutTitle:'ወደ ሸገሬ መጋረጆች እንኳን ደህና መጡ',aboutText:'ቆንጆ፣ ከፍተኛ ጥራት ያላቸውን መጋረጆች እና የመስኮት ዕቃዎችን እንሰራለን።',svcT1:'ብጁ መለኪያዎች',svcD1:'ለማንኛውም የመስኮት መጠን ትክክለኛ መለኪያዎች።',svcT2:'ነፃ መጫኛ',svcD2:'በአዲስ አበባ ውስጥ ከእያንዳንዱ ግዢ ጋር የሙያ መጫኛ።',aboutBtn:'ክሊክሽን ይመልከቱ',asLbl:'የብልጽግና ዓመታት',worksLabel:'ሂደት',worksTitle:'እንዴት እንደሚሰራ',stT1:'ዘይቤዎን ይምረጡ',stD1:'ክሊክሽናችንን ይመልከቱ እና ትክክለኛውን ዘይቤ ይምረጡ።',stT2:'ብጁ መለኪያ',stD2:'ለመስኮቶችዎ ትክክለኛ ቦታ እንዲሆን መለኪያ እንወስዳለን።',stT3:'የሙያ ስራ',stD3:'ባለሙያዎቻችን በፕሪሚየም ጨርቆች ይሰራሉ።',stT4:'ነፃ መጫኛ',stD4:'መጋረጆችዎን በትክክል እና በቀላሉ እንጫናለን።',prodLabel:'ክሊክሽን',prodTitle:'የመጋረጅ ክሊክሽናችን',prodSub:'ለማንኛውም ክፍል ከ20 በላይ ዘይቦች',gallLabel:'ጋለሪ',gallTitle:'የመጫኛ ጋለሪ',gallSub:'መጋረጆቻችን እንዴት እንደሚቀይሩ ይመልከቱ',ctLabel:'ያግኙን',ctTitle:'መስኮቶችዎን ለመቀየር ዝግጁ ነዎት?',ctText:'ለነፃ ምክር እና መለኪያ ያግኙን።',ctPhone:'ስልክ',ctEmail:'ኢሜይል',ctAddr:'አድራሻ',ctHours:'የስራ ሰዓታት',lName:'ሙሉ ስም',lEmail:'ኢሜይል አድራሻ',lPhone:'ስልክ ቁጥር',lProduct:'የምርት ፍላጎት',lMsg:'መልእክት',fSubmit:'መልእክት ይላኩ',footBrand:'ሸገሬ',footDesc:'በኢትዮጵያ ቆንጆ መጋረጆችን ለመስራት ቆርጠን የቆምን ቡድን ነን።',fCopy:'© 2024 ሸገሬ። ሁሉም መብቶች የተጠበቁ ናቸው።',fTag:'ለቆንጆ መስኮቶች በፍቅር',mn1:'መነሻ',mn2:'ስለኛ',mn3:'ምርቶች',mn4:'ጋለሪ',mn5:'ያግኙን',mobHome:'መነሻ',mobAbout:'ስለኛ',mobServices:'አገልግሎቶች',mobProducts:'ምርቶች',mobContact:'ያግኙን',toastSent:'መልእክት ተልኳል!',thDark:'ጨለማ',thLight:'ብርሃን'},
-  om:{brandName:'Shegere',navAbout:"Waa'ee Keenya",navServices:'Tajaajiloota',navProducts:'Oomishoota',navContact:'Nu Qunnamaa',heroTag:'Tajaajila Foddaa',heroH1:'Bareedina <em>Foddaa</em> Keef',heroPrice:'$45 irraa <strong>eegalee</strong>',heroBtn:'Walitti Qabaa',heroBtn2:'Gorsuu Bilisaa',hbLbl:'Macaanfa Qabaattoota',aboutLabel:"Waa'ee Keenya",aboutTitle:'Baga Nagaan Dhuftan Shegere',aboutText:'Kurtiin bareedaa, qulqullina olaanaa qabu hojjenna.',svcT1:'Safartuu Dhuunfaa',svcD1:"Safartuu sirrii ta'e kan foddaa hundaaf.",svcT2:'Maxxansuu Bilisaa',svcD2:'Maxxansuu ogeessaa kan bita hunda waliin.',aboutBtn:'Walitti Qabaa Ilaali',asLbl:'Waggaa Bareedinaa',worksLabel:'Adeemsa',worksTitle:'Akkamitti Hoojjeta',stT1:'Stiilii Filadhu',stD1:"Walitti qabaa keenya ilaali fi stiilii sirrii ta'e filadhu.",stT2:'Safartuu Dhuunfaa',stD2:"Safartuu sirrii ta'e kan foddaa keetiif fudhanna.",stT3:'Hoojjii Ogeessaa',stD3:'Ogeessota keenyaan kurtiin keetiif hojjeta.',stT4:'Maxxansuu Bilisaa',stD4:'Kurtiin kee sirrii fi tasgabbiidhaan maxxansina.',prodLabel:'Walitti Qabaa',prodTitle:'Walitti Qabaa Kurtiin Keenyaa',prodSub:'Kurtiin 20 ol kan manakee hundaaf',gallLabel:'Galerii',gallTitle:'Galerii Maxxansuu',gallSub:'Kurtiin keenya manaa dhugaa akkamitti jijjiiru ilaali',ctLabel:'Nu Qunnamaa',ctTitle:'Foddaa Kee Jijjiiruu Barbaaddaa?',ctText:'Gorsuu fi safartuu bilisaa nu qunnamaa.',ctPhone:'Bilbila',ctEmail:'Imeelii',ctAddr:'Teessoo',ctHours:"Sa'aatii Hojii",lName:'Maqaa Guutuu',lEmail:'Teessoo Imeelii',lPhone:'Lakk Bilbila',lProduct:'Fayyadama Oomishaa',lMsg:'Ergaa',fSubmit:'Ergaa Ergi',footBrand:'Shegere',footDesc:'Daldala kurtiin kan Itoophiyaa keessatti manaa bareedisuuf hojjennu.',fCopy:'© 2024 Shegere Curtains.',fTag:'Foddaa bareedaa jaalalaan',mn1:'Mana',mn2:"Waa'ee",mn3:'Oomishoota',mn4:'Galerii',mn5:'Qunnamtii',mobHome:'Mana',mobAbout:"Waa'ee Keenya",mobServices:'Tajaajiloota',mobProducts:'Oomishoota',mobContact:'Nu Qunnamaa',toastSent:"Ergaan milkaa'eraan ergameera!",thDark:'Duukkanaa',thLight:'Iftuu'}
-};
+    html {
+      scroll-behavior: smooth
+    }
 
-/* ── ARROW ICON SNIPPET (re-used in product cards) ── */
-const arrowIco=`<svg class="ico ico-16" style="stroke:currentColor;fill:none"><use href="#ic-arrow-ne"/></svg>`;
+    body {
+      font-family: 'DM Sans', 'Noto Sans Ethiopic', sans-serif;
+      background: var(--lh3);
+      color: var(--td);
+      overflow-x: hidden;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeSpeed
+    }
 
-/* ── STATE ── */
-let lang='en',dark=false,slide=0,menuOpen=false,counted=false;
-const slides=document.querySelectorAll('.hero-slide');
+    ::-webkit-scrollbar {
+      width: 5px
+    }
 
-/* ── BUILD PRODUCT CARDS (DocumentFragment — one DOM insertion) ── */
-(function(){
-  const frag=document.createDocumentFragment();
-  PRODS.forEach(p=>{
-    const div=document.createElement('div');
-    div.className='p-card fade-in';
-    div.innerHTML=`
-      <div class="p-img ${p.cls} curtain-pattern"><div class="drape"></div><div class="sheen"></div>${p.badge?`<span class="p-badge">${p.badge}</span>`:''}</div>
+    ::-webkit-scrollbar-track {
+      background: var(--lh3)
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--lh);
+      border-radius: 3px
+    }
+
+    /* ═══ CSS-ONLY IMAGE PLACEHOLDERS (no network) ═══ */
+    .img-curtain-hero1 {
+      background: linear-gradient(135deg, #c9b8f0 0%, #8b6db5 40%, #5a3d8a 100%)
+    }
+
+    .img-curtain-hero2 {
+      background: linear-gradient(160deg, #e8deff 0%, #b89ee0 50%, #7a55a8 100%)
+    }
+
+    .img-curtain-hero3 {
+      background: linear-gradient(120deg, #d4c4f8 0%, #9b7dcf 60%, #4a2d7a 100%)
+    }
+
+    .img-about {
+      background: linear-gradient(145deg, #ede5ff 0%, #c4aef0 40%, #7a55b0 100%)
+    }
+
+    .img-p1 {
+      background: linear-gradient(135deg, #3a2060, #6b4ba0)
+    }
+
+    .img-p2 {
+      background: linear-gradient(135deg, #f0ebff, #c8b8f2)
+    }
+
+    .img-p3 {
+      background: linear-gradient(135deg, #1e1535, #4a3070)
+    }
+
+    .img-p4 {
+      background: linear-gradient(135deg, #e8dff8, #a890d8)
+    }
+
+    .img-p5 {
+      background: linear-gradient(135deg, #5a3590, #9060c0)
+    }
+
+    .img-p6 {
+      background: linear-gradient(135deg, #2d1f4a, #5a4080)
+    }
+
+    .img-p7 {
+      background: linear-gradient(135deg, #ece4ff, #b8a0e0)
+    }
+
+    .img-p8 {
+      background: linear-gradient(135deg, #4a3070, #8060b0)
+    }
+
+    .img-p9 {
+      background: linear-gradient(135deg, #d8ccf8, #9878d0)
+    }
+
+    .img-p10 {
+      background: linear-gradient(135deg, #6040a0, #a080d0)
+    }
+
+    .img-p11 {
+      background: linear-gradient(135deg, #2a1c45, #503878)
+    }
+
+    .img-p12 {
+      background: linear-gradient(135deg, #f0e8ff, #c0a8e8)
+    }
+
+    .img-g1 {
+      background: linear-gradient(160deg, #d0c0f0, #7048a8, #3a2460)
+    }
+
+    .img-g2 {
+      background: linear-gradient(160deg, #200f3a, #4a3070, #8060b0)
+    }
+
+    .img-g3 {
+      background: linear-gradient(160deg, #f0eaff, #c0a8e8, #8060b8)
+    }
+
+    .img-g4 {
+      background: linear-gradient(160deg, #3a2868, #7858a8, #a888d0)
+    }
+
+    /* Curtain texture overlay — pure CSS, composited layer */
+    .curtain-pattern {
+      contain: strict
+    }
+
+    .curtain-pattern::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .04) 0px, rgba(255, 255, 255, .04) 2px, transparent 2px, transparent 18px);
+      pointer-events: none;
+      will-change: auto
+    }
+
+    .img-block {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%
+    }
+
+    .img-block .drape {
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(90deg, rgba(0, 0, 0, .06) 0, rgba(0, 0, 0, .06) 3px, transparent 3px, transparent 22px)
+    }
+
+    .img-block .sheen {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .18) 0%, transparent 60%, rgba(0, 0, 0, .15) 100%)
+    }
+
+    /* ═══ ICON HELPER ═══ */
+    .ico {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      stroke: currentColor;
+      fill: none;
+      vertical-align: middle;
+      flex-shrink: 0
+    }
+
+    .ico-16 {
+      width: 16px;
+      height: 16px
+    }
+
+    .ico-18 {
+      width: 18px;
+      height: 18px
+    }
+
+    .ico-20 {
+      width: 20px;
+      height: 20px
+    }
+
+    .ico-22 {
+      width: 22px;
+      height: 22px
+    }
+
+    .ico-fill {
+      fill: currentColor;
+      stroke: none
+    }
+
+    /* ═══ TOP BAR ═══ */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1002;
+      background: var(--vg2);
+      padding: 7px 28px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px
+    }
+
+    .ctrl-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(210, 195, 246, .12);
+      border: 1px solid rgba(210, 195, 246, .25);
+      color: var(--lh);
+      padding: 5px 13px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: inherit;
+      transition: background .2s, border-color .2s
+    }
+
+    .ctrl-btn:hover {
+      background: rgba(210, 195, 246, .22);
+      border-color: var(--lh)
+    }
+
+    .lang-wrap {
+      position: relative
+    }
+
+    .lang-drop {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: var(--vg2);
+      border: 1px solid rgba(210, 195, 246, .2);
+      border-radius: var(--r);
+      padding: 6px 0;
+      min-width: 160px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-6px);
+      transition: opacity .2s, transform .2s, visibility .2s;
+      z-index: 1003;
+      box-shadow: var(--shd)
+    }
+
+    .lang-drop.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0)
+    }
+
+    .lang-opt {
+      display: block;
+      padding: 9px 16px;
+      color: var(--lh);
+      font-size: 13px;
+      cursor: pointer;
+      transition: background .15s;
+      font-family: inherit
+    }
+
+    .lang-opt:hover {
+      background: rgba(210, 195, 246, .1)
+    }
+
+    .lang-opt.active::before {
+      content: "✓ "
+    }
+
+    /* ═══ NAVBAR ═══ */
+    .navbar {
+      position: fixed;
+      top: var(--bar-h);
+      left: 0;
+      right: 0;
+      z-index: 1001;
+      padding: 13px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(253, 252, 255, .94);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--bd);
+      transition: padding .3s, box-shadow .3s
+    }
+
+    .navbar.sc {
+      padding: 9px 28px;
+      box-shadow: var(--sh)
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--vg);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 700
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--vg);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0
+    }
+
+    .logo-mark svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--lh)
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2px;
+      list-style: none
+    }
+
+    .nav-item {
+      position: relative
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 13px;
+      border-radius: var(--r);
+      color: var(--tm);
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .2s, color .2s;
+      background: none;
+      border: none;
+      font-family: inherit;
+      white-space: nowrap
+    }
+
+    .chev {
+      display: flex;
+      align-items: center;
+      transition: transform .3s
+    }
+
+    .nav-item:hover .chev {
+      transform: rotate(180deg)
+    }
+
+    .nav-link:hover {
+      background: var(--lh3);
+      color: var(--vg)
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--w);
+      border: 1px solid var(--bd);
+      border-radius: var(--rl);
+      padding: 8px 0;
+      min-width: 220px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(6px);
+      transition: opacity .2s, transform .2s, visibility .2s;
+      box-shadow: var(--shd);
+      z-index: 200
+    }
+
+    .nav-item:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0)
+    }
+
+    .drop-item {
+      display: block;
+      padding: 10px 20px;
+      color: var(--tm);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color .18s, padding .18s, background .18s;
+      position: relative
+    }
+
+    .drop-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--vg);
+      transform: scaleY(0);
+      transition: transform .2s;
+      border-radius: 0 2px 2px 0
+    }
+
+    .drop-item:hover {
+      color: var(--vg);
+      padding-left: 26px;
+      background: var(--lh3)
+    }
+
+    .drop-item:hover::before {
+      transform: scaleY(1)
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 5px;
+      background: none;
+      border: none
+    }
+
+    .hamburger span {
+      width: 22px;
+      height: 2px;
+      background: var(--vg);
+      border-radius: 2px;
+      transition: transform .3s, opacity .3s;
+      display: block
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg)
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg)
+    }
+
+    /* ═══ MOBILE DRAWER ═══ */
+    .mob-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--vg2);
+      z-index: 1000;
+      padding: 105px 28px 40px;
+      transform: translateX(100%);
+      transition: transform .38s cubic-bezier(.4, 0, .2, 1);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto
+    }
+
+    .mob-menu.open {
+      transform: translateX(0)
+    }
+
+    .mob-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0;
+      color: var(--lh);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(210, 195, 246, .1);
+      cursor: pointer;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 100%;
+      transition: color .2s;
+      border-bottom: 1px solid rgba(210, 195, 246, .1)
+    }
+
+    .mob-link:hover {
+      color: #fff
+    }
+
+    .mob-sub {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s
+    }
+
+    .mob-sub.open {
+      max-height: 400px
+    }
+
+    .mob-sub-item {
+      display: block;
+      padding: 10px 14px;
+      color: rgba(210, 195, 246, .65);
+      font-size: 15px;
+      text-decoration: none;
+      transition: color .2s
+    }
+
+    .mob-sub-item:hover {
+      color: var(--lh)
+    }
+
+    .mob-social {
+      display: flex;
+      gap: 14px;
+      margin-top: 36px
+    }
+
+    .mob-social a {
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(210, 195, 246, .25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--lh);
+      text-decoration: none;
+      transition: background .2s, color .2s
+    }
+
+    .mob-social a:hover {
+      background: var(--lh);
+      color: var(--vg)
+    }
+
+    /* ═══ SIDEBAR ═══ */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 44px;
+      background: var(--w);
+      border-right: 1px solid var(--bd);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 115px 0 22px;
+      z-index: 999
+    }
+
+    .sidebar-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 9px;
+      color: var(--tl);
+      letter-spacing: 2px;
+      margin-bottom: auto;
+      white-space: nowrap
+    }
+
+    .sidebar-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: auto
+    }
+
+    .sidebar-icons a {
+      color: var(--tl);
+      text-decoration: none;
+      transition: color .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .sidebar-icons a:hover {
+      color: var(--vg)
+    }
+
+    /* ═══ BUTTONS ═══ */
+    .btn-p {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 26px;
+      background: var(--vg);
+      color: var(--lh);
+      border: none;
+      border-radius: var(--r);
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .28s, transform .28s, box-shadow .28s
+    }
+
+    .btn-p:hover {
+      background: var(--vg2);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 36px rgba(54, 37, 92, .3)
+    }
+
+    .btn-o {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 26px;
+      background: transparent;
+      border: 1.5px solid var(--vg);
+      color: var(--vg);
+      border-radius: var(--r);
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .28s, color .28s, transform .28s
+    }
+
+    .btn-o:hover {
+      background: var(--vg);
+      color: var(--lh);
+      transform: translateY(-2px)
+    }
+
+    /* ═══ SECTION HELPERS ═══ */
+    .sec-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--vg3);
+      margin-bottom: 12px
+    }
+
+    .sec-label::before {
+      content: '';
+      width: 22px;
+      height: 2px;
+      background: var(--lh);
+      border-radius: 1px;
+      flex-shrink: 0
+    }
+
+    .sec-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(30px, 4.5vw, 50px);
+      font-weight: 700;
+      line-height: 1.08;
+      color: var(--vg);
+      margin-bottom: 16px
+    }
+
+    .sec-sub {
+      color: var(--tm);
+      font-size: 15px;
+      line-height: 1.75
+    }
+
+    section {
+      padding: 84px 40px 84px calc(44px + 36px)
+    }
+
+    /* ═══ HERO ═══ */
+    #home {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 40px 60px calc(44px + 36px);
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--lh3) 0%, #ebe5fd 100%)
+    }
+
+    #home::before {
+      content: '';
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(210, 195, 246, .45) 0%, transparent 70%);
+      top: -80px;
+      right: -80px;
+      pointer-events: none
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      z-index: 2
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: var(--vg);
+      color: var(--lh);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 15px;
+      border-radius: 20px;
+      margin-bottom: 22px
+    }
+
+    .hero-h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(38px, 5.5vw, 68px);
+      font-weight: 700;
+      line-height: 1.0;
+      color: var(--vg);
+      margin-bottom: 18px
+    }
+
+    .hero-h1 em {
+      font-style: italic;
+      color: var(--vg3)
+    }
+
+    .hero-price {
+      font-size: 17px;
+      color: var(--tm);
+      font-weight: 500;
+      margin-bottom: 32px
+    }
+
+    .hero-price strong {
+      color: var(--vg);
+      font-size: 22px
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    .sl-ctrl {
+      display: flex;
+      gap: 10px;
+      margin-top: 36px
+    }
+
+    .sl-btn {
+      width: 44px;
+      height: 44px;
+      border: 1.5px solid var(--bd);
+      border-radius: 50%;
+      background: var(--w);
+      color: var(--tm);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color .22s, color .22s
+    }
+
+    .sl-btn:hover {
+      border-color: var(--vg);
+      color: var(--vg)
+    }
+
+    .hero-img-wrap {
+      position: relative;
+      height: 500px
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      border-radius: 50% 20% 50% 20% / 30% 50% 30% 50%;
+      overflow: hidden;
+      opacity: 0;
+      transform: scale(.94) translateX(24px);
+      transition: opacity .75s cubic-bezier(.4, 0, .2, 1), transform .75s cubic-bezier(.4, 0, .2, 1);
+      box-shadow: var(--shd);
+      will-change: opacity, transform
+    }
+
+    .hero-slide.active {
+      opacity: 1;
+      transform: scale(1) translateX(0)
+    }
+
+    .hero-slide .img-block {
+      height: 100%;
+      position: relative
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 36px;
+      left: -16px;
+      background: var(--vg);
+      color: var(--lh);
+      padding: 16px 22px;
+      border-radius: var(--rl);
+      box-shadow: var(--shd);
+      animation: floatY 3s ease-in-out infinite;
+      z-index: 10
+    }
+
+    .hb-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1
+    }
+
+    .hb-lbl {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: .7;
+      margin-top: 3px
+    }
+
+    @keyframes floatY {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-9px)
+      }
+    }
+
+    /* ═══ ABOUT ═══ */
+    #about {
+      background: var(--w)
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center
+    }
+
+    .about-img-box {
+      position: relative
+    }
+
+    .about-img {
+      border-radius: 40% 20% 40% 20% / 20% 40% 20% 40%;
+      overflow: hidden;
+      height: 400px;
+      position: relative;
+      box-shadow: var(--shd)
+    }
+
+    .about-stat {
+      position: absolute;
+      top: 24px;
+      right: -18px;
+      background: var(--lh);
+      border-radius: var(--rl);
+      padding: 18px 22px;
+      box-shadow: var(--shd);
+      text-align: center
+    }
+
+    .as-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--vg);
+      line-height: 1
+    }
+
+    .as-txt {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--vg3);
+      text-transform: uppercase;
+      margin-top: 3px
+    }
+
+    .svc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 24px 0
+    }
+
+    .svc-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 16px;
+      border-radius: var(--r);
+      border: 1px solid var(--bd);
+      background: var(--lh3);
+      transition: border-color .28s, box-shadow .28s, transform .28s
+    }
+
+    .svc-item:hover {
+      border-color: var(--lh);
+      box-shadow: var(--sh);
+      transform: translateX(4px)
+    }
+
+    .svc-ico {
+      width: 42px;
+      height: 42px;
+      background: var(--vg);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--lh);
+      flex-shrink: 0
+    }
+
+    .svc-ico.lt {
+      background: var(--lh);
+      color: var(--vg)
+    }
+
+    .svc-info h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--vg);
+      margin-bottom: 3px
+    }
+
+    .svc-info p {
+      font-size: 13px;
+      color: var(--tm);
+      line-height: 1.6
+    }
+
+    /* ═══ HOW IT WORKS ═══ */
+    #works {
+      background: linear-gradient(155deg, var(--lh3) 0%, #ede8fc 100%)
+    }
+
+    .works-head {
+      text-align: center;
+      margin-bottom: 52px
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px
+    }
+
+    .step-card {
+      background: var(--w);
+      border-radius: var(--rl);
+      padding: 28px 20px;
+      text-align: center;
+      border: 1px solid var(--bd);
+      transition: transform .32s, box-shadow .32s;
+      position: relative;
+      overflow: hidden
+    }
+
+    .step-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--lh), var(--vg));
+      transform: scaleX(0);
+      transition: transform .35s;
+      transform-origin: left
+    }
+
+    .step-card:hover::before {
+      transform: scaleX(1)
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shd)
+    }
+
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--lh);
+      line-height: 1;
+      margin-bottom: 14px
+    }
+
+    .step-ico {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 16px;
+      background: var(--vg);
+      border-radius: var(--r);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--lh);
+      transition: transform .28s
+    }
+
+    .step-card:hover .step-ico {
+      transform: scale(1.1) rotate(6deg)
+    }
+
+    .step-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--vg);
+      margin-bottom: 8px
+    }
+
+    .step-card p {
+      font-size: 13px;
+      color: var(--tm);
+      line-height: 1.65
+    }
+
+    /* ═══ PRODUCTS ═══ */
+    #products {
+      background: var(--w)
+    }
+
+    .prod-head {
+      text-align: center;
+      margin-bottom: 48px
+    }
+
+    .prod-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 24px
+    }
+
+    .p-card {
+      background: var(--lh3);
+      border-radius: var(--rl);
+      overflow: hidden;
+      border: 1px solid var(--bd);
+      transition: transform .35s, box-shadow .35s, border-color .35s
+    }
+
+    .p-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shd);
+      border-color: var(--lh)
+    }
+
+    .p-img {
+      height: 200px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .p-badge {
+      position: absolute;
+      top: 11px;
+      left: 11px;
+      background: var(--vg);
+      color: var(--lh);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 11px;
+      border-radius: 20px;
+      z-index: 2
+    }
+
+    .p-body {
+      padding: 20px
+    }
+
+    .p-body h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--vg);
+      margin-bottom: 6px;
+      line-height: 1.3
+    }
+
+    .p-body p {
+      font-size: 13px;
+      color: var(--tm);
+      line-height: 1.6;
+      margin-bottom: 12px
+    }
+
+    .p-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .p-price {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--vg3)
+    }
+
+    .p-arrow {
+      width: 32px;
+      height: 32px;
+      border: 1.5px solid var(--bd);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--tl);
+      cursor: pointer;
+      transition: background .28s, border-color .28s, color .28s, transform .28s;
+      background: var(--w)
+    }
+
+    .p-card:hover .p-arrow {
+      background: var(--vg);
+      border-color: var(--vg);
+      color: var(--lh);
+      transform: rotate(45deg)
+    }
+
+    /* ═══ MARQUEE ═══ */
+    .mq-sec {
+      padding: 28px 0;
+      background: var(--vg);
+      overflow: hidden;
+      white-space: nowrap
+    }
+
+    .mq-track {
+      display: inline-flex;
+      gap: 44px;
+      animation: mq 28s linear infinite
+    }
+
+    .mq-word {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(38px, 6vw, 68px);
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(210, 195, 246, .3);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      cursor: default;
+      transition: color .25s, -webkit-text-stroke-color .25s
+    }
+
+    .mq-word:hover {
+      -webkit-text-stroke-color: var(--lh);
+      color: var(--lh);
+      -webkit-text-fill-color: var(--lh)
+    }
+
+    @keyframes mq {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* ═══ GALLERY ═══ */
+    #gallery {
+      background: var(--lh3)
+    }
+
+    .gall-head {
+      text-align: center;
+      margin-bottom: 44px
+    }
+
+    .gall-flex {
+      display: flex;
+      gap: 14px;
+      height: 460px
+    }
+
+    .g-card {
+      flex: 1;
+      border-radius: var(--rl);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: flex .48s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .g-card:hover {
+      flex: 2.2
+    }
+
+    .g-card .img-block {
+      height: 100%
+    }
+
+    .g-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(54, 37, 92, .8) 0%, transparent 55%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      opacity: 0;
+      transition: opacity .28s
+    }
+
+    .g-card:hover .g-overlay {
+      opacity: 1
+    }
+
+    .g-tag {
+      font-size: 10px;
+      color: var(--lh);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 5px
+    }
+
+    .g-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #fff
+    }
+
+    /* ═══ CONTACT ═══ */
+    #contact {
+      background: var(--w)
+    }
+
+    .ct-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start
+    }
+
+    .ct-details {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 28px
+    }
+
+    .ct-item {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start
+    }
+
+    .ct-ico {
+      width: 44px;
+      height: 44px;
+      background: var(--lh);
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--vg);
+      flex-shrink: 0
+    }
+
+    .ct-item h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--vg);
+      margin-bottom: 2px
+    }
+
+    .ct-item span {
+      font-size: 13px;
+      color: var(--tm)
+    }
+
+    .ct-form {
+      background: var(--lh3);
+      padding: 32px;
+      border-radius: var(--rx);
+      border: 1px solid var(--bd)
+    }
+
+    .f-grp {
+      margin-bottom: 16px
+    }
+
+    .f-grp label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--vg);
+      margin-bottom: 6px
+    }
+
+    .f-grp input,
+    .f-grp textarea,
+    .f-grp select {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid var(--bd);
+      border-radius: var(--r);
+      font-size: 14px;
+      font-family: inherit;
+      background: var(--w);
+      color: var(--td);
+      transition: border-color .22s, box-shadow .22s;
+      outline: none
+    }
+
+    .f-grp input:focus,
+    .f-grp textarea:focus,
+    .f-grp select:focus {
+      border-color: var(--vg);
+      box-shadow: 0 0 0 3px rgba(54, 37, 92, .07)
+    }
+
+    .f-grp textarea {
+      resize: vertical;
+      min-height: 100px
+    }
+
+    .f-sub {
+      width: 100%;
+      padding: 14px;
+      background: var(--vg);
+      color: var(--lh);
+      border: none;
+      border-radius: var(--r);
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background .28s, transform .28s, box-shadow .28s
+    }
+
+    .f-sub:hover {
+      background: var(--vg2);
+      transform: translateY(-2px);
+      box-shadow: var(--shd)
+    }
+
+    /* ═══ FOOTER ═══ */
+    footer {
+      background: var(--vg2);
+      padding: 54px 40px 26px calc(44px + 36px)
+    }
+
+    .f-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 44px;
+      margin-bottom: 44px
+    }
+
+    .f-brand .logo {
+      color: var(--lh);
+      margin-bottom: 14px
+    }
+
+    .f-brand p {
+      color: rgba(210, 195, 246, .6);
+      font-size: 13px;
+      line-height: 1.8;
+      margin-bottom: 20px
+    }
+
+    .f-social {
+      display: flex;
+      gap: 11px
+    }
+
+    .f-social a {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(210, 195, 246, .2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(210, 195, 246, .55);
+      text-decoration: none;
+      transition: background .22s, border-color .22s, color .22s, transform .22s
+    }
+
+    .f-social a:hover {
+      background: var(--lh);
+      border-color: var(--lh);
+      color: var(--vg);
+      transform: translateY(-3px)
+    }
+
+    .f-col h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--lh);
+      margin-bottom: 18px
+    }
+
+    .f-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px
+    }
+
+    .f-links a {
+      color: rgba(210, 195, 246, .55);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color .18s
+    }
+
+    .f-links a:hover {
+      color: var(--lh)
+    }
+
+    .f-bot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 22px;
+      border-top: 1px solid rgba(210, 195, 246, .1);
+      flex-wrap: wrap;
+      gap: 8px
+    }
+
+    .f-bot p {
+      color: rgba(210, 195, 246, .4);
+      font-size: 12px
+    }
+
+    /* ═══ TOAST ═══ */
+    .toast {
+      position: fixed;
+      bottom: 26px;
+      right: 26px;
+      background: var(--vg);
+      color: var(--lh);
+      padding: 13px 20px;
+      border-radius: var(--r);
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: var(--shd);
+      transform: translateY(70px);
+      opacity: 0;
+      transition: transform .35s, opacity .35s;
+      z-index: 9999
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1
+    }
+
+    /* ═══ ANIMATIONS ═══ */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .65s ease, transform .65s ease
+    }
+
+    .fade-in.vis {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .fade-l {
+      opacity: 0;
+      transform: translateX(-24px);
+      transition: opacity .65s ease, transform .65s ease
+    }
+
+    .fade-l.vis {
+      opacity: 1;
+      transform: translateX(0)
+    }
+
+    .fade-r {
+      opacity: 0;
+      transform: translateX(24px);
+      transition: opacity .7s ease .1s, transform .7s ease .1s
+    }
+
+    .fade-r.vis {
+      opacity: 1;
+      transform: translateX(0)
+    }
+
+    /* ═══ MOBILE BOTTOM NAV ═══ */
+    .mob-bot-nav {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1001;
+      background: rgba(253, 252, 255, .96);
+      backdrop-filter: blur(18px);
+      border-top: 1px solid var(--bd);
+      padding: 9px 0 max(9px, env(safe-area-inset-bottom))
+    }
+
+    .mob-bot-nav ul {
+      display: flex;
+      list-style: none
+    }
+
+    .mob-bot-nav li {
+      flex: 1
+    }
+
+    .mbn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      background: none;
+      border: none;
+      width: 100%;
+      padding: 5px 3px;
+      color: var(--tl);
+      font-size: 9.5px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: none;
+      transition: color .18s
+    }
+
+    .mbn.act,
+    .mbn:hover {
+      color: var(--vg)
+    }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media(max-width:1050px) {
+      .f-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:900px) {
+
+      .about-grid,
+      .ct-grid {
+        grid-template-columns: 1fr
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr
+      }
+
+      .hero-img-wrap {
+        height: 320px
+      }
+
+      .gall-flex {
+        height: 300px
+      }
+    }
+
+    @media(max-width:768px) {
+      .top-bar {
+        padding: 6px 14px
+      }
+
+      .navbar {
+        top: 29px;
+        padding: 9px 14px
+      }
+
+      .nav-links,
+      .sidebar {
+        display: none
+      }
+
+      .hamburger {
+        display: flex
+      }
+
+      #home {
+        padding: 95px 18px 70px 18px
+      }
+
+      section {
+        padding: 56px 18px 56px 18px
+      }
+
+      footer {
+        padding: 44px 18px 24px 18px
+      }
+
+      .f-grid {
+        grid-template-columns: 1fr;
+        gap: 26px
+      }
+
+      .gall-flex {
+        flex-direction: column;
+        height: auto
+      }
+
+      .g-card {
+        height: 200px;
+        flex: none
+      }
+
+      .g-card:hover {
+        flex: none
+      }
+
+      .g-overlay {
+        opacity: 1
+      }
+
+      .mob-bot-nav {
+        display: block
+      }
+
+      body {
+        padding-bottom: 68px
+      }
+
+      .hero-badge {
+        left: 0;
+        bottom: 18px
+      }
+    }
+
+    @media(max-width:480px) {
+      .hero-actions {
+        flex-direction: column
+      }
+
+      .btn-p,
+      .btn-o {
+        width: 100%;
+        justify-content: center
+      }
+
+      .ct-form {
+        padding: 22px
+      }
+    }
+  </style>
+<base target="_blank">
+</head>
+
+<body>
+  <div class="toast" id="toast"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <button class="ctrl-btn" onclick="toggleTheme()" id="themeBtn">
+      <svg class="ico ico-16">
+        <use href="#ic-moon" id="themeIco" />
+      </svg>
+      <span id="themeLabel">Dark</span>
+    </button>
+    <div class="lang-wrap">
+      <button class="ctrl-btn" onclick="toggleLang(event)">
+        <svg class="ico ico-16">
+          <use href="#ic-globe" />
+        </svg>
+        <span id="curLang">English</span>
+        <svg class="ico ico-16">
+          <use href="#ic-chev-down" />
+        </svg>
+      </button>
+      <div class="lang-drop" id="langDrop">
+        <div class="lang-opt active" onclick="setLang('en')" data-l="en">English</div>
+        <div class="lang-opt" onclick="setLang('am')" data-l="am">Amharic (አማርኛ)</div>
+        <div class="lang-opt" onclick="setLang('om')" data-l="om">Afaan Oromo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">
+      <div class="logo-mark">
+        <svg width="16" height="16" fill="var(--lh)" viewBox="0 0 24 24">
+          <use href="#ic-logo" />
+        </svg>
+      </div>
+      <span id="brandName">Weynua Interiors</span>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item">
+        <button class="nav-link">Home <span class="chev"><svg class="ico ico-16">
+              <use href="#ic-chev-down" />
+            </svg></span></button>
+        <div class="dropdown">
+          <a href="#home" class="drop-item">Home</a>
+          <a href="#about" class="drop-item">About Section</a>
+          <a href="#works" class="drop-item">How It Works</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#about" class="nav-link" id="navAbout">About Us</a></li>
+      <li class="nav-item">
+        <button class="nav-link" id="navServices">Services <span class="chev"><svg class="ico ico-16">
+              <use href="#ic-chev-down" />
+            </svg></span></button>
+        <div class="dropdown">
+          <a href="#products" class="drop-item">Bed Covers</a>
+          <a href="#products" class="drop-item">Curtains</a>
+          <a href="#products" class="drop-item">Sofa Covers</a>
+          <a href="#products" class="drop-item">Interior Floors</a>
+          <a href="#products" class="drop-item">Interior Lights</a>
+          <a href="#products" class="drop-item">Arabian Mejlis</a>
+          <a href="#products" class="drop-item">Imported Pillows</a>
+          <a href="#products" class="drop-item">Under Mats</a>
+          <a href="#products" class="drop-item">Artificial Grass</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#products" class="nav-link" id="navProducts">Products</a></li>
+      <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="ham" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mob-menu" id="mobMenu">
+    <button class="mob-link" onclick="toggleSub('sh')"><span id="mobHome">Home</span> <svg class="ico ico-16">
+        <use href="#ic-chev-down" />
+      </svg></button>
+    <div class="mob-sub" id="sh">
+      <a href="#home" class="mob-sub-item" onclick="closeMob()">Home</a>
+      <a href="#about" class="mob-sub-item" onclick="closeMob()">About Section</a>
+      <a href="#works" class="mob-sub-item" onclick="closeMob()">How It Works</a>
+    </div>
+    <a href="#about" class="mob-link" onclick="closeMob()" id="mobAbout">About Us</a>
+    <button class="mob-link" onclick="toggleSub('ss')"><span id="mobServices">Services</span> <svg class="ico ico-16">
+        <use href="#ic-chev-down" />
+      </svg></button>
+    <div class="mob-sub" id="ss">
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Bed Covers</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Curtains</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Sofa Covers</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Interior Floors</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Interior Lights</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Arabian Mejlis</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Imported Pillows</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Under Mats</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Artificial Grass</a>
+    </div>
+    <a href="#products" class="mob-link" onclick="closeMob()" id="mobProducts">Products</a>
+    <a href="#gallery" class="mob-link" onclick="closeMob()">Gallery</a>
+    <a href="#contact" class="mob-link" onclick="closeMob()" id="mobContact">Contact</a>
+    <div class="mob-social">
+      <a href="#" aria-label="Facebook"><svg class="ico ico-18">
+          <use href="#ic-fb" />
+        </svg></a>
+      <a href="#" aria-label="Twitter"><svg class="ico ico-18">
+          <use href="#ic-tw" />
+        </svg></a>
+      <a href="#" aria-label="Instagram"><svg class="ico ico-18">
+          <use href="#ic-ig" />
+        </svg></a>
+      <a href="#" aria-label="WhatsApp"><svg class="ico ico-18">
+          <use href="#ic-wa" />
+        </svg></a>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <p class="sidebar-text">+251 911 234 567 · info@weynuainteriors.com</p>
+    <div class="sidebar-icons">
+      <a href="#" aria-label="Facebook"><svg class="ico ico-16">
+          <use href="#ic-fb" />
+        </svg></a>
+      <a href="#" aria-label="Twitter"><svg class="ico ico-16">
+          <use href="#ic-tw" />
+        </svg></a>
+      <a href="#" aria-label="Instagram"><svg class="ico ico-16">
+          <use href="#ic-ig" />
+        </svg></a>
+      <a href="#" aria-label="WhatsApp"><svg class="ico ico-16">
+          <use href="#ic-wa" />
+        </svg></a>
+    </div>
+  </aside>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="fade-l">
+        <span class="hero-tag" id="heroTag">Premium Interior Design</span>
+        <h1 class="hero-h1" id="heroH1">Transform Your<br>Space with <em>Weynua</em></h1>
+        <p class="hero-price" id="heroPrice">Starting from <strong>$35</strong></p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-p" id="heroBtn">Explore Services <svg class="ico ico-16">
+              <use href="#ic-arrow-right" />
+            </svg></a>
+          <a href="#contact" class="btn-o" id="heroBtn2">Free Consultation</a>
+        </div>
+        <div class="sl-ctrl">
+          <button class="sl-btn" onclick="prevSlide()" aria-label="Previous slide"><svg class="ico ico-16">
+              <use href="#ic-arrow-left" />
+            </svg></button>
+          <button class="sl-btn" onclick="nextSlide()" aria-label="Next slide"><svg class="ico ico-16">
+              <use href="#ic-arrow-right" />
+            </svg></button>
+        </div>
+      </div>
+      <div class="hero-img-wrap fade-r">
+        <div class="hero-slide active">
+          <div class="img-block img-curtain-hero1 curtain-pattern">
+            <div class="drape"></div>
+            <div class="sheen"></div>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="img-block img-curtain-hero2 curtain-pattern">
+            <div class="drape"></div>
+            <div class="sheen"></div>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="img-block img-curtain-hero3 curtain-pattern">
+            <div class="drape"></div>
+            <div class="sheen"></div>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="hb-num" id="hbNum">0</div>
+          <div class="hb-lbl" id="hbLbl">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-img-box fade-l">
+        <div class="about-img img-about curtain-pattern">
+          <div class="drape"></div>
+          <div class="sheen"></div>
+        </div>
+        <div class="about-stat">
+          <div class="as-num">8+</div>
+          <div class="as-txt" id="asLbl">Years of Excellence</div>
+        </div>
+      </div>
+      <div class="fade-r">
+        <span class="sec-label" id="aboutLabel">About Us</span>
+        <h2 class="sec-title" id="aboutTitle">Welcome to Weynua Interiors</h2>
+        <p class="sec-sub" id="aboutText">We specialize in transforming living spaces with premium interior solutions. From luxurious Arabian mejlis designs to comfortable bed covers, elegant curtains, and modern interior lighting — we bring your vision to life with quality craftsmanship and imported materials.</p>
+        <div class="svc-list">
+          <div class="svc-item">
+            <div class="svc-ico"><svg class="ico ico-22">
+                <use href="#ic-bed" />
+              </svg></div>
+            <div class="svc-info">
+              <h4 id="svcT1">Bed Cover Comfort</h4>
+              <p id="svcD1">Premium quality bed covers and bedding sets designed for ultimate comfort and style.</p>
+            </div>
+          </div>
+          <div class="svc-item">
+            <div class="svc-ico lt"><svg class="ico ico-22">
+                <use href="#ic-sofa" />
+              </svg></div>
+            <div class="svc-info">
+              <h4 id="svcT2">Sofa & Mejlis Covers</h4>
+              <p id="svcD2">Custom sofa covers and luxury Arabian mejlis designs with imported fabrics.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#products" class="btn-p" style="margin-top:20px" id="aboutBtn">View Services <svg class="ico ico-16">
+            <use href="#ic-arrow-right" />
+          </svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="works">
+    <div class="works-head fade-in">
+      <span class="sec-label" id="worksLabel">Process</span>
+      <h2 class="sec-title" id="worksTitle">How It Works</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card fade-in" style="transition-delay:.05s">
+        <div class="step-num">01</div>
+        <div class="step-ico"><svg class="ico ico-22">
+            <use href="#ic-search" />
+          </svg></div>
+        <h3 id="stT1">Choose Your Service</h3>
+        <p id="stD1">Browse our collection and select the perfect interior solution for your space.</p>
+      </div>
+      <div class="step-card fade-in" style="transition-delay:.12s">
+        <div class="step-num">02</div>
+        <div class="step-ico"><svg class="ico ico-22">
+            <use href="#ic-measure" />
+          </svg></div>
+        <h3 id="stT2">Custom Measure</h3>
+        <p id="stD2">We take precise measurements to ensure a perfect fit for your furniture and spaces.</p>
+      </div>
+      <div class="step-card fade-in" style="transition-delay:.2s">
+        <div class="step-num">03</div>
+        <div class="step-ico"><svg class="ico ico-22">
+            <use href="#ic-scissors" />
+          </svg></div>
+        <h3 id="stT3">Expert Crafting</h3>
+        <p id="stD3">Our artisans craft your items with premium imported fabrics and meticulous care.</p>
+      </div>
+      <div class="step-card fade-in" style="transition-delay:.28s">
+        <div class="step-num">04</div>
+        <div class="step-ico"><svg class="ico ico-22">
+            <use href="#ic-home" />
+          </svg></div>
+        <h3 id="stT4">Delivery & Setup</h3>
+        <p id="stD4">We deliver and install everything perfectly, hassle-free at your location.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="prod-head fade-in">
+      <span class="sec-label" id="prodLabel">Services</span>
+      <h2 class="sec-title" id="prodTitle">Our Interior Services</h2>
+      <p class="sec-sub" style="max-width:480px;margin:0 auto;text-align:center" id="prodSub">Premium interior solutions for every corner of your home</p>
+    </div>
+    <div class="prod-grid" id="prodGrid"></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="mq-sec">
+    <div class="mq-track">
+      <span class="mq-word">WEYNUA INTERIORS</span><span class="mq-word">·</span>
+      <span class="mq-word">PREMIUM QUALITY</span><span class="mq-word">·</span>
+      <span class="mq-word">CUSTOM DESIGNS</span><span class="mq-word">·</span>
+      <span class="mq-word">WEYNUA INTERIORS</span><span class="mq-word">·</span>
+      <span class="mq-word">PREMIUM QUALITY</span><span class="mq-word">·</span>
+      <span class="mq-word">CUSTOM DESIGNS</span><span class="mq-word">·</span>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="gall-head fade-in">
+      <span class="sec-label" id="gallLabel">Gallery</span>
+      <h2 class="sec-title" id="gallTitle">Our Work</h2>
+      <p class="sec-sub" style="max-width:480px;margin:0 auto;text-align:center" id="gallSub">See how Weynua transforms real homes</p>
+    </div>
+    <div class="gall-flex">
+      <div class="g-card fade-in">
+        <div class="img-block img-g1 curtain-pattern">
+          <div class="drape"></div>
+        </div>
+        <div class="g-overlay">
+          <div class="g-tag">Living Room</div>
+          <div class="g-name">Arabian Mejlis Design</div>
+        </div>
+      </div>
+      <div class="g-card fade-in" style="transition-delay:.08s">
+        <div class="img-block img-g2 curtain-pattern">
+          <div class="drape"></div>
+        </div>
+        <div class="g-overlay">
+          <div class="g-tag">Bedroom</div>
+          <div class="g-name">Luxury Bed Covers</div>
+        </div>
+      </div>
+      <div class="g-card fade-in" style="transition-delay:.16s">
+        <div class="img-block img-g3 curtain-pattern">
+          <div class="drape"></div>
+        </div>
+        <div class="g-overlay">
+          <div class="g-tag">Interior</div>
+          <div class="g-name">Modern Lighting & Floors</div>
+        </div>
+      </div>
+      <div class="g-card fade-in" style="transition-delay:.24s">
+        <div class="img-block img-g4 curtain-pattern">
+          <div class="drape"></div>
+        </div>
+        <div class="g-overlay">
+          <div class="g-tag">Outdoor</div>
+          <div class="g-name">Artificial Grass Setup</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="ct-grid">
+      <div class="fade-l">
+        <span class="sec-label" id="ctLabel">Get In Touch</span>
+        <h2 class="sec-title" id="ctTitle">Ready to Transform Your Space?</h2>
+        <p class="sec-sub" id="ctText">Contact us for a free consultation and measurement. Our team is here to help you create the perfect interior for your home.</p>
+        <div class="ct-details">
+          <div class="ct-item">
+            <div class="ct-ico"><svg class="ico ico-20">
+                <use href="#ic-phone" />
+              </svg></div>
+            <div>
+              <h4 id="ctPhone">Phone</h4><span>+251 911 234 567 / +251 911 234 568</span>
+            </div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-ico"><svg class="ico ico-20">
+                <use href="#ic-mail" />
+              </svg></div>
+            <div>
+              <h4 id="ctEmail">Email</h4><span>info@weynuainteriors.com</span>
+            </div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-ico"><svg class="ico ico-20">
+                <use href="#ic-pin" />
+              </svg></div>
+            <div>
+              <h4 id="ctAddr">Address</h4><span>Bole Road, Addis Ababa, Ethiopia</span>
+            </div>
+          </div>
+          <div class="ct-item">
+            <div class="ct-ico"><svg class="ico ico-20">
+                <use href="#ic-clock" />
+              </svg></div>
+            <div>
+              <h4 id="ctHours">Working Hours</h4><span>Mon – Sat: 8:00 AM – 6:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-r">
+        <div class="ct-form">
+          <form onsubmit="submitForm(event)">
+            <div class="f-grp"><label id="lName">Full Name</label><input type="text" placeholder="Your name" required>
+            </div>
+            <div class="f-grp"><label id="lEmail">Email Address</label><input type="email" placeholder="your@email.com"
+                required></div>
+            <div class="f-grp"><label id="lPhone">Phone Number</label><input type="tel" placeholder="+251 9XX XXX XXX">
+            </div>
+            <div class="f-grp"><label id="lProduct">Service Interest</label>
+              <select>
+                <option value="">Select a service</option>
+                <option>Bed Cover Comfort</option>
+                <option>Curtains</option>
+                <option>Sofa Cover</option>
+                <option>Interior Floors</option>
+                <option>Interior Lights</option>
+                <option>Luxury Arabian Mejlis Design</option>
+                <option>Imported Pillows</option>
+                <option>Under Sofa & Bed Mats</option>
+                <option>Artificial Grass</option>
+              </select>
+            </div>
+            <div class="f-grp"><label id="lMsg">Message</label><textarea
+                placeholder="Tell us about your project..."></textarea></div>
+            <button type="submit" class="f-sub" id="fSubmit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="f-grid">
+      <div class="f-brand">
+        <a href="#home" class="logo">
+          <div class="logo-mark"><svg width="16" height="16" fill="var(--lh)" viewBox="0 0 24 24">
+              <use href="#ic-logo" />
+            </svg></div>
+          <span id="footBrand">Weynua</span>
+        </a>
+        <p id="footDesc">A passionate team dedicated to creating beautiful, comfortable interior spaces across Ethiopia. From custom covers to luxury lighting, we bring elegance to every home.</p>
+        <div class="f-social">
+          <a href="#" aria-label="Facebook"><svg class="ico ico-16">
+              <use href="#ic-fb" />
+            </svg></a>
+          <a href="#" aria-label="Twitter"><svg class="ico ico-16">
+              <use href="#ic-tw" />
+            </svg></a>
+          <a href="#" aria-label="Instagram"><svg class="ico ico-16">
+              <use href="#ic-ig" />
+            </svg></a>
+          <a href="#" aria-label="WhatsApp"><svg class="ico ico-16">
+              <use href="#ic-wa" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Quick Links</h4>
+        <ul class="f-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Services</h4>
+        <ul class="f-links">
+          <li><a href="#products">Bed Covers</a></li>
+          <li><a href="#products">Curtains</a></li>
+          <li><a href="#products">Sofa Covers</a></li>
+          <li><a href="#products">Interior Floors</a></li>
+          <li><a href="#products">Interior Lights</a></li>
+          <li><a href="#products">Arabian Mejlis</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Contact</h4>
+        <ul class="f-links">
+          <li><a href="tel:+251911234567">+251 911 234 567</a></li>
+          <li><a href="mailto:info@weynuainteriors.com">info@weynuainteriors.com</a></li>
+          <li><a href="#contact">Addis Ababa, Ethiopia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot">
+      <p id="fCopy">© 2024 Weynua Interiors. All rights reserved.</p>
+      <p id="fTag">Designed with passion for beautiful spaces</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="mob-bot-nav">
+    <ul>
+      <li><a href="#home" class="mbn act" onclick="setAct(this)"><svg class="ico ico-18">
+            <use href="#ic-nav-home" />
+          </svg><span id="mn1">Home</span></a></li>
+      <li><a href="#about" class="mbn" onclick="setAct(this)"><svg class="ico ico-18">
+            <use href="#ic-nav-info" />
+          </svg><span id="mn2">About</span></a></li>
+      <li><a href="#products" class="mbn" onclick="setAct(this)"><svg class="ico ico-18">
+            <use href="#ic-nav-shop" />
+          </svg><span id="mn3">Services</span></a></li>
+      <li><a href="#gallery" class="mbn" onclick="setAct(this)"><svg class="ico ico-18">
+            <use href="#ic-nav-gallery" />
+          </svg><span id="mn4">Gallery</span></a></li>
+      <li><a href="#contact" class="mbn" onclick="setAct(this)"><svg class="ico ico-18">
+            <use href="#ic-nav-contact" />
+          </svg><span id="mn5">Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- DEFERRED JS — parsed after HTML is rendered -->
+  <script>
+    /* ── INTERSECTION OBSERVER ── */
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('vis');
+          startCounter();
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    /* ── PRODUCTS DATA ── */
+    const PRODS = [
+      { cls: 'img-p1', badge: 'Popular', name: 'Bed Cover Comfort', desc: 'Premium quality bed covers and bedding sets for ultimate comfort and restful sleep.', price: '$45' },
+      { cls: 'img-p2', badge: 'Bestseller', name: 'Custom Curtains', desc: 'Beautiful, high-quality curtains and window treatments for any room style.', price: '$55' },
+      { cls: 'img-p3', badge: '', name: 'Sofa Covers', desc: 'Custom-fit sofa covers that protect and transform your living room furniture.', price: '$65' },
+      { cls: 'img-p4', badge: 'New', name: 'Interior Floors', desc: 'Modern flooring solutions including vinyl, laminate, and decorative tiles.', price: '$120' },
+      { cls: 'img-p5', badge: 'Premium', name: 'Interior Lights', desc: 'Stylish lighting fixtures and LED solutions to set the perfect ambiance.', price: '$85' },
+      { cls: 'img-p6', badge: 'Luxury', name: 'Arabian Mejlis Design', desc: 'Authentic luxury Arabian mejlis seating with custom covers and cushions.', price: '$350' },
+      { cls: 'img-p7', badge: 'Imported', name: 'Imported Pillows', desc: 'High-quality imported decorative and comfort pillows for sofas and beds.', price: '$25' },
+      { cls: 'img-p8', badge: '', name: 'Under Sofa & Bed Mats', desc: 'Protective and decorative mats designed to fit perfectly under furniture.', price: '$35' },
+      { cls: 'img-p9', badge: 'Trending', name: 'Artificial Grass', desc: 'Realistic artificial grass for balconies, terraces, and interior green spaces.', price: '$75' },
+      { cls: 'img-p10', badge: 'Bundle', name: 'Bedroom Package', desc: 'Complete bedroom set including bed cover, pillows, and under-bed mats.', price: '$150' },
+      { cls: 'img-p11', badge: '', name: 'Living Room Set', desc: 'Full living room package with sofa covers, curtains, and decorative pillows.', price: '$280' },
+      { cls: 'img-p12', badge: 'Special', name: 'Mejlis Full Setup', desc: 'Complete Arabian mejlis with floor seating, covers, lights, and grass base.', price: '$580' },
+    ];
+
+    /* ── TRANSLATIONS ── */
+    const T = {
+      en: { brandName: 'Weynua Interiors', navAbout: 'About Us', navServices: 'Services', navProducts: 'Services', navContact: 'Contact', heroBtn: 'Explore Services', heroBtn2: 'Free Consultation', hbLbl: 'Happy Clients', aboutLabel: 'About Us', aboutTitle: 'Welcome to Weynua Interiors', aboutText: 'We specialize in transforming living spaces with premium interior solutions. From luxurious Arabian mejlis designs to comfortable bed covers, elegant curtains, and modern interior lighting.', svcT1: 'Bed Cover Comfort', svcD1: 'Premium quality bed covers and bedding sets designed for ultimate comfort and style.', svcT2: 'Sofa & Mejlis Covers', svcD2: 'Custom sofa covers and luxury Arabian mejlis designs with imported fabrics.', aboutBtn: 'View Services', asLbl: 'Years of Excellence', worksLabel: 'Process', worksTitle: 'How It Works', stT1: 'Choose Your Service', stD1: 'Browse our collection and select the perfect interior solution for your space.', stT2: 'Custom Measure', stD2: 'We take precise measurements to ensure a perfect fit for your furniture and spaces.', stT3: 'Expert Crafting', stD3: 'Our artisans craft your items with premium imported fabrics and meticulous care.', stT4: 'Delivery & Setup', stD4: 'We deliver and install everything perfectly, hassle-free at your location.', prodLabel: 'Services', prodTitle: 'Our Interior Services', prodSub: 'Premium interior solutions for every corner of your home', gallLabel: 'Gallery', gallTitle: 'Our Work', gallSub: 'See how Weynua transforms real homes', ctLabel: 'Get In Touch', ctTitle: 'Ready to Transform Your Space?', ctText: 'Contact us for a free consultation and measurement. Our team is here to help you create the perfect interior for your home.', ctPhone: 'Phone', ctEmail: 'Email', ctAddr: 'Address', ctHours: 'Working Hours', lName: 'Full Name', lEmail: 'Email Address', lPhone: 'Phone Number', lProduct: 'Service Interest', lMsg: 'Message', fSubmit: 'Send Message', footBrand: 'Weynua', footDesc: 'A passionate team dedicated to creating beautiful, comfortable interior spaces across Ethiopia. From custom covers to luxury lighting, we bring elegance to every home.', fCopy: '© 2024 Weynua Interiors. All rights reserved.', fTag: 'Designed with passion for beautiful spaces', mn1: 'Home', mn2: 'About', mn3: 'Services', mn4: 'Gallery', mn5: 'Contact', mobHome: 'Home', mobAbout: 'About Us', mobServices: 'Services', mobProducts: 'Services', mobContact: 'Contact', toastSent: 'Message sent successfully!', thDark: 'Dark', thLight: 'Light' },
+      am: { brandName: 'ወይኑዋ ኢንተርየርስ', navAbout: 'ስለኛ', navServices: 'አገልግሎቶች', navProducts: 'አገልግሎቶች', navContact: 'ያግኙን', heroTag: 'የፕሪሚየም ኢንተርየር ዲዛይን', heroH1: 'ቦታዎን በ<em>ወይኑዋ</em> ይቀይሩ', heroPrice: 'ከ <strong>$35</strong> ጀምሮ', heroBtn: 'አገልግሎቶችን ይመልከቱ', heroBtn2: 'ነፃ ምክር', hbLbl: 'ደስተኛ ደንበኞች', aboutLabel: 'ስለኛ', aboutTitle: 'ወደ ወይኑዋ ኢንተርየርስ እንኳን ደህና መጡ', aboutText: 'በፕሪሚየም ኢንተርየር መፍትሄዎች የኑሮ ቦታዎችን መቀየር ላይ እንተኮራለን።', svcT1: 'የመኝታ ጨርቅ እርጥበት', svcD1: 'ለተሟላ ጥራት እና ዘይቤ የተዘጋጁ ፕሪሚየም የመኝታ ጨርቆች።', svcT2: 'ሶፋ እና መጅሊስ ጨርቆች', svcD2: 'ብጁ የሶፋ ጨርቆች እና የአረቢያን መጅሊስ ዲዛይኖች።', aboutBtn: 'አገልግሎቶችን ይመልከቱ', asLbl: 'የብልጽግና ዓመታት', worksLabel: 'ሂደት', worksTitle: 'እንዴት እንደሚሰራ', stT1: 'አገልግሎትዎን ይምረጡ', stD1: 'ክሊክሽናችንን ይመልከቱ እና ትክክለኛውን አገልግሎት ይምረጡ።', stT2: 'ብጁ መለኪያ', stD2: 'ለማብሰሪያዎች እና ቦታዎች ትክክለኛ ቦታ እንዲሆን መለኪያ እንወስዳለን።', stT3: 'የሙያ ስራ', stD3: 'ባለሙያዎቻችን በፕሪሚየም ጨርቆች ይሰራሉ።', stT4: 'ማድረስ እና ተከላ', stD4: 'ሁሉንም በትክክል እና በቀላሉ በቦታዎ እናድርሳለን።', prodLabel: 'አገልግሎቶች', prodTitle: 'የእኛ የኢንተርየር አገልግሎቶች', prodSub: 'ለቤትዎ እያንዳንዱ ጥግ ፕሪሚየም ኢንተርየር መፍትሄዎች', gallLabel: 'ጋለሪ', gallTitle: 'የእኛ ስራ', gallSub: 'ወይኑዋ እንዴት እንደሚቀይሩ ይመልከቱ', ctLabel: 'ያግኙን', ctTitle: 'ቦታዎን ለመቀየር ዝግጁ ነዎት?', ctText: 'ለነፃ ምክር እና መለኪያ ያግኙን።', ctPhone: 'ስልክ', ctEmail: 'ኢሜይል', ctAddr: 'አድራሻ', ctHours: 'የስራ ሰዓታት', lName: 'ሙሉ ስም', lEmail: 'ኢሜይል አድራሻ', lPhone: 'ስልክ ቁጥር', lProduct: 'የአገልግሎት ፍላጎት', lMsg: 'መልእክት', fSubmit: 'መልእክት ይላኩ', footBrand: 'ወይኑዋ', footDesc: 'በኢትዮጵያ ቆንጆ እና ምቹ የኢንተርየር ቦታዎችን ለመፍጠር ቆርጠን የቆምን ቡድን ነን።', fCopy: '© 2024 ወይኑዋ ኢንተርየርስ። ሁሉም መብቶች የተጠበቁ ናቸው።', fTag: 'ለቆንጆ ቦታዎች በፍቅር', mn1: 'መነሻ', mn2: 'ስለኛ', mn3: 'አገልግሎቶች', mn4: 'ጋለሪ', mn5: 'ያግኙን', mobHome: 'መነሻ', mobAbout: 'ስለኛ', mobServices: 'አገልግሎቶች', mobProducts: 'አገልግሎቶች', mobContact: 'ያግኙን', toastSent: 'መልእክት ተልኳል!', thDark: 'ጨለማ', thLight: 'ብርሃን' },
+      om: { brandName: 'Weynua Interiors', navAbout: "Waa'ee Keenya", navServices: 'Tajaajiloota', navProducts: 'Tajaajiloota', navContact: 'Nu Qunnamaa', heroTag: 'Tajaajila Interior', heroH1: 'Bakka <em>Weynuu</em> Waliin Jijjiiraa', heroPrice: '$35 irraa <strong>eegalee</strong>', heroBtn: 'Tajaajila Ilaali', heroBtn2: 'Gorsuu Bilisaa', hbLbl: 'Macaanfa Qabaattoota', aboutLabel: "Waa'ee Keenya", aboutTitle: 'Baga Nagaan Dhuftan Weynua', aboutText: 'Furuu interior olaanaa fayyadamuun manaa jijjiirra.', svcT1: 'Fuudhaa Bireedhaa', svcD1: 'Fuudhaa bireedhaa qulqullina olaanaa qabu.', svcT2: 'Kuffaa Sofaa fi Mejlis', svcD2: 'Kuffaa sofaa dhuunfaa fi qaphxii Mejlis gurguddaa.', aboutBtn: 'Tajaajila Ilaali', asLbl: 'Waggaa Bareedinaa', worksLabel: 'Adeemsa', worksTitle: 'Akkamitti Hoojjeta', stT1: 'Tajaajila Filadhu', stD1: 'Walitti qabaa keenya ilaali fi tajaajila sirrii ta'e filadhu.', stT2: 'Safartuu Dhuunfaa', stD2: "Safartuu sirrii ta'e kan meeshaa keetiif fudhanna.", stT3: 'Hoojjii Ogeessaa', stD3: 'Ogeessota keenyaan meeshaa keetiif hojjeta.', stT4: 'Geesisuu fi Qabachuu', stD4: 'Hundumaa sirrii fi tasgabbiidhaan geesisina.', prodLabel: 'Tajaajiloota', prodTitle: 'Tajaajila Interior Keenya', prodSub: 'Furuu interior olaanaa manakee hundaaf', gallLabel: 'Galerii', gallTitle: 'Hojii Keenya', gallSub: 'Weynua manaa dhugaa akkamitti jijjiiru ilaali', ctLabel: 'Nu Qunnamaa', ctTitle: 'Bakka Kee Jijjiiruu Barbaaddaa?', ctText: 'Gorsuu fi safartuu bilisaa nu qunnamaa.', ctPhone: 'Bilbila', ctEmail: 'Imeelii', ctAddr: 'Teessoo', ctHours: "Sa'aatii Hojii", lName: 'Maqaa Guutuu', lEmail: 'Teessoo Imeelii', lPhone: 'Lakk Bilbila', lProduct: 'Fayyadama Tajaajilaa', lMsg: 'Ergaa', fSubmit: 'Ergaa Ergi', footBrand: 'Weynua', footDesc: 'Daldala interior kan Itoophiyaa keessatti manaa bareedisuuf hojjennu.', fCopy: '© 2024 Weynua Interiors.', fTag: 'Bakka bareedaa jaalalaan', mn1: 'Mana', mn2: "Waa'ee", mn3: 'Tajaajiloota', mn4: 'Galerii', mn5: 'Qunnamtii', mobHome: 'Mana', mobAbout: "Waa'ee Keenya", mobServices: 'Tajaajiloota', mobProducts: 'Tajaajiloota', mobContact: 'Nu Qunnamaa', toastSent: "Ergaan milkaa'eraan ergameera!", thDark: 'Duukkanaa', thLight: 'Iftuu' }
+    };
+
+    /* ── ARROW ICON SNIPPET ── */
+    const arrowIco = `<svg class="ico ico-16" style="stroke:currentColor;fill:none"><use href="#ic-arrow-ne"/></svg>`;
+
+    /* ── STATE ── */
+    let lang = 'en', dark = false, slide = 0, menuOpen = false, counted = false;
+    const slides = document.querySelectorAll('.hero-slide');
+
+    /* ── BUILD PRODUCT CARDS ── */
+    (function () {
+      const frag = document.createDocumentFragment();
+      PRODS.forEach(p => {
+        const div = document.createElement('div');
+        div.className = 'p-card fade-in';
+        div.innerHTML = `
+      <div class="p-img ${p.cls} curtain-pattern"><div class="drape"></div><div class="sheen"></div>${p.badge ? `<span class="p-badge">${p.badge}</span>` : ''}</div>
       <div class="p-body">
         <h3>${p.name}</h3><p>${p.desc}</p>
         <div class="p-foot"><div class="p-price">${p.price}</div><button class="p-arrow" aria-label="View product">${arrowIco}</button></div>
       </div>`;
-    frag.appendChild(div);
-  });
-  const grid=document.getElementById('prodGrid');
-  grid.appendChild(frag);
-})();
+        frag.appendChild(div);
+      });
+      const grid = document.getElementById('prodGrid');
+      grid.appendChild(frag);
+    })();
 
-/* ── COUNTER ── */
-function startCounter(){
-  if(counted)return;counted=true;
-  let n=0;const el=document.getElementById('hbNum');
-  const t=setInterval(()=>{n+=5;if(n>=500){n=500;clearInterval(t);}el.textContent=n+'+';},16);
-}
+    /* ── COUNTER ── */
+    function startCounter() {
+      if (counted) return; counted = true;
+      let n = 0; const el = document.getElementById('hbNum');
+      const t = setInterval(() => { n += 5; if (n >= 500) { n = 500; clearInterval(t); } el.textContent = n + '+'; }, 16);
+    }
 
-/* ── OBSERVE ALL ANIMATED ELEMENTS ── */
-/* Hero elements are above the fold — make them visible immediately */
-document.querySelectorAll('#home .fade-l, #home .fade-r').forEach(el=>el.classList.add('vis'));
-/* Everything else gets scroll-triggered */
-document.querySelectorAll('.fade-in,.fade-l,.fade-r,.step-card').forEach(el=>{
-  if(!el.classList.contains('vis')) obs.observe(el);
-});
+    /* ── OBSERVE ALL ANIMATED ELEMENTS ── */
+    document.querySelectorAll('#home .fade-l, #home .fade-r').forEach(el => el.classList.add('vis'));
+    document.querySelectorAll('.fade-in,.fade-l,.fade-r,.step-card').forEach(el => {
+      if (!el.classList.contains('vis')) obs.observe(el);
+    });
 
-/* ── NAVBAR SCROLL (passive) ── */
-const navbar=document.getElementById('navbar');
-window.addEventListener('scroll',()=>navbar.classList.toggle('sc',scrollY>50),{passive:true});
+    /* ── NAVBAR SCROLL ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('sc', scrollY > 50), { passive: true });
 
-/* ── SLIDER ── */
-let autoSlide;
-function goSlide(n){
-  slides[slide].classList.remove('active');
-  slide=(n+slides.length)%slides.length;
-  slides[slide].classList.add('active');
-}
-function nextSlide(){goSlide(slide+1);}
-function prevSlide(){goSlide(slide-1);}
-function resetAuto(){clearInterval(autoSlide);autoSlide=setInterval(nextSlide,5000);}
-resetAuto();
-document.querySelectorAll('.sl-btn').forEach(b=>b.addEventListener('click',resetAuto));
+    /* ── SLIDER ── */
+    let autoSlide;
+    function goSlide(n) {
+      slides[slide].classList.remove('active');
+      slide = (n + slides.length) % slides.length;
+      slides[slide].classList.add('active');
+    }
+    function nextSlide() { goSlide(slide + 1); }
+    function prevSlide() { goSlide(slide - 1); }
+    function resetAuto() { clearInterval(autoSlide); autoSlide = setInterval(nextSlide, 5000); }
+    resetAuto();
+    document.querySelectorAll('.sl-btn').forEach(b => b.addEventListener('click', resetAuto));
 
-/* ── THEME ── */
-function toggleTheme(){
-  dark=!dark;
-  const r=document.documentElement.style;
-  if(dark){
-    r.setProperty('--lh3','#1e1628');r.setProperty('--w','#251c35');
-    r.setProperty('--bd','rgba(210,195,246,.12)');r.setProperty('--td','#e8dff8');r.setProperty('--tm','#b09fd0');
-    document.querySelector('#themeIco').setAttribute('href','#ic-sun');
-  } else {
-    r.setProperty('--lh3','#f3eefd');r.setProperty('--w','#fdfcff');
-    r.setProperty('--bd','rgba(54,37,92,.12)');r.setProperty('--td','#1a1124');r.setProperty('--tm','#5e4d7a');
-    document.querySelector('#themeIco').setAttribute('href','#ic-moon');
-  }
-  document.getElementById('themeLabel').textContent=dark?T[lang].thLight:T[lang].thDark;
-}
+    /* ── THEME ── */
+    function toggleTheme() {
+      dark = !dark;
+      const r = document.documentElement.style;
+      if (dark) {
+        r.setProperty('--lh3', '#1e1628'); r.setProperty('--w', '#251c35');
+        r.setProperty('--bd', 'rgba(210,195,246,.12)'); r.setProperty('--td', '#e8dff8'); r.setProperty('--tm', '#b09fd0');
+        document.querySelector('#themeIco').setAttribute('href', '#ic-sun');
+      } else {
+        r.setProperty('--lh3', '#f3eefd'); r.setProperty('--w', '#fdfcff');
+        r.setProperty('--bd', 'rgba(54,37,92,.12)'); r.setProperty('--td', '#1a1124'); r.setProperty('--tm', '#5e4d7a');
+        document.querySelector('#themeIco').setAttribute('href', '#ic-moon');
+      }
+      document.getElementById('themeLabel').textContent = dark ? T[lang].thLight : T[lang].thDark;
+    }
 
-/* ── LANGUAGE ── */
-function toggleLang(e){e.stopPropagation();document.getElementById('langDrop').classList.toggle('open');}
-document.addEventListener('click',()=>document.getElementById('langDrop').classList.remove('open'));
+    /* ── LANGUAGE ── */
+    function toggleLang(e) { e.stopPropagation(); document.getElementById('langDrop').classList.toggle('open'); }
+    document.addEventListener('click', () => document.getElementById('langDrop').classList.remove('open'));
 
-function setLang(l){
-  lang=l;const t=T[l];
-  const textIds=['brandName','navAbout','navServices','navProducts','navContact','heroBtn','heroBtn2','hbLbl',
-    'aboutLabel','aboutTitle','aboutText','svcT1','svcD1','svcT2','svcD2','aboutBtn','asLbl',
-    'worksLabel','worksTitle','stT1','stD1','stT2','stD2','stT3','stD3','stT4','stD4',
-    'prodLabel','prodTitle','prodSub','gallLabel','gallTitle','gallSub',
-    'ctLabel','ctTitle','ctText','ctPhone','ctEmail','ctAddr','ctHours',
-    'lName','lEmail','lPhone','lProduct','lMsg','fSubmit','footBrand','footDesc','fCopy','fTag',
-    'mn1','mn2','mn3','mn4','mn5','mobHome','mobAbout','mobServices','mobProducts','mobContact'];
-  textIds.forEach(id=>{const el=document.getElementById(id);if(el&&t[id]!=null)el.textContent=t[id];});
-  ['heroTag','heroH1','heroPrice'].forEach(id=>{const el=document.getElementById(id);if(el&&t[id])el.innerHTML=t[id];});
-  document.querySelectorAll('.lang-opt').forEach(o=>o.classList.toggle('active',o.dataset.l===l));
-  document.getElementById('curLang').textContent={en:'English',am:'Amharic',om:'Afaan Oromo'}[l];
-  document.getElementById('langDrop').classList.remove('open');
-  document.body.dir=l==='am'?'rtl':'ltr';
-  document.getElementById('themeLabel').textContent=dark?t.thLight:t.thDark;
-}
+    function setLang(l) {
+      lang = l; const t = T[l];
+      const textIds = ['brandName', 'navAbout', 'navServices', 'navProducts', 'navContact', 'heroBtn', 'heroBtn2', 'hbLbl',
+        'aboutLabel', 'aboutTitle', 'aboutText', 'svcT1', 'svcD1', 'svcT2', 'svcD2', 'aboutBtn', 'asLbl',
+        'worksLabel', 'worksTitle', 'stT1', 'stD1', 'stT2', 'stD2', 'stT3', 'stD3', 'stT4', 'stD4',
+        'prodLabel', 'prodTitle', 'prodSub', 'gallLabel', 'gallTitle', 'gallSub',
+        'ctLabel', 'ctTitle', 'ctText', 'ctPhone', 'ctEmail', 'ctAddr', 'ctHours',
+        'lName', 'lEmail', 'lPhone', 'lProduct', 'lMsg', 'fSubmit', 'footBrand', 'footDesc', 'fCopy', 'fTag',
+        'mn1', 'mn2', 'mn3', 'mn4', 'mn5', 'mobHome', 'mobAbout', 'mobServices', 'mobProducts', 'mobContact'];
+      textIds.forEach(id => { const el = document.getElementById(id); if (el && t[id] != null) el.textContent = t[id]; });
+      ['heroTag', 'heroH1', 'heroPrice'].forEach(id => { const el = document.getElementById(id); if (el && t[id]) el.innerHTML = t[id]; });
+      document.querySelectorAll('.lang-opt').forEach(o => o.classList.toggle('active', o.dataset.l === l));
+      document.getElementById('curLang').textContent = { en: 'English', am: 'Amharic', om: 'Afaan Oromo' }[l];
+      document.getElementById('langDrop').classList.remove('open');
+      document.body.dir = l === 'am' ? 'rtl' : 'ltr';
+      document.getElementById('themeLabel').textContent = dark ? t.thLight : t.thDark;
+    }
 
-/* ── MOBILE MENU ── */
-function toggleMenu(){
-  menuOpen=!menuOpen;
-  document.getElementById('mobMenu').classList.toggle('open',menuOpen);
-  document.getElementById('ham').classList.toggle('open',menuOpen);
-  document.body.style.overflow=menuOpen?'hidden':'';
-}
-function closeMob(){
-  menuOpen=false;
-  document.getElementById('mobMenu').classList.remove('open');
-  document.getElementById('ham').classList.remove('open');
-  document.body.style.overflow='';
-}
-function toggleSub(id){document.getElementById(id).classList.toggle('open');}
+    /* ── MOBILE MENU ── */
+    function toggleMenu() {
+      menuOpen = !menuOpen;
+      document.getElementById('mobMenu').classList.toggle('open', menuOpen);
+      document.getElementById('ham').classList.toggle('open', menuOpen);
+      document.body.style.overflow = menuOpen ? 'hidden' : '';
+    }
+    function closeMob() {
+      menuOpen = false;
+      document.getElementById('mobMenu').classList.remove('open');
+      document.getElementById('ham').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function toggleSub(id) { document.getElementById(id).classList.toggle('open'); }
 
-/* ── BOTTOM NAV ── */
-function setAct(el){document.querySelectorAll('.mbn').forEach(b=>b.classList.remove('act'));el.classList.add('act');}
+    /* ── BOTTOM NAV ── */
+    function setAct(el) { document.querySelectorAll('.mbn').forEach(b => b.classList.remove('act')); el.classList.add('act'); }
 
-/* ── FORM ── */
-function submitForm(e){e.preventDefault();showToast(T[lang].toastSent);e.target.reset();}
-function showToast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
+    /* ── FORM ── */
+    function submitForm(e) { e.preventDefault(); showToast(T[lang].toastSent); e.target.reset(); }
+    function showToast(m) { const t = document.getElementById('toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 3000); }
 
-/* ── SMOOTH SCROLL ── */
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){
-  const tgt=document.querySelector(this.getAttribute('href'));
-  if(tgt){e.preventDefault();tgt.scrollIntoView({behavior:'smooth'});}
-}));
+    /* ── SMOOTH SCROLL ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function (e) {
+      const tgt = document.querySelector(this.getAttribute('href'));
+      if (tgt) { e.preventDefault(); tgt.scrollIntoView({ behavior: 'smooth' }); }
+    }));
 
-/* ── START ── */
-startCounter();
-</script>
+    /* ── START ── */
+    startCounter();
+  </script>
 </body>
+
 </html>
