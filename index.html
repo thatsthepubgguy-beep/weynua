@@ -1,188 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Weynua Interiors – Premium Interior Design & Home Comfort</title>
-  <!-- Preconnect only to what we actually use -->
+  <title>Weynua Interiors – Premium Window Treatments</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Load only 2 weights per font, subset to latin -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=Noto+Sans+Ethiopic:wght@400;600&display=swap&subset=latin"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Noto+Sans+Ethiopic:wght@300;400;500;600;700&display=swap&subset=latin" rel="stylesheet">
 
-  <!-- ═══ INLINE CRITICAL SVG ICONS (zero network, zero layout shift) ═══ -->
-  <!-- Icons referenced via <use> from hidden sprite -->
   <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="ic-logo" viewBox="0 0 24 24">
-      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </symbol>
-    <symbol id="ic-moon" viewBox="0 0 24 24">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" fill="none"
-        stroke-linecap="round" stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-sun" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none" />
-      <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="12" y1="1" x2="12" y2="3" />
-        <line x1="12" y1="21" x2="12" y2="23" />
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-        <line x1="1" y1="12" x2="3" y2="12" />
-        <line x1="21" y1="12" x2="23" y2="12" />
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-      </g>
-    </symbol>
-    <symbol id="ic-globe" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
-      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"
-        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
-    </symbol>
-    <symbol id="ic-chev-down" viewBox="0 0 16 16">
-      <polyline points="4,6 8,10 12,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-chev-right" viewBox="0 0 16 16">
-      <polyline points="6,4 10,8 6,12" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-arrow-ne" viewBox="0 0 16 16">
-      <path d="M5 11L11 5M11 5H6M11 5v5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-arrow-right" viewBox="0 0 16 16">
-      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-arrow-left" viewBox="0 0 16 16">
-      <path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </symbol>
-    <!-- Feature icons -->
-    <symbol id="ic-ruler" viewBox="0 0 24 24">
-      <path d="M21.3 8.7L8.7 21.3a2.83 2.83 0 0 1-4-4L17.3 4.7a2.83 2.83 0 0 1 4 4zM11 8l2 2M14 5l2 2M8 11l2 2M5 14l2 2"
-        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-truck" viewBox="0 0 24 24">
-      <rect x="1" y="3" width="15" height="13" rx="1" stroke="currentColor" stroke-width="2" fill="none" />
-      <path d="M16 8h4l3 3v5h-7V8z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round" />
-      <circle cx="5.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none" />
-      <circle cx="18.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none" />
-    </symbol>
-    <symbol id="ic-search" viewBox="0 0 24 24">
-      <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none" />
-      <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-    </symbol>
-    <symbol id="ic-measure" viewBox="0 0 24 24">
-      <path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke="currentColor" stroke-width="2" fill="none"
-        stroke-linecap="round" />
-    </symbol>
-    <symbol id="ic-scissors" viewBox="0 0 24 24">
-      <circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="2" fill="none" />
-      <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2" fill="none" />
-      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" stroke="currentColor" stroke-width="2" fill="none"
-        stroke-linecap="round" />
-    </symbol>
-    <symbol id="ic-home" viewBox="0 0 24 24">
-      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none"
-        stroke-linejoin="round" />
-      <polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2" fill="none"
-        stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-phone" viewBox="0 0 24 24">
-      <path
-        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z"
-        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-mail" viewBox="0 0 24 24">
-      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor"
-        stroke-width="2" fill="none" />
-      <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none" />
-    </symbol>
-    <symbol id="ic-pin" viewBox="0 0 24 24">
-      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" fill="none" />
-      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none" />
-    </symbol>
-    <symbol id="ic-clock" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
-      <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-fb" viewBox="0 0 24 24">
-      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2"
-        fill="none" stroke-linecap="round" stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-tw" viewBox="0 0 24 24">
-      <path
-        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
-        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-ig" viewBox="0 0 24 24">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" fill="none" />
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-    </symbol>
-    <symbol id="ic-wa" viewBox="0 0 24 24">
-      <path
-        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
-        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-    </symbol>
-    <!-- Bottom nav icons -->
-    <symbol id="ic-nav-home" viewBox="0 0 24 24">
-      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none" />
-    </symbol>
-    <symbol id="ic-nav-info" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
-      <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-      <line x1="12" y1="8" x2="12.01" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-    </symbol>
-    <symbol id="ic-nav-shop" viewBox="0 0 24 24">
-      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" stroke="currentColor" stroke-width="2" fill="none"
-        stroke-linejoin="round" />
-      <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
-      <path d="M16 10a4 4 0 0 1-8 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
-    </symbol>
-    <symbol id="ic-nav-gallery" viewBox="0 0 24 24">
-      <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none" />
-      <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2" fill="none" />
-      <polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </symbol>
-    <symbol id="ic-nav-contact" viewBox="0 0 24 24">
-      <path
-        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z"
-        stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
-    </symbol>
-    <!-- Interior design icons -->
-    <symbol id="ic-bed" viewBox="0 0 24 24">
-      <path d="M2 7v14M2 7h20M22 7v14M2 11h20M6 7V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </symbol>
-    <symbol id="ic-sofa" viewBox="0 0 24 24">
-      <path d="M4 18v3M20 18v3M2 8h2a2 2 0 0 1 2 2v4H4a2 2 0 0 1-2-2V8zM20 8h2a2 2 0 0 1 2 2v4h-2a2 2 0 0 1-2-2V8zM6 14h12M6 10a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4H6v-4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </symbol>
-    <symbol id="ic-light" viewBox="0 0 24 24">
-      <path d="M9 18h6M10 22h4M12 2v1M12 22v-4M4.22 4.22l.71.71M19.07 19.07l.71.71M2 12h1M21 12h1M4.22 19.78l.71-.71M19.07 4.93l.71-.71" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
-    </symbol>
-    <symbol id="ic-floor" viewBox="0 0 24 24">
-      <path d="M3 21h18M5 21V10l7-4 7 4v11M12 6V3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </symbol>
-    <symbol id="ic-pillow" viewBox="0 0 24 24">
-      <rect x="4" y="6" width="16" height="12" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
-      <path d="M8 10h.01M16 10h.01M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    </symbol>
-    <symbol id="ic-grass" viewBox="0 0 24 24">
-      <path d="M12 22v-8M8 22v-6M16 22v-6M6 22v-4M18 22v-4M4 22v-2M20 22v-2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
-      <path d="M12 14c0-4 4-8 4-8s-2 4-2 8M12 14c0-4-4-8-4-8s2 4 2 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
-    </symbol>
+    <symbol id="ic-logo" viewBox="0 0 24 24"><path d="M12 2C7 2 3 7 3 12c0 2 .8 4 2 5.5L12 22l7-4.5c1.2-1.5 2-3.5 2-5.5 0-5-4-10-9-10z"/></symbol>
+    <symbol id="ic-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></symbol>
+    <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="ic-chev-down" viewBox="0 0 16 16"><polyline points="4,6 8,10 12,6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-chev-right" viewBox="0 0 16 16"><polyline points="6,4 10,8 6,12" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-arrow-ne" viewBox="0 0 16 16"><path d="M5 11L11 5M11 5H6M11 5v5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-arrow-right" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-arrow-left" viewBox="0 0 16 16"><path d="M13 8H3M7 12L3 8l4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-ruler" viewBox="0 0 24 24"><path d="M21.3 8.7L8.7 21.3a2.83 2.83 0 0 1-4-4L17.3 4.7a2.83 2.83 0 0 1 4 4zM11 8l2 2M14 5l2 2M8 11l2 2M5 14l2 2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-truck" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 8h4l3 3v5h-7V8z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="5.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="18.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-measure" viewBox="0 0 24 24"><path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="ic-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="ic-home" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" fill="none"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-tw" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2" fill="none"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-nav-home" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" fill="none"/></symbol>
+    <symbol id="ic-nav-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="8" x2="12.01" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-nav-shop" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/><path d="M16 10a4 4 0 0 1-8 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="ic-nav-gallery" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2" fill="none"/><polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-nav-contact" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l.92-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="ic-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><polygon points="10 8 16 12 10 16 10 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-sparkle" viewBox="0 0 24 24"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5zM5 15l1 3 3 1-3 1-1 3-1-3-3-1 3-1z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   </svg>
 
   <style>
-    /* ═══ CSS CUSTOM PROPERTIES ═══ */
     :root {
       --lh: #D2C3F6;
       --lh2: #e6ddfb;
@@ -194,1706 +57,921 @@
       --tm: #5e4d7a;
       --tl: #9882be;
       --w: #fdfcff;
-      --bd: rgba(54, 37, 92, .12);
-      --sh: 0 4px 24px rgba(54, 37, 92, .13);
-      --shd: 0 16px 60px rgba(54, 37, 92, .22);
-      --r: 12px;
+      --bd: rgba(54, 37, 92, .10);
+      --sh: 0 4px 24px rgba(54, 37, 92, .10);
+      --shd: 0 20px 60px rgba(54, 37, 92, .18);
+      --shh: 0 30px 80px rgba(54, 37, 92, .25);
+      --r: 14px;
       --rl: 24px;
       --rx: 40px;
-      --bar-h: 33px;
+      --bar-h: 36px;
+      --ease-out: cubic-bezier(.4, 0, .2, 1);
+      --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
     }
 
-    /* ═══ RESET ═══ */
-    *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: 'DM Sans', 'Noto Sans Ethiopic', sans-serif;
       background: var(--lh3);
       color: var(--td);
       overflow-x: hidden;
-      line-height: 1.6;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeSpeed
+      text-rendering: optimizeLegibility;
     }
 
-    ::-webkit-scrollbar {
-      width: 5px
-    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--lh3); }
+    ::-webkit-scrollbar-thumb { background: var(--lh); border-radius: 3px; }
 
-    ::-webkit-scrollbar-track {
-      background: var(--lh3)
-    }
+    .ico { display: inline-block; width: 1em; height: 1em; stroke: currentColor; fill: none; vertical-align: middle; flex-shrink: 0; }
+    .ico-16 { width: 16px; height: 16px; }
+    .ico-18 { width: 18px; height: 18px; }
+    .ico-20 { width: 20px; height: 20px; }
+    .ico-22 { width: 22px; height: 22px; }
+    .ico-fill { fill: currentColor; stroke: none; }
 
-    ::-webkit-scrollbar-thumb {
-      background: var(--lh);
-      border-radius: 3px
-    }
-
-    /* ═══ CSS-ONLY IMAGE PLACEHOLDERS (no network) ═══ */
-    .img-curtain-hero1 {
-      background: linear-gradient(135deg, #c9b8f0 0%, #8b6db5 40%, #5a3d8a 100%)
-    }
-
-    .img-curtain-hero2 {
-      background: linear-gradient(160deg, #e8deff 0%, #b89ee0 50%, #7a55a8 100%)
-    }
-
-    .img-curtain-hero3 {
-      background: linear-gradient(120deg, #d4c4f8 0%, #9b7dcf 60%, #4a2d7a 100%)
-    }
-
-    .img-about {
-      background: linear-gradient(145deg, #ede5ff 0%, #c4aef0 40%, #7a55b0 100%)
-    }
-
-    .img-p1 {
-      background: linear-gradient(135deg, #3a2060, #6b4ba0)
-    }
-
-    .img-p2 {
-      background: linear-gradient(135deg, #f0ebff, #c8b8f2)
-    }
-
-    .img-p3 {
-      background: linear-gradient(135deg, #1e1535, #4a3070)
-    }
-
-    .img-p4 {
-      background: linear-gradient(135deg, #e8dff8, #a890d8)
-    }
-
-    .img-p5 {
-      background: linear-gradient(135deg, #5a3590, #9060c0)
-    }
-
-    .img-p6 {
-      background: linear-gradient(135deg, #2d1f4a, #5a4080)
-    }
-
-    .img-p7 {
-      background: linear-gradient(135deg, #ece4ff, #b8a0e0)
-    }
-
-    .img-p8 {
-      background: linear-gradient(135deg, #4a3070, #8060b0)
-    }
-
-    .img-p9 {
-      background: linear-gradient(135deg, #d8ccf8, #9878d0)
-    }
-
-    .img-p10 {
-      background: linear-gradient(135deg, #6040a0, #a080d0)
-    }
-
-    .img-p11 {
-      background: linear-gradient(135deg, #2a1c45, #503878)
-    }
-
-    .img-p12 {
-      background: linear-gradient(135deg, #f0e8ff, #c0a8e8)
-    }
-
-    .img-g1 {
-      background: linear-gradient(160deg, #d0c0f0, #7048a8, #3a2460)
-    }
-
-    .img-g2 {
-      background: linear-gradient(160deg, #200f3a, #4a3070, #8060b0)
-    }
-
-    .img-g3 {
-      background: linear-gradient(160deg, #f0eaff, #c0a8e8, #8060b8)
-    }
-
-    .img-g4 {
-      background: linear-gradient(160deg, #3a2868, #7858a8, #a888d0)
-    }
-
-    /* Curtain texture overlay — pure CSS, composited layer */
-    .curtain-pattern {
-      contain: strict
-    }
-
-    .curtain-pattern::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .04) 0px, rgba(255, 255, 255, .04) 2px, transparent 2px, transparent 18px);
-      pointer-events: none;
-      will-change: auto
-    }
-
-    .img-block {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      height: 100%
-    }
-
-    .img-block .drape {
-      position: absolute;
-      inset: 0;
-      background: repeating-linear-gradient(90deg, rgba(0, 0, 0, .06) 0, rgba(0, 0, 0, .06) 3px, transparent 3px, transparent 22px)
-    }
-
-    .img-block .sheen {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(255, 255, 255, .18) 0%, transparent 60%, rgba(0, 0, 0, .15) 100%)
-    }
-
-    /* ═══ ICON HELPER ═══ */
-    .ico {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      stroke: currentColor;
-      fill: none;
-      vertical-align: middle;
-      flex-shrink: 0
-    }
-
-    .ico-16 {
-      width: 16px;
-      height: 16px
-    }
-
-    .ico-18 {
-      width: 18px;
-      height: 18px
-    }
-
-    .ico-20 {
-      width: 20px;
-      height: 20px
-    }
-
-    .ico-22 {
-      width: 22px;
-      height: 22px
-    }
-
-    .ico-fill {
-      fill: currentColor;
-      stroke: none
-    }
-
-    /* ═══ TOP BAR ═══ */
+    /* TOP BAR */
     .top-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1002;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1002;
       background: var(--vg2);
-      padding: 7px 28px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 10px
+      padding: 8px 28px;
+      display: flex; justify-content: flex-end; align-items: center; gap: 12px;
     }
-
     .ctrl-btn {
-      display: flex;
-      align-items: center;
-      gap: 7px;
+      display: flex; align-items: center; gap: 7px;
       background: rgba(210, 195, 246, .12);
       border: 1px solid rgba(210, 195, 246, .25);
       color: var(--lh);
-      padding: 5px 13px;
+      padding: 6px 14px;
       border-radius: 20px;
       cursor: pointer;
       font-size: 12px;
       font-weight: 500;
       font-family: inherit;
-      transition: background .2s, border-color .2s
+      transition: all .25s var(--ease-out);
     }
-
-    .ctrl-btn:hover {
-      background: rgba(210, 195, 246, .22);
-      border-color: var(--lh)
-    }
-
-    .lang-wrap {
-      position: relative
-    }
-
+    .ctrl-btn:hover { background: rgba(210, 195, 246, .25); border-color: var(--lh); transform: translateY(-1px); }
+    .lang-wrap { position: relative; }
     .lang-drop {
-      position: absolute;
-      top: calc(100% + 6px);
-      right: 0;
+      position: absolute; top: calc(100% + 8px); right: 0;
       background: var(--vg2);
       border: 1px solid rgba(210, 195, 246, .2);
       border-radius: var(--r);
       padding: 6px 0;
-      min-width: 160px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-6px);
-      transition: opacity .2s, transform .2s, visibility .2s;
+      min-width: 170px;
+      opacity: 0; visibility: hidden;
+      transform: translateY(-8px) scale(.96);
+      transition: all .25s var(--ease-out);
       z-index: 1003;
-      box-shadow: var(--shd)
+      box-shadow: var(--shd);
+      transform-origin: top right;
     }
-
-    .lang-drop.open {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0)
-    }
-
+    .lang-drop.open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
     .lang-opt {
-      display: block;
-      padding: 9px 16px;
-      color: var(--lh);
-      font-size: 13px;
-      cursor: pointer;
-      transition: background .15s;
-      font-family: inherit
+      display: block; padding: 10px 18px;
+      color: var(--lh); font-size: 13px;
+      cursor: pointer; transition: background .15s;
+      font-family: inherit;
     }
+    .lang-opt:hover { background: rgba(210, 195, 246, .1); }
+    .lang-opt.active::before { content: "✓ "; }
 
-    .lang-opt:hover {
-      background: rgba(210, 195, 246, .1)
-    }
-
-    .lang-opt.active::before {
-      content: "✓ "
-    }
-
-    /* ═══ NAVBAR ═══ */
+    /* NAVBAR */
     .navbar {
-      position: fixed;
-      top: var(--bar-h);
-      left: 0;
-      right: 0;
-      z-index: 1001;
-      padding: 13px 28px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(253, 252, 255, .94);
-      backdrop-filter: blur(20px);
+      position: fixed; top: var(--bar-h); left: 0; right: 0; z-index: 1001;
+      padding: 14px 28px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(253, 252, 255, .92);
+      backdrop-filter: blur(24px) saturate(1.2);
       border-bottom: 1px solid var(--bd);
-      transition: padding .3s, box-shadow .3s
+      transition: padding .3s, box-shadow .3s;
     }
-
-    .navbar.sc {
-      padding: 9px 28px;
-      box-shadow: var(--sh)
-    }
-
+    .navbar.sc { padding: 10px 28px; box-shadow: var(--sh); }
     .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--vg);
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--vg);
       font-family: 'Cormorant Garamond', serif;
-      font-size: 22px;
-      font-weight: 700
+      font-size: 23px; font-weight: 700;
+      transition: transform .3s var(--ease-out);
     }
-
+    .logo:hover { transform: scale(1.02); }
     .logo-mark {
-      width: 32px;
-      height: 32px;
-      background: var(--vg);
-      border-radius: 9px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0
+      width: 34px; height: 34px;
+      background: var(--vg); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(54,37,92,.2);
     }
-
-    .logo-mark svg {
-      width: 16px;
-      height: 16px;
-      fill: var(--lh)
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2px;
-      list-style: none
-    }
-
-    .nav-item {
-      position: relative
-    }
-
+    .logo-mark svg { width: 16px; height: 16px; fill: var(--lh); }
+    .nav-links { display: flex; gap: 4px; list-style: none; }
+    .nav-item { position: relative; }
     .nav-link {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      padding: 8px 13px;
+      display: flex; align-items: center; gap: 5px;
+      padding: 9px 14px;
       border-radius: var(--r);
       color: var(--tm);
-      font-size: 13px;
-      font-weight: 500;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background .2s, color .2s;
-      background: none;
-      border: none;
-      font-family: inherit;
-      white-space: nowrap
+      font-size: 13px; font-weight: 500;
+      text-decoration: none; cursor: pointer;
+      transition: all .25s var(--ease-out);
+      background: none; border: none;
+      font-family: inherit; white-space: nowrap;
     }
-
-    .chev {
-      display: flex;
-      align-items: center;
-      transition: transform .3s
-    }
-
-    .nav-item:hover .chev {
-      transform: rotate(180deg)
-    }
-
-    .nav-link:hover {
-      background: var(--lh3);
-      color: var(--vg)
-    }
-
+    .chev { display: flex; align-items: center; transition: transform .3s var(--ease-out); }
+    .nav-item:hover .chev { transform: rotate(180deg); }
+    .nav-link:hover { background: var(--lh3); color: var(--vg); }
     .dropdown {
-      position: absolute;
-      top: 100%;
-      left: 0;
+      position: absolute; top: calc(100% + 8px); left: 0;
       background: var(--w);
       border: 1px solid var(--bd);
       border-radius: var(--rl);
       padding: 8px 0;
-      min-width: 220px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(6px);
-      transition: opacity .2s, transform .2s, visibility .2s;
+      min-width: 200px;
+      opacity: 0; visibility: hidden;
+      transform: translateY(10px) scale(.97);
+      transition: all .25s var(--ease-out);
       box-shadow: var(--shd);
-      z-index: 200
+      z-index: 200;
+      transform-origin: top left;
     }
-
-    .nav-item:hover .dropdown {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0)
-    }
-
+    .nav-item:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
     .drop-item {
-      display: block;
-      padding: 10px 20px;
-      color: var(--tm);
-      text-decoration: none;
+      display: block; padding: 11px 22px;
+      color: var(--tm); text-decoration: none;
       font-size: 13px;
-      transition: color .18s, padding .18s, background .18s;
-      position: relative
+      transition: all .2s var(--ease-out);
+      position: relative;
     }
-
     .drop-item::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: var(--vg);
-      transform: scaleY(0);
-      transition: transform .2s;
-      border-radius: 0 2px 2px 0
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+      width: 3px; background: var(--vg);
+      transform: scaleY(0); transition: transform .25s var(--ease-out);
+      border-radius: 0 2px 2px 0;
     }
+    .drop-item:hover { color: var(--vg); padding-left: 28px; background: var(--lh3); }
+    .drop-item:hover::before { transform: scaleY(1); }
 
-    .drop-item:hover {
-      color: var(--vg);
-      padding-left: 26px;
-      background: var(--lh3)
-    }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; background: none; border: none; }
+    .hamburger span { width: 22px; height: 2px; background: var(--vg); border-radius: 2px; transition: transform .3s, opacity .3s; display: block; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-    .drop-item:hover::before {
-      transform: scaleY(1)
-    }
-
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 5px;
-      background: none;
-      border: none
-    }
-
-    .hamburger span {
-      width: 22px;
-      height: 2px;
-      background: var(--vg);
-      border-radius: 2px;
-      transition: transform .3s, opacity .3s;
-      display: block
-    }
-
-    .hamburger.open span:nth-child(1) {
-      transform: translateY(7px) rotate(45deg)
-    }
-
-    .hamburger.open span:nth-child(2) {
-      opacity: 0
-    }
-
-    .hamburger.open span:nth-child(3) {
-      transform: translateY(-7px) rotate(-45deg)
-    }
-
-    /* ═══ MOBILE DRAWER ═══ */
+    /* MOBILE DRAWER */
     .mob-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--vg2);
-      z-index: 1000;
-      padding: 105px 28px 40px;
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--vg2); z-index: 1000;
+      padding: 110px 28px 40px;
       transform: translateX(100%);
-      transition: transform .38s cubic-bezier(.4, 0, .2, 1);
-      display: flex;
-      flex-direction: column;
-      overflow-y: auto
+      transition: transform .4s var(--ease-out);
+      display: flex; flex-direction: column; overflow-y: auto;
     }
-
-    .mob-menu.open {
-      transform: translateX(0)
-    }
-
+    .mob-menu.open { transform: translateX(0); }
     .mob-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 0;
       color: var(--lh);
       font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
-      font-weight: 700;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(210, 195, 246, .1);
-      cursor: pointer;
-      background: none;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      width: 100%;
+      font-size: 30px; font-weight: 700;
+      text-decoration: none; cursor: pointer;
+      background: none; border: none; width: 100%;
       transition: color .2s;
-      border-bottom: 1px solid rgba(210, 195, 246, .1)
+      border-bottom: 1px solid rgba(210, 195, 246, .1);
     }
-
-    .mob-link:hover {
-      color: #fff
-    }
-
-    .mob-sub {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .3s
-    }
-
-    .mob-sub.open {
-      max-height: 400px
-    }
-
+    .mob-link:hover { color: #fff; }
+    .mob-sub { max-height: 0; overflow: hidden; transition: max-height .35s var(--ease-out); }
+    .mob-sub.open { max-height: 320px; }
     .mob-sub-item {
-      display: block;
-      padding: 10px 14px;
+      display: block; padding: 11px 16px;
       color: rgba(210, 195, 246, .65);
-      font-size: 15px;
-      text-decoration: none;
-      transition: color .2s
+      font-size: 15px; text-decoration: none;
+      transition: color .2s;
     }
-
-    .mob-sub-item:hover {
-      color: var(--lh)
-    }
-
-    .mob-social {
-      display: flex;
-      gap: 14px;
-      margin-top: 36px
-    }
-
+    .mob-sub-item:hover { color: var(--lh); }
+    .mob-social { display: flex; gap: 14px; margin-top: 40px; }
     .mob-social a {
-      width: 40px;
-      height: 40px;
+      width: 44px; height: 44px;
       border: 1px solid rgba(210, 195, 246, .25);
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--lh);
-      text-decoration: none;
-      transition: background .2s, color .2s
+      display: flex; align-items: center; justify-content: center;
+      color: var(--lh); text-decoration: none;
+      transition: all .25s var(--ease-out);
     }
+    .mob-social a:hover { background: var(--lh); color: var(--vg); transform: translateY(-3px); }
 
-    .mob-social a:hover {
-      background: var(--lh);
-      color: var(--vg)
-    }
-
-    /* ═══ SIDEBAR ═══ */
+    /* SIDEBAR */
     .sidebar {
-      position: fixed;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 44px;
+      position: fixed; left: 0; top: 0; bottom: 0; width: 44px;
       background: var(--w);
       border-right: 1px solid var(--bd);
-      display: flex;
-      flex-direction: column;
+      display: flex; flex-direction: column;
       align-items: center;
-      padding: 115px 0 22px;
-      z-index: 999
+      padding: 120px 0 24px;
+      z-index: 999;
     }
-
     .sidebar-text {
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-      font-size: 9px;
-      color: var(--tl);
-      letter-spacing: 2px;
-      margin-bottom: auto;
-      white-space: nowrap
+      writing-mode: vertical-rl; transform: rotate(180deg);
+      font-size: 9px; color: var(--tl);
+      letter-spacing: 2px; margin-bottom: auto;
+      white-space: nowrap;
     }
-
     .sidebar-icons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: auto
+      display: flex; flex-direction: column; gap: 16px; margin-top: auto;
     }
-
     .sidebar-icons a {
-      color: var(--tl);
-      text-decoration: none;
-      transition: color .2s;
-      display: flex;
-      align-items: center;
-      justify-content: center
+      color: var(--tl); text-decoration: none;
+      transition: all .25s var(--ease-out);
+      display: flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 8px;
     }
+    .sidebar-icons a:hover { color: var(--vg); background: var(--lh3); }
 
-    .sidebar-icons a:hover {
-      color: var(--vg)
-    }
-
-    /* ═══ BUTTONS ═══ */
+    /* BUTTONS */
     .btn-p {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      padding: 13px 26px;
-      background: var(--vg);
-      color: var(--lh);
-      border: none;
-      border-radius: var(--r);
-      font-size: 14px;
-      font-weight: 600;
-      font-family: inherit;
-      cursor: pointer;
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 14px 28px;
+      background: var(--vg); color: var(--lh);
+      border: none; border-radius: var(--r);
+      font-size: 14px; font-weight: 600;
+      font-family: inherit; cursor: pointer;
       text-decoration: none;
-      transition: background .28s, transform .28s, box-shadow .28s
+      transition: all .35s var(--ease-out);
+      box-shadow: 0 4px 16px rgba(54,37,92,.2);
+      position: relative; overflow: hidden;
     }
-
+    .btn-p::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,.12) 50%, transparent 60%);
+      transform: translateX(-100%);
+      transition: transform .6s;
+    }
     .btn-p:hover {
-      background: var(--vg2);
-      transform: translateY(-2px);
-      box-shadow: 0 10px 36px rgba(54, 37, 92, .3)
+      background: var(--vg2); transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(54, 37, 92, .35);
     }
-
+    .btn-p:hover::after { transform: translateX(100%); }
     .btn-o {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      padding: 13px 26px;
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 14px 28px;
       background: transparent;
-      border: 1.5px solid var(--vg);
-      color: var(--vg);
-      border-radius: var(--r);
-      font-size: 14px;
-      font-weight: 600;
-      font-family: inherit;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background .28s, color .28s, transform .28s
+      border: 1.5px solid var(--vg); color: var(--vg);
+      border-radius: var(--r); font-size: 14px; font-weight: 600;
+      font-family: inherit; cursor: pointer; text-decoration: none;
+      transition: all .35s var(--ease-out);
+      position: relative; overflow: hidden;
     }
-
-    .btn-o:hover {
-      background: var(--vg);
-      color: var(--lh);
-      transform: translateY(-2px)
+    .btn-o::before {
+      content: ''; position: absolute; inset: 0;
+      background: var(--vg); transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .4s var(--ease-out);
+      z-index: -1;
     }
+    .btn-o:hover { color: var(--lh); border-color: var(--vg2); transform: translateY(-3px); }
+    .btn-o:hover::before { transform: scaleX(1); }
 
-    /* ═══ SECTION HELPERS ═══ */
+    /* SECTION HELPERS */
     .sec-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--vg3);
-      margin-bottom: 12px
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 3.5px; text-transform: uppercase;
+      color: var(--vg3); margin-bottom: 14px;
     }
-
     .sec-label::before {
-      content: '';
-      width: 22px;
-      height: 2px;
-      background: var(--lh);
-      border-radius: 1px;
-      flex-shrink: 0
+      content: ''; width: 24px; height: 2px;
+      background: var(--lh); border-radius: 1px; flex-shrink: 0;
     }
-
     .sec-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(30px, 4.5vw, 50px);
-      font-weight: 700;
-      line-height: 1.08;
-      color: var(--vg);
-      margin-bottom: 16px
+      font-size: clamp(32px, 5vw, 54px);
+      font-weight: 700; line-height: 1.05;
+      color: var(--vg); margin-bottom: 18px;
+      letter-spacing: -0.02em;
     }
-
     .sec-sub {
-      color: var(--tm);
-      font-size: 15px;
-      line-height: 1.75
+      color: var(--tm); font-size: 16px;
+      line-height: 1.75; font-weight: 400;
     }
+    section { padding: 100px 40px 100px calc(44px + 40px); }
 
-    section {
-      padding: 84px 40px 84px calc(44px + 36px)
-    }
-
-    /* ═══ HERO ═══ */
+    /* HERO */
     #home {
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 100px 40px 60px calc(44px + 36px);
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, var(--lh3) 0%, #ebe5fd 100%)
+      display: flex; align-items: center;
+      padding: 110px 40px 70px calc(44px + 40px);
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, var(--lh3) 0%, #ebe5fd 50%, #e0d6f8 100%);
     }
-
     #home::before {
-      content: '';
-      position: absolute;
-      width: 480px;
-      height: 480px;
-      background: radial-gradient(circle, rgba(210, 195, 246, .45) 0%, transparent 70%);
-      top: -80px;
-      right: -80px;
-      pointer-events: none
+      content: ''; position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(210, 195, 246, .5) 0%, transparent 70%);
+      top: -120px; right: -120px; pointer-events: none;
     }
-
+    #home::after {
+      content: ''; position: absolute; bottom: -100px; left: -100px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(210, 195, 246, .35) 0%, transparent 70%);
+      pointer-events: none;
+    }
     .hero-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: center;
-      width: 100%;
-      position: relative;
-      z-index: 2
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: center;
+      width: 100%; position: relative; z-index: 2;
     }
-
     .hero-tag {
-      display: inline-block;
-      background: var(--vg);
-      color: var(--lh);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 6px 15px;
-      border-radius: 20px;
-      margin-bottom: 22px
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--vg); color: var(--lh);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase;
+      padding: 7px 16px; border-radius: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(54,37,92,.2);
     }
-
+    .hero-tag svg { stroke: var(--lh); }
     .hero-h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(38px, 5.5vw, 68px);
-      font-weight: 700;
-      line-height: 1.0;
-      color: var(--vg);
-      margin-bottom: 18px
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 700; line-height: 0.98;
+      color: var(--vg); margin-bottom: 20px;
+      letter-spacing: -0.03em;
     }
-
     .hero-h1 em {
-      font-style: italic;
-      color: var(--vg3)
-    }
-
-    .hero-price {
-      font-size: 17px;
-      color: var(--tm);
-      font-weight: 500;
-      margin-bottom: 32px
-    }
-
-    .hero-price strong {
-      color: var(--vg);
-      font-size: 22px
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap
-    }
-
-    .sl-ctrl {
-      display: flex;
-      gap: 10px;
-      margin-top: 36px
-    }
-
-    .sl-btn {
-      width: 44px;
-      height: 44px;
-      border: 1.5px solid var(--bd);
-      border-radius: 50%;
-      background: var(--w);
-      color: var(--tm);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: border-color .22s, color .22s
-    }
-
-    .sl-btn:hover {
-      border-color: var(--vg);
-      color: var(--vg)
-    }
-
-    .hero-img-wrap {
+      font-style: italic; color: var(--vg3);
       position: relative;
-      height: 500px
     }
+    .hero-h1 em::after {
+      content: ''; position: absolute; bottom: 4px; left: 0; right: 0;
+      height: 8px; background: var(--lh); opacity: .4; z-index: -1; border-radius: 4px;
+    }
+    .hero-price {
+      font-size: 18px; color: var(--tm);
+      font-weight: 500; margin-bottom: 36px;
+    }
+    .hero-price strong { color: var(--vg); font-size: 24px; font-weight: 700; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .sl-ctrl { display: flex; gap: 12px; margin-top: 40px; }
+    .sl-btn {
+      width: 48px; height: 48px;
+      border: 1.5px solid var(--bd); border-radius: 50%;
+      background: var(--w); color: var(--tm);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .3s var(--ease-out);
+      box-shadow: var(--sh);
+    }
+    .sl-btn:hover { border-color: var(--vg); color: var(--vg); transform: scale(1.1); box-shadow: var(--shd); }
 
+    .hero-img-wrap { position: relative; height: 520px; }
     .hero-slide {
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       border-radius: 50% 20% 50% 20% / 30% 50% 30% 50%;
       overflow: hidden;
       opacity: 0;
-      transform: scale(.94) translateX(24px);
-      transition: opacity .75s cubic-bezier(.4, 0, .2, 1), transform .75s cubic-bezier(.4, 0, .2, 1);
-      box-shadow: var(--shd);
-      will-change: opacity, transform
+      transform: scale(.95) translateX(30px);
+      transition: opacity .9s var(--ease-out), transform .9s var(--ease-out);
+      box-shadow: var(--shh);
+      will-change: opacity, transform;
     }
-
-    .hero-slide.active {
-      opacity: 1;
-      transform: scale(1) translateX(0)
+    .hero-slide.active { opacity: 1; transform: scale(1) translateX(0); }
+    .hero-slide img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 8s ease;
     }
-
-    .hero-slide .img-block {
-      height: 100%;
-      position: relative
-    }
+    .hero-slide.active img { transform: scale(1.08); }
 
     .hero-badge {
-      position: absolute;
-      bottom: 36px;
-      left: -16px;
-      background: var(--vg);
-      color: var(--lh);
-      padding: 16px 22px;
-      border-radius: var(--rl);
+      position: absolute; bottom: 40px; left: -20px;
+      background: var(--vg); color: var(--lh);
+      padding: 18px 26px; border-radius: var(--rl);
       box-shadow: var(--shd);
-      animation: floatY 3s ease-in-out infinite;
-      z-index: 10
+      animation: floatY 3.5s ease-in-out infinite;
+      z-index: 10;
     }
-
     .hb-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 42px;
-      font-weight: 700;
-      line-height: 1
+      font-size: 44px; font-weight: 700; line-height: 1;
     }
+    .hb-lbl { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; opacity: .75; margin-top: 4px; }
+    @keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
-    .hb-lbl {
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      opacity: .7;
-      margin-top: 3px
+    /* ABOUT */
+    #about { background: var(--w); position: relative; }
+    #about::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--bd), transparent);
     }
-
-    @keyframes floatY {
-
-      0%,
-      100% {
-        transform: translateY(0)
-      }
-
-      50% {
-        transform: translateY(-9px)
-      }
-    }
-
-    /* ═══ ABOUT ═══ */
-    #about {
-      background: var(--w)
-    }
-
     .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: center
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 72px; align-items: center;
     }
-
-    .about-img-box {
-      position: relative
-    }
-
+    .about-img-box { position: relative; }
     .about-img {
       border-radius: 40% 20% 40% 20% / 20% 40% 20% 40%;
-      overflow: hidden;
-      height: 400px;
-      position: relative;
-      box-shadow: var(--shd)
+      overflow: hidden; height: 440px;
+      position: relative; box-shadow: var(--shd);
     }
-
+    .about-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 6s ease; }
+    .about-img:hover img { transform: scale(1.06); }
     .about-stat {
-      position: absolute;
-      top: 24px;
-      right: -18px;
-      background: var(--lh);
-      border-radius: var(--rl);
-      padding: 18px 22px;
-      box-shadow: var(--shd);
-      text-align: center
+      position: absolute; top: 28px; right: -20px;
+      background: var(--lh); border-radius: var(--rl);
+      padding: 20px 26px; box-shadow: var(--shd);
+      text-align: center;
+      animation: floatY 4s ease-in-out infinite;
+      animation-delay: 1s;
     }
-
     .as-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 48px;
-      font-weight: 700;
-      color: var(--vg);
-      line-height: 1
+      font-size: 52px; font-weight: 700; color: var(--vg); line-height: 1;
     }
-
-    .as-txt {
-      font-size: 10px;
-      letter-spacing: 2px;
-      color: var(--vg3);
-      text-transform: uppercase;
-      margin-top: 3px
-    }
-
-    .svc-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin: 24px 0
-    }
-
+    .as-txt { font-size: 10px; letter-spacing: 2.5px; color: var(--vg3); text-transform: uppercase; margin-top: 4px; }
+    .svc-list { display: flex; flex-direction: column; gap: 18px; margin: 28px 0; }
     .svc-item {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      padding: 16px;
-      border-radius: var(--r);
-      border: 1px solid var(--bd);
-      background: var(--lh3);
-      transition: border-color .28s, box-shadow .28s, transform .28s
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 18px; border-radius: var(--r);
+      border: 1px solid var(--bd); background: var(--lh3);
+      transition: all .35s var(--ease-out);
     }
-
     .svc-item:hover {
-      border-color: var(--lh);
-      box-shadow: var(--sh);
-      transform: translateX(4px)
+      border-color: var(--lh); box-shadow: var(--sh);
+      transform: translateX(6px); background: var(--w);
     }
-
     .svc-ico {
-      width: 42px;
-      height: 42px;
-      background: var(--vg);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--lh);
-      flex-shrink: 0
+      width: 46px; height: 46px;
+      background: var(--vg); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--lh); flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(54,37,92,.2);
+      transition: transform .35s var(--ease-spring);
     }
+    .svc-item:hover .svc-ico { transform: scale(1.1) rotate(6deg); }
+    .svc-ico.lt { background: var(--lh); color: var(--vg); }
+    .svc-info h4 { font-size: 15px; font-weight: 600; color: var(--vg); margin-bottom: 4px; }
+    .svc-info p { font-size: 13.5px; color: var(--tm); line-height: 1.65; }
 
-    .svc-ico.lt {
-      background: var(--lh);
-      color: var(--vg)
-    }
-
-    .svc-info h4 {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--vg);
-      margin-bottom: 3px
-    }
-
-    .svc-info p {
-      font-size: 13px;
-      color: var(--tm);
-      line-height: 1.6
-    }
-
-    /* ═══ HOW IT WORKS ═══ */
+    /* HOW IT WORKS */
     #works {
-      background: linear-gradient(155deg, var(--lh3) 0%, #ede8fc 100%)
+      background: linear-gradient(155deg, var(--lh3) 0%, #ede8fc 60%, #e5ddf8 100%);
+      position: relative; overflow: hidden;
     }
-
-    .works-head {
-      text-align: center;
-      margin-bottom: 52px
+    #works::before {
+      content: ''; position: absolute; top: -200px; right: -200px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(210,195,246,.3) 0%, transparent 70%);
+      pointer-events: none;
     }
-
+    .works-head { text-align: center; margin-bottom: 60px; position: relative; z-index: 1; }
     .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 28px; position: relative; z-index: 1;
     }
-
     .step-card {
-      background: var(--w);
-      border-radius: var(--rl);
-      padding: 28px 20px;
-      text-align: center;
+      background: var(--w); border-radius: var(--rl);
+      padding: 32px 24px; text-align: center;
       border: 1px solid var(--bd);
-      transition: transform .32s, box-shadow .32s;
-      position: relative;
-      overflow: hidden
+      transition: all .4s var(--ease-out);
+      position: relative; overflow: hidden;
     }
-
     .step-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
       background: linear-gradient(90deg, var(--lh), var(--vg));
-      transform: scaleX(0);
-      transition: transform .35s;
-      transform-origin: left
+      transform: scaleX(0); transition: transform .4s var(--ease-out);
+      transform-origin: left;
     }
-
-    .step-card:hover::before {
-      transform: scaleX(1)
-    }
-
+    .step-card:hover::before { transform: scaleX(1); }
     .step-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shd)
+      transform: translateY(-8px); box-shadow: var(--shd); border-color: var(--lh);
     }
-
     .step-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 52px;
-      font-weight: 700;
-      color: var(--lh);
-      line-height: 1;
-      margin-bottom: 14px
+      font-size: 56px; font-weight: 700;
+      color: var(--lh); line-height: 1; margin-bottom: 16px;
+      transition: color .3s;
     }
-
+    .step-card:hover .step-num { color: var(--vg3); }
     .step-ico {
-      width: 56px;
-      height: 56px;
-      margin: 0 auto 16px;
-      background: var(--vg);
-      border-radius: var(--r);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 60px; height: 60px; margin: 0 auto 18px;
+      background: var(--vg); border-radius: var(--r);
+      display: flex; align-items: center; justify-content: center;
       color: var(--lh);
-      transition: transform .28s
+      transition: all .35s var(--ease-spring);
+      box-shadow: 0 6px 20px rgba(54,37,92,.2);
     }
+    .step-card:hover .step-ico { transform: scale(1.12) rotate(8deg); box-shadow: 0 10px 30px rgba(54,37,92,.25); }
+    .step-card h3 { font-size: 16px; font-weight: 700; color: var(--vg); margin-bottom: 10px; }
+    .step-card p { font-size: 13.5px; color: var(--tm); line-height: 1.7; }
 
-    .step-card:hover .step-ico {
-      transform: scale(1.1) rotate(6deg)
+    /* PRODUCTS */
+    #products { background: var(--w); position: relative; }
+    #products::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--bd), transparent);
     }
-
-    .step-card h3 {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--vg);
-      margin-bottom: 8px
-    }
-
-    .step-card p {
-      font-size: 13px;
-      color: var(--tm);
-      line-height: 1.65
-    }
-
-    /* ═══ PRODUCTS ═══ */
-    #products {
-      background: var(--w)
-    }
-
-    .prod-head {
-      text-align: center;
-      margin-bottom: 48px
-    }
-
+    .prod-head { text-align: center; margin-bottom: 56px; }
     .prod-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 24px
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 28px;
     }
-
     .p-card {
-      background: var(--lh3);
-      border-radius: var(--rl);
+      background: var(--w); border-radius: var(--rl);
       overflow: hidden;
       border: 1px solid var(--bd);
-      transition: transform .35s, box-shadow .35s, border-color .35s
-    }
-
-    .p-card:hover {
-      transform: translateY(-7px);
-      box-shadow: var(--shd);
-      border-color: var(--lh)
-    }
-
-    .p-img {
-      height: 200px;
+      transition: all .45s var(--ease-out);
       position: relative;
-      overflow: hidden
     }
-
+    .p-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shh);
+      border-color: var(--lh);
+    }
+    .p-img {
+      height: 240px; position: relative; overflow: hidden;
+      background: var(--lh3);
+    }
+    .p-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .7s var(--ease-out);
+    }
+    .p-card:hover .p-img img { transform: scale(1.1); }
+    .p-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,17,36,.25) 0%, transparent 40%);
+      opacity: 0; transition: opacity .4s;
+      pointer-events: none;
+    }
+    .p-card:hover .p-img::after { opacity: 1; }
     .p-badge {
-      position: absolute;
-      top: 11px;
-      left: 11px;
-      background: var(--vg);
-      color: var(--lh);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 4px 11px;
-      border-radius: 20px;
-      z-index: 2
+      position: absolute; top: 14px; left: 14px;
+      background: var(--vg); color: var(--lh);
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 5px 13px; border-radius: 20px;
+      z-index: 2; box-shadow: 0 4px 12px rgba(54,37,92,.25);
     }
-
-    .p-body {
-      padding: 20px
+    .p-wish {
+      position: absolute; top: 14px; right: 14px;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(255,255,255,.9); backdrop-filter: blur(4px);
+      border: none; display: flex; align-items: center; justify-content: center;
+      color: var(--tl); cursor: pointer; z-index: 2;
+      transition: all .25s var(--ease-out);
+      box-shadow: 0 2px 8px rgba(0,0,0,.1);
     }
-
-    .p-body h3 {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--vg);
-      margin-bottom: 6px;
-      line-height: 1.3
-    }
-
-    .p-body p {
-      font-size: 13px;
-      color: var(--tm);
-      line-height: 1.6;
-      margin-bottom: 12px
-    }
-
-    .p-foot {
-      display: flex;
-      justify-content: space-between;
-      align-items: center
-    }
-
-    .p-price {
-      font-size: 19px;
-      font-weight: 700;
-      color: var(--vg3)
-    }
-
+    .p-wish:hover { color: #e74c3c; transform: scale(1.15); }
+    .p-wish.active { color: #e74c3c; }
+    .p-body { padding: 22px; }
+    .p-body h3 { font-size: 16px; font-weight: 700; color: var(--vg); margin-bottom: 8px; line-height: 1.35; }
+    .p-body p { font-size: 13.5px; color: var(--tm); line-height: 1.65; margin-bottom: 16px; }
+    .p-foot { display: flex; justify-content: space-between; align-items: center; }
+    .p-price { font-size: 20px; font-weight: 700; color: var(--vg3); }
     .p-arrow {
-      width: 32px;
-      height: 32px;
-      border: 1.5px solid var(--bd);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--tl);
-      cursor: pointer;
-      transition: background .28s, border-color .28s, color .28s, transform .28s;
-      background: var(--w)
+      width: 36px; height: 36px;
+      border: 1.5px solid var(--bd); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--tl); cursor: pointer;
+      transition: all .35s var(--ease-out);
+      background: var(--w);
     }
-
     .p-card:hover .p-arrow {
-      background: var(--vg);
-      border-color: var(--vg);
-      color: var(--lh);
-      transform: rotate(45deg)
+      background: var(--vg); border-color: var(--vg); color: var(--lh);
+      transform: rotate(45deg) scale(1.1);
+      box-shadow: 0 4px 12px rgba(54,37,92,.25);
     }
 
-    /* ═══ MARQUEE ═══ */
+    /* MARQUEE */
     .mq-sec {
-      padding: 28px 0;
+      padding: 32px 0;
       background: var(--vg);
-      overflow: hidden;
-      white-space: nowrap
+      overflow: hidden; white-space: nowrap;
+      position: relative;
     }
-
+    .mq-sec::before, .mq-sec::after {
+      content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2; pointer-events: none;
+    }
+    .mq-sec::before { left: 0; background: linear-gradient(90deg, var(--vg), transparent); }
+    .mq-sec::after { right: 0; background: linear-gradient(-90deg, var(--vg), transparent); }
     .mq-track {
-      display: inline-flex;
-      gap: 44px;
-      animation: mq 28s linear infinite
+      display: inline-flex; gap: 48px;
+      animation: mq 30s linear infinite;
     }
-
     .mq-word {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(38px, 6vw, 68px);
+      font-size: clamp(42px, 6.5vw, 72px);
       font-weight: 700;
       color: transparent;
-      -webkit-text-stroke: 1px rgba(210, 195, 246, .3);
+      -webkit-text-stroke: 1.2px rgba(210, 195, 246, .25);
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       cursor: default;
-      transition: color .25s, -webkit-text-stroke-color .25s
+      transition: all .3s var(--ease-out);
     }
-
     .mq-word:hover {
       -webkit-text-stroke-color: var(--lh);
       color: var(--lh);
-      -webkit-text-fill-color: var(--lh)
+      -webkit-text-fill-color: var(--lh);
     }
+    @keyframes mq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    @keyframes mq {
-      from {
-        transform: translateX(0)
-      }
-
-      to {
-        transform: translateX(-50%)
-      }
-    }
-
-    /* ═══ GALLERY ═══ */
+    /* GALLERY */
     #gallery {
-      background: var(--lh3)
+      background: var(--lh3); position: relative;
     }
-
-    .gall-head {
-      text-align: center;
-      margin-bottom: 44px
+    #gallery::before {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--bd), transparent);
     }
-
-    .gall-flex {
-      display: flex;
-      gap: 14px;
-      height: 460px
-    }
-
+    .gall-head { text-align: center; margin-bottom: 52px; }
+    .gall-flex { display: flex; gap: 16px; height: 480px; }
     .g-card {
-      flex: 1;
-      border-radius: var(--rl);
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-      transition: flex .48s cubic-bezier(.4, 0, .2, 1)
+      flex: 1; border-radius: var(--rl);
+      overflow: hidden; position: relative; cursor: pointer;
+      transition: flex .55s var(--ease-out);
+      box-shadow: var(--sh);
     }
-
-    .g-card:hover {
-      flex: 2.2
+    .g-card:hover { flex: 2.5; }
+    .g-card img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .7s var(--ease-out);
     }
-
-    .g-card .img-block {
-      height: 100%
-    }
-
+    .g-card:hover img { transform: scale(1.08); }
     .g-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(54, 37, 92, .8) 0%, transparent 55%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 24px;
-      opacity: 0;
-      transition: opacity .28s
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,17,36,.85) 0%, rgba(26,17,36,.2) 50%, transparent 100%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 28px;
+      opacity: 0; transition: opacity .35s;
     }
-
-    .g-card:hover .g-overlay {
-      opacity: 1
-    }
-
+    .g-card:hover .g-overlay { opacity: 1; }
     .g-tag {
-      font-size: 10px;
-      color: var(--lh);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 5px
+      font-size: 10px; color: var(--lh);
+      letter-spacing: 2.5px; text-transform: uppercase;
+      margin-bottom: 6px;
+      transform: translateY(10px); transition: transform .4s var(--ease-out) .05s;
     }
-
+    .g-card:hover .g-tag { transform: translateY(0); }
     .g-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 19px;
-      font-weight: 700;
-      color: #fff
+      font-size: 22px; font-weight: 700; color: #fff;
+      transform: translateY(10px); transition: transform .4s var(--ease-out) .1s;
     }
-
-    /* ═══ CONTACT ═══ */
-    #contact {
-      background: var(--w)
+    .g-card:hover .g-name { transform: translateY(0); }
+    .g-btn {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%) scale(.8);
+      width: 56px; height: 56px; border-radius: 50%;
+      background: rgba(255,255,255,.95); backdrop-filter: blur(8px);
+      border: none; display: flex; align-items: center; justify-content: center;
+      color: var(--vg); cursor: pointer; opacity: 0;
+      transition: all .4s var(--ease-spring);
+      box-shadow: 0 8px 24px rgba(0,0,0,.2);
     }
+    .g-card:hover .g-btn { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    .g-btn:hover { background: var(--vg); color: var(--lh); transform: translate(-50%, -50%) scale(1.15); }
 
+    /* CONTACT */
+    #contact { background: var(--w); position: relative; }
     .ct-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: start
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 72px; align-items: start;
     }
-
-    .ct-details {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      margin-top: 28px
-    }
-
+    .ct-details { display: flex; flex-direction: column; gap: 20px; margin-top: 32px; }
     .ct-item {
-      display: flex;
-      gap: 13px;
-      align-items: flex-start
+      display: flex; gap: 15px; align-items: flex-start;
+      padding: 14px; border-radius: var(--r);
+      transition: all .3s var(--ease-out);
     }
-
+    .ct-item:hover { background: var(--lh3); transform: translateX(4px); }
     .ct-ico {
-      width: 44px;
-      height: 44px;
-      background: var(--lh);
-      border-radius: 11px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--vg);
-      flex-shrink: 0
+      width: 48px; height: 48px;
+      background: var(--lh); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--vg); flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(54,37,92,.1);
+      transition: all .3s var(--ease-out);
     }
-
-    .ct-item h4 {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--vg);
-      margin-bottom: 2px
-    }
-
-    .ct-item span {
-      font-size: 13px;
-      color: var(--tm)
-    }
-
+    .ct-item:hover .ct-ico { background: var(--vg); color: var(--lh); transform: scale(1.1); }
+    .ct-item h4 { font-size: 15px; font-weight: 600; color: var(--vg); margin-bottom: 3px; }
+    .ct-item span { font-size: 14px; color: var(--tm); }
     .ct-form {
       background: var(--lh3);
-      padding: 32px;
+      padding: 36px;
       border-radius: var(--rx);
-      border: 1px solid var(--bd)
+      border: 1px solid var(--bd);
+      box-shadow: var(--sh);
+      transition: box-shadow .4s;
     }
-
-    .f-grp {
-      margin-bottom: 16px
-    }
-
+    .ct-form:hover { box-shadow: var(--shd); }
+    .f-grp { margin-bottom: 18px; }
     .f-grp label {
-      display: block;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--vg);
-      margin-bottom: 6px
+      display: block; font-size: 12.5px; font-weight: 600;
+      color: var(--vg); margin-bottom: 7px;
+      display: flex; align-items: center; gap: 6px;
     }
-
-    .f-grp input,
-    .f-grp textarea,
-    .f-grp select {
-      width: 100%;
-      padding: 11px 14px;
-      border: 1.5px solid var(--bd);
-      border-radius: var(--r);
-      font-size: 14px;
-      font-family: inherit;
-      background: var(--w);
-      color: var(--td);
-      transition: border-color .22s, box-shadow .22s;
-      outline: none
+    .f-grp input, .f-grp textarea, .f-grp select {
+      width: 100%; padding: 13px 16px;
+      border: 1.5px solid var(--bd); border-radius: var(--r);
+      font-size: 14.5px; font-family: inherit;
+      background: var(--w); color: var(--td);
+      transition: all .25s var(--ease-out);
+      outline: none;
     }
-
-    .f-grp input:focus,
-    .f-grp textarea:focus,
-    .f-grp select:focus {
+    .f-grp input:focus, .f-grp textarea:focus, .f-grp select:focus {
       border-color: var(--vg);
-      box-shadow: 0 0 0 3px rgba(54, 37, 92, .07)
+      box-shadow: 0 0 0 4px rgba(54, 37, 92, .06);
     }
-
-    .f-grp textarea {
-      resize: vertical;
-      min-height: 100px
-    }
-
+    .f-grp textarea { resize: vertical; min-height: 110px; }
     .f-sub {
-      width: 100%;
-      padding: 14px;
-      background: var(--vg);
-      color: var(--lh);
-      border: none;
-      border-radius: var(--r);
-      font-size: 15px;
-      font-weight: 600;
-      font-family: inherit;
-      cursor: pointer;
-      transition: background .28s, transform .28s, box-shadow .28s
+      width: 100%; padding: 15px;
+      background: var(--vg); color: var(--lh);
+      border: none; border-radius: var(--r);
+      font-size: 15.5px; font-weight: 600;
+      font-family: inherit; cursor: pointer;
+      transition: all .35s var(--ease-out);
+      box-shadow: 0 4px 16px rgba(54,37,92,.2);
+      position: relative; overflow: hidden;
     }
-
+    .f-sub::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,.1) 50%, transparent 60%);
+      transform: translateX(-100%);
+      transition: transform .6s;
+    }
     .f-sub:hover {
-      background: var(--vg2);
-      transform: translateY(-2px);
-      box-shadow: var(--shd)
+      background: var(--vg2); transform: translateY(-2px);
+      box-shadow: var(--shd);
     }
+    .f-sub:hover::after { transform: translateX(100%); }
 
-    /* ═══ FOOTER ═══ */
+    /* FOOTER */
     footer {
       background: var(--vg2);
-      padding: 54px 40px 26px calc(44px + 36px)
+      padding: 64px 40px 28px calc(44px + 40px);
+      position: relative;
     }
-
+    footer::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(210,195,246,.15), transparent);
+    }
     .f-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 44px;
-      margin-bottom: 44px
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px; margin-bottom: 48px;
     }
-
-    .f-brand .logo {
-      color: var(--lh);
-      margin-bottom: 14px
-    }
-
-    .f-brand p {
-      color: rgba(210, 195, 246, .6);
-      font-size: 13px;
-      line-height: 1.8;
-      margin-bottom: 20px
-    }
-
-    .f-social {
-      display: flex;
-      gap: 11px
-    }
-
+    .f-brand .logo { color: var(--lh); margin-bottom: 16px; }
+    .f-brand p { color: rgba(210, 195, 246, .55); font-size: 13.5px; line-height: 1.85; margin-bottom: 22px; }
+    .f-social { display: flex; gap: 12px; }
     .f-social a {
-      width: 36px;
-      height: 36px;
+      width: 38px; height: 38px;
       border: 1px solid rgba(210, 195, 246, .2);
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(210, 195, 246, .55);
-      text-decoration: none;
-      transition: background .22s, border-color .22s, color .22s, transform .22s
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(210, 195, 246, .5); text-decoration: none;
+      transition: all .3s var(--ease-out);
     }
-
     .f-social a:hover {
-      background: var(--lh);
-      border-color: var(--lh);
-      color: var(--vg);
-      transform: translateY(-3px)
+      background: var(--lh); border-color: var(--lh);
+      color: var(--vg); transform: translateY(-4px) scale(1.1);
+      box-shadow: 0 8px 20px rgba(54,37,92,.3);
     }
-
-    .f-col h4 {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--lh);
-      margin-bottom: 18px
-    }
-
-    .f-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 9px
-    }
-
+    .f-col h4 { font-size: 14.5px; font-weight: 700; color: var(--lh); margin-bottom: 20px; }
+    .f-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .f-links a {
-      color: rgba(210, 195, 246, .55);
-      text-decoration: none;
-      font-size: 13px;
-      transition: color .18s
+      color: rgba(210, 195, 246, .5); text-decoration: none;
+      font-size: 13.5px; transition: all .2s var(--ease-out);
+      display: inline-flex; align-items: center; gap: 6px;
     }
-
-    .f-links a:hover {
-      color: var(--lh)
-    }
-
+    .f-links a:hover { color: var(--lh); transform: translateX(4px); }
     .f-bot {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 22px;
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 24px;
       border-top: 1px solid rgba(210, 195, 246, .1);
-      flex-wrap: wrap;
-      gap: 8px
+      flex-wrap: wrap; gap: 10px;
     }
+    .f-bot p { color: rgba(210, 195, 246, .35); font-size: 12.5px; }
 
-    .f-bot p {
-      color: rgba(210, 195, 246, .4);
-      font-size: 12px
-    }
-
-    /* ═══ TOAST ═══ */
+    /* TOAST */
     .toast {
-      position: fixed;
-      bottom: 26px;
-      right: 26px;
-      background: var(--vg);
-      color: var(--lh);
-      padding: 13px 20px;
-      border-radius: var(--r);
-      font-size: 14px;
-      font-weight: 500;
+      position: fixed; bottom: 28px; right: 28px;
+      background: var(--vg); color: var(--lh);
+      padding: 14px 22px; border-radius: var(--r);
+      font-size: 14.5px; font-weight: 500;
       box-shadow: var(--shd);
-      transform: translateY(70px);
+      transform: translateY(80px) scale(.95);
       opacity: 0;
-      transition: transform .35s, opacity .35s;
-      z-index: 9999
+      transition: all .4s var(--ease-spring);
+      z-index: 9999;
+      display: flex; align-items: center; gap: 10px;
     }
+    .toast.show { transform: translateY(0) scale(1); opacity: 1; }
+    .toast svg { stroke: var(--lh); }
 
-    .toast.show {
-      transform: translateY(0);
-      opacity: 1
-    }
-
-    /* ═══ ANIMATIONS ═══ */
+    /* ANIMATIONS */
     .fade-in {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity .65s ease, transform .65s ease
+      opacity: 0; transform: translateY(28px);
+      transition: opacity .75s var(--ease-out), transform .75s var(--ease-out);
     }
-
-    .fade-in.vis {
-      opacity: 1;
-      transform: translateY(0)
-    }
-
+    .fade-in.vis { opacity: 1; transform: translateY(0); }
     .fade-l {
-      opacity: 0;
-      transform: translateX(-24px);
-      transition: opacity .65s ease, transform .65s ease
+      opacity: 0; transform: translateX(-28px);
+      transition: opacity .7s var(--ease-out), transform .7s var(--ease-out);
     }
-
-    .fade-l.vis {
-      opacity: 1;
-      transform: translateX(0)
-    }
-
+    .fade-l.vis { opacity: 1; transform: translateX(0); }
     .fade-r {
-      opacity: 0;
-      transform: translateX(24px);
-      transition: opacity .7s ease .1s, transform .7s ease .1s
+      opacity: 0; transform: translateX(28px);
+      transition: opacity .8s var(--ease-out) .1s, transform .8s var(--ease-out) .1s;
     }
-
-    .fade-r.vis {
-      opacity: 1;
-      transform: translateX(0)
+    .fade-r.vis { opacity: 1; transform: translateX(0); }
+    .scale-in {
+      opacity: 0; transform: scale(.92);
+      transition: opacity .7s var(--ease-out), transform .7s var(--ease-out);
     }
+    .scale-in.vis { opacity: 1; transform: scale(1); }
 
-    /* ═══ MOBILE BOTTOM NAV ═══ */
+    /* MOBILE BOTTOM NAV */
     .mob-bot-nav {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 1001;
+      display: none; position: fixed;
+      bottom: 0; left: 0; right: 0; z-index: 1001;
       background: rgba(253, 252, 255, .96);
-      backdrop-filter: blur(18px);
+      backdrop-filter: blur(20px) saturate(1.2);
       border-top: 1px solid var(--bd);
-      padding: 9px 0 max(9px, env(safe-area-inset-bottom))
+      padding: 10px 0 max(10px, env(safe-area-inset-bottom));
     }
-
-    .mob-bot-nav ul {
-      display: flex;
-      list-style: none
-    }
-
-    .mob-bot-nav li {
-      flex: 1
-    }
-
+    .mob-bot-nav ul { display: flex; list-style: none; }
+    .mob-bot-nav li { flex: 1; }
     .mbn {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3px;
-      background: none;
-      border: none;
-      width: 100%;
-      padding: 5px 3px;
-      color: var(--tl);
-      font-size: 9.5px;
-      font-weight: 500;
-      font-family: inherit;
-      cursor: pointer;
-      text-decoration: none;
-      transition: color .18s
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+      background: none; border: none; width: 100%;
+      padding: 6px 3px;
+      color: var(--tl); font-size: 10px; font-weight: 500;
+      font-family: inherit; cursor: pointer;
+      text-decoration: none; transition: all .2s var(--ease-out);
+      position: relative;
     }
-
-    .mbn.act,
-    .mbn:hover {
-      color: var(--vg)
+    .mbn::after {
+      content: ''; position: absolute; bottom: 0; width: 0; height: 3px;
+      background: var(--vg); border-radius: 3px 3px 0 0;
+      transition: width .3s var(--ease-out);
     }
+    .mbn.act, .mbn:hover { color: var(--vg); }
+    .mbn.act::after { width: 24px; }
 
-    /* ═══ RESPONSIVE ═══ */
+    /* RESPONSIVE */
     @media(max-width:1050px) {
-      .f-grid {
-        grid-template-columns: 1fr 1fr
-      }
-
-      .steps-grid {
-        grid-template-columns: repeat(2, 1fr)
-      }
+      .f-grid { grid-template-columns: 1fr 1fr; }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
     }
-
     @media(max-width:900px) {
-
-      .about-grid,
-      .ct-grid {
-        grid-template-columns: 1fr
-      }
-
-      .hero-inner {
-        grid-template-columns: 1fr
-      }
-
-      .hero-img-wrap {
-        height: 320px
-      }
-
-      .gall-flex {
-        height: 300px
-      }
+      .about-grid, .ct-grid { grid-template-columns: 1fr; }
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-img-wrap { height: 340px; margin-top: 20px; }
+      .gall-flex { height: 320px; }
+      .about-img { height: 360px; }
     }
-
     @media(max-width:768px) {
-      .top-bar {
-        padding: 6px 14px
-      }
-
-      .navbar {
-        top: 29px;
-        padding: 9px 14px
-      }
-
-      .nav-links,
-      .sidebar {
-        display: none
-      }
-
-      .hamburger {
-        display: flex
-      }
-
-      #home {
-        padding: 95px 18px 70px 18px
-      }
-
-      section {
-        padding: 56px 18px 56px 18px
-      }
-
-      footer {
-        padding: 44px 18px 24px 18px
-      }
-
-      .f-grid {
-        grid-template-columns: 1fr;
-        gap: 26px
-      }
-
-      .gall-flex {
-        flex-direction: column;
-        height: auto
-      }
-
-      .g-card {
-        height: 200px;
-        flex: none
-      }
-
-      .g-card:hover {
-        flex: none
-      }
-
-      .g-overlay {
-        opacity: 1
-      }
-
-      .mob-bot-nav {
-        display: block
-      }
-
-      body {
-        padding-bottom: 68px
-      }
-
-      .hero-badge {
-        left: 0;
-        bottom: 18px
-      }
+      .top-bar { padding: 7px 16px; }
+      .navbar { top: 30px; padding: 10px 16px; }
+      .nav-links, .sidebar { display: none; }
+      .hamburger { display: flex; }
+      #home { padding: 100px 20px 80px 20px; }
+      section { padding: 64px 20px 64px 20px; }
+      footer { padding: 48px 20px 28px 20px; }
+      .f-grid { grid-template-columns: 1fr; gap: 28px; }
+      .gall-flex { flex-direction: column; height: auto; }
+      .g-card { height: 220px; flex: none; }
+      .g-card:hover { flex: none; }
+      .g-overlay { opacity: 1; background: linear-gradient(to top, rgba(26,17,36,.8) 0%, transparent 60%); }
+      .g-tag, .g-name { transform: translateY(0); }
+      .mob-bot-nav { display: block; }
+      body { padding-bottom: 72px; }
+      .hero-badge { left: 0; bottom: 20px; }
+      .steps-grid { gap: 16px; }
+      .step-card { padding: 24px 18px; }
     }
-
     @media(max-width:480px) {
-      .hero-actions {
-        flex-direction: column
-      }
-
-      .btn-p,
-      .btn-o {
-        width: 100%;
-        justify-content: center
-      }
-
-      .ct-form {
-        padding: 22px
-      }
+      .hero-actions { flex-direction: column; }
+      .btn-p, .btn-o { width: 100%; justify-content: center; }
+      .ct-form { padding: 24px; }
+      .prod-grid { grid-template-columns: 1fr; }
+      .p-img { height: 260px; }
     }
   </style>
-<base target="_blank">
 </head>
-
 <body>
-  <div class="toast" id="toast"></div>
+  <div class="toast" id="toast"><svg class="ico ico-18"><use href="#ic-check"/></svg><span id="toastMsg">Message sent!</span></div>
 
   <!-- TOP BAR -->
   <div class="top-bar">
     <button class="ctrl-btn" onclick="toggleTheme()" id="themeBtn">
-      <svg class="ico ico-16">
-        <use href="#ic-moon" id="themeIco" />
-      </svg>
+      <svg class="ico ico-16"><use href="#ic-moon" id="themeIco"/></svg>
       <span id="themeLabel">Dark</span>
     </button>
     <div class="lang-wrap">
       <button class="ctrl-btn" onclick="toggleLang(event)">
-        <svg class="ico ico-16">
-          <use href="#ic-globe" />
-        </svg>
+        <svg class="ico ico-16"><use href="#ic-globe"/></svg>
         <span id="curLang">English</span>
-        <svg class="ico ico-16">
-          <use href="#ic-chev-down" />
-        </svg>
+        <svg class="ico ico-16"><use href="#ic-chev-down"/></svg>
       </button>
       <div class="lang-drop" id="langDrop">
         <div class="lang-opt active" onclick="setLang('en')" data-l="en">English</div>
@@ -1907,17 +985,13 @@
   <nav class="navbar" id="navbar">
     <a href="#home" class="logo">
       <div class="logo-mark">
-        <svg width="16" height="16" fill="var(--lh)" viewBox="0 0 24 24">
-          <use href="#ic-logo" />
-        </svg>
+        <svg width="16" height="16" fill="var(--lh)" viewBox="0 0 24 24"><use href="#ic-logo"/></svg>
       </div>
-      <span id="brandName">Weynua Interiors</span>
+      <span id="brandName">Weynua interiors</span>
     </a>
     <ul class="nav-links">
       <li class="nav-item">
-        <button class="nav-link">Home <span class="chev"><svg class="ico ico-16">
-              <use href="#ic-chev-down" />
-            </svg></span></button>
+        <button class="nav-link">Home <span class="chev"><svg class="ico ico-16"><use href="#ic-chev-down"/></svg></span></button>
         <div class="dropdown">
           <a href="#home" class="drop-item">Home</a>
           <a href="#about" class="drop-item">About Section</a>
@@ -1926,19 +1000,14 @@
       </li>
       <li class="nav-item"><a href="#about" class="nav-link" id="navAbout">About Us</a></li>
       <li class="nav-item">
-        <button class="nav-link" id="navServices">Services <span class="chev"><svg class="ico ico-16">
-              <use href="#ic-chev-down" />
-            </svg></span></button>
+        <button class="nav-link" id="navServices">Services <span class="chev"><svg class="ico ico-16"><use href="#ic-chev-down"/></svg></span></button>
         <div class="dropdown">
-          <a href="#products" class="drop-item">Bed Covers</a>
-          <a href="#products" class="drop-item">Curtains</a>
-          <a href="#products" class="drop-item">Sofa Covers</a>
-          <a href="#products" class="drop-item">Interior Floors</a>
-          <a href="#products" class="drop-item">Interior Lights</a>
-          <a href="#products" class="drop-item">Arabian Mejlis</a>
-          <a href="#products" class="drop-item">Imported Pillows</a>
-          <a href="#products" class="drop-item">Under Mats</a>
-          <a href="#products" class="drop-item">Artificial Grass</a>
+          <a href="#products" class="drop-item">Custom Curtains</a>
+          <a href="#products" class="drop-item">Blinds & Shades</a>
+          <a href="#products" class="drop-item">Curtain Rods</a>
+          <a href="#works" class="drop-item">Installation</a>
+          <a href="#contact" class="drop-item">Consultation</a>
+          <a href="#contact" class="drop-item">Repair</a>
         </div>
       </li>
       <li class="nav-item"><a href="#products" class="nav-link" id="navProducts">Products</a></li>
@@ -1950,64 +1019,39 @@
 
   <!-- MOBILE DRAWER -->
   <div class="mob-menu" id="mobMenu">
-    <button class="mob-link" onclick="toggleSub('sh')"><span id="mobHome">Home</span> <svg class="ico ico-16">
-        <use href="#ic-chev-down" />
-      </svg></button>
+    <button class="mob-link" onclick="toggleSub('sh')"><span id="mobHome">Home</span> <svg class="ico ico-16"><use href="#ic-chev-down"/></svg></button>
     <div class="mob-sub" id="sh">
       <a href="#home" class="mob-sub-item" onclick="closeMob()">Home</a>
       <a href="#about" class="mob-sub-item" onclick="closeMob()">About Section</a>
       <a href="#works" class="mob-sub-item" onclick="closeMob()">How It Works</a>
     </div>
     <a href="#about" class="mob-link" onclick="closeMob()" id="mobAbout">About Us</a>
-    <button class="mob-link" onclick="toggleSub('ss')"><span id="mobServices">Services</span> <svg class="ico ico-16">
-        <use href="#ic-chev-down" />
-      </svg></button>
+    <button class="mob-link" onclick="toggleSub('ss')"><span id="mobServices">Services</span> <svg class="ico ico-16"><use href="#ic-chev-down"/></svg></button>
     <div class="mob-sub" id="ss">
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Bed Covers</a>
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Curtains</a>
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Sofa Covers</a>
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Interior Floors</a>
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Interior Lights</a>
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Arabian Mejlis</a>
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Imported Pillows</a>
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Under Mats</a>
-      <a href="#products" class="mob-sub-item" onclick="closeMob()">Artificial Grass</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Custom Curtains</a>
+      <a href="#products" class="mob-sub-item" onclick="closeMob()">Blinds & Shades</a>
+      <a href="#works" class="mob-sub-item" onclick="closeMob()">Installation</a>
+      <a href="#contact" class="mob-sub-item" onclick="closeMob()">Consultation</a>
     </div>
     <a href="#products" class="mob-link" onclick="closeMob()" id="mobProducts">Products</a>
     <a href="#gallery" class="mob-link" onclick="closeMob()">Gallery</a>
     <a href="#contact" class="mob-link" onclick="closeMob()" id="mobContact">Contact</a>
     <div class="mob-social">
-      <a href="#" aria-label="Facebook"><svg class="ico ico-18">
-          <use href="#ic-fb" />
-        </svg></a>
-      <a href="#" aria-label="Twitter"><svg class="ico ico-18">
-          <use href="#ic-tw" />
-        </svg></a>
-      <a href="#" aria-label="Instagram"><svg class="ico ico-18">
-          <use href="#ic-ig" />
-        </svg></a>
-      <a href="#" aria-label="WhatsApp"><svg class="ico ico-18">
-          <use href="#ic-wa" />
-        </svg></a>
+      <a href="#" aria-label="Facebook"><svg class="ico ico-18"><use href="#ic-fb"/></svg></a>
+      <a href="#" aria-label="Twitter"><svg class="ico ico-18"><use href="#ic-tw"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg class="ico ico-18"><use href="#ic-ig"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg class="ico ico-18"><use href="#ic-wa"/></svg></a>
     </div>
   </div>
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
-    <p class="sidebar-text">+251 911 234 567 · info@weynuainteriors.com</p>
+    <p class="sidebar-text">+251 911 234 567 · info@shegerecurtains.com</p>
     <div class="sidebar-icons">
-      <a href="#" aria-label="Facebook"><svg class="ico ico-16">
-          <use href="#ic-fb" />
-        </svg></a>
-      <a href="#" aria-label="Twitter"><svg class="ico ico-16">
-          <use href="#ic-tw" />
-        </svg></a>
-      <a href="#" aria-label="Instagram"><svg class="ico ico-16">
-          <use href="#ic-ig" />
-        </svg></a>
-      <a href="#" aria-label="WhatsApp"><svg class="ico ico-16">
-          <use href="#ic-wa" />
-        </svg></a>
+      <a href="#" aria-label="Facebook"><svg class="ico ico-16"><use href="#ic-fb"/></svg></a>
+      <a href="#" aria-label="Twitter"><svg class="ico ico-16"><use href="#ic-tw"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg class="ico ico-16"><use href="#ic-ig"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg class="ico ico-16"><use href="#ic-wa"/></svg></a>
     </div>
   </aside>
 
@@ -2015,42 +1059,27 @@
   <section id="home">
     <div class="hero-inner">
       <div class="fade-l">
-        <span class="hero-tag" id="heroTag">Premium Interior Design</span>
-        <h1 class="hero-h1" id="heroH1">Transform Your<br>Space with <em>Weynua</em></h1>
-        <p class="hero-price" id="heroPrice">Starting from <strong>$35</strong></p>
+        <span class="hero-tag" id="heroTag"><svg class="ico ico-16"><use href="#ic-sparkle"/></svg>Premium Window Treatments</span>
+        <h1 class="hero-h1" id="heroH1">Elegance<br>for Your <em>Windows</em></h1>
+        <p class="hero-price" id="heroPrice">Starting from <strong>$45</strong></p>
         <div class="hero-actions">
-          <a href="#products" class="btn-p" id="heroBtn">Explore Services <svg class="ico ico-16">
-              <use href="#ic-arrow-right" />
-            </svg></a>
+          <a href="#products" class="btn-p" id="heroBtn">Shop Collection <svg class="ico ico-16"><use href="#ic-arrow-right"/></svg></a>
           <a href="#contact" class="btn-o" id="heroBtn2">Free Consultation</a>
         </div>
         <div class="sl-ctrl">
-          <button class="sl-btn" onclick="prevSlide()" aria-label="Previous slide"><svg class="ico ico-16">
-              <use href="#ic-arrow-left" />
-            </svg></button>
-          <button class="sl-btn" onclick="nextSlide()" aria-label="Next slide"><svg class="ico ico-16">
-              <use href="#ic-arrow-right" />
-            </svg></button>
+          <button class="sl-btn" onclick="prevSlide()" aria-label="Previous slide"><svg class="ico ico-16"><use href="#ic-arrow-left"/></svg></button>
+          <button class="sl-btn" onclick="nextSlide()" aria-label="Next slide"><svg class="ico ico-16"><use href="#ic-arrow-right"/></svg></button>
         </div>
       </div>
       <div class="hero-img-wrap fade-r">
         <div class="hero-slide active">
-          <div class="img-block img-curtain-hero1 curtain-pattern">
-            <div class="drape"></div>
-            <div class="sheen"></div>
-          </div>
+          <img src="https://kimi-web-img.moonshot.cn/img/www.anadytop.com/e966a7ee3ebdb74182e29a58d2abf46828f6730a.jpg" alt="Emerald green velvet curtains in luxury living room">
         </div>
         <div class="hero-slide">
-          <div class="img-block img-curtain-hero2 curtain-pattern">
-            <div class="drape"></div>
-            <div class="sheen"></div>
-          </div>
+          <img src="https://kimi-web-img.moonshot.cn/img/assets.architecturaldigest.in/42d17977376a1ba808aa3a02c411fd27146acc62.jpg" alt="Elegant living room with chandelier and curtains">
         </div>
         <div class="hero-slide">
-          <div class="img-block img-curtain-hero3 curtain-pattern">
-            <div class="drape"></div>
-            <div class="sheen"></div>
-          </div>
+          <img src="https://kimi-web-img.moonshot.cn/img/lux-life.digital/475af209805713d961016e48932eddcaefdd3485.jpg" alt="Luxury living room with fireplace and curtains">
         </div>
         <div class="hero-badge">
           <div class="hb-num" id="hbNum">0</div>
@@ -2064,42 +1093,35 @@
   <section id="about">
     <div class="about-grid">
       <div class="about-img-box fade-l">
-        <div class="about-img img-about curtain-pattern">
-          <div class="drape"></div>
-          <div class="sheen"></div>
+        <div class="about-img">
+          <img src="https://kimi-web-img.moonshot.cn/img/image.made-in-china.com/bc09932f34d1771e6815f1e642da22f14b23399b.webp" alt="Beautiful curtain installation in modern living room">
         </div>
         <div class="about-stat">
-          <div class="as-num">8+</div>
+          <div class="as-num">12+</div>
           <div class="as-txt" id="asLbl">Years of Excellence</div>
         </div>
       </div>
       <div class="fade-r">
         <span class="sec-label" id="aboutLabel">About Us</span>
-        <h2 class="sec-title" id="aboutTitle">Welcome to Weynua Interiors</h2>
-        <p class="sec-sub" id="aboutText">We specialize in transforming living spaces with premium interior solutions. From luxurious Arabian mejlis designs to comfortable bed covers, elegant curtains, and modern interior lighting — we bring your vision to life with quality craftsmanship and imported materials.</p>
+        <h2 class="sec-title" id="aboutTitle">Welcome to Weynua interiors</h2>
+        <p class="sec-sub" id="aboutText">We craft beautiful, high-quality curtains and window treatments that transform your living spaces. From luxurious velvet to sheer elegance, our designs bring warmth, privacy, and style.</p>
         <div class="svc-list">
           <div class="svc-item">
-            <div class="svc-ico"><svg class="ico ico-22">
-                <use href="#ic-bed" />
-              </svg></div>
+            <div class="svc-ico"><svg class="ico ico-22"><use href="#ic-ruler"/></svg></div>
             <div class="svc-info">
-              <h4 id="svcT1">Bed Cover Comfort</h4>
-              <p id="svcD1">Premium quality bed covers and bedding sets designed for ultimate comfort and style.</p>
+              <h4 id="svcT1">Custom Measurements</h4>
+              <p id="svcD1">Precise fitting for every window size with professional measurement services.</p>
             </div>
           </div>
           <div class="svc-item">
-            <div class="svc-ico lt"><svg class="ico ico-22">
-                <use href="#ic-sofa" />
-              </svg></div>
+            <div class="svc-ico lt"><svg class="ico ico-22"><use href="#ic-truck"/></svg></div>
             <div class="svc-info">
-              <h4 id="svcT2">Sofa & Mejlis Covers</h4>
-              <p id="svcD2">Custom sofa covers and luxury Arabian mejlis designs with imported fabrics.</p>
+              <h4 id="svcT2">Free Installation</h4>
+              <p id="svcD2">Expert installation included with every purchase across Addis Ababa.</p>
             </div>
           </div>
         </div>
-        <a href="#products" class="btn-p" style="margin-top:20px" id="aboutBtn">View Services <svg class="ico ico-16">
-            <use href="#ic-arrow-right" />
-          </svg></a>
+        <a href="#products" class="btn-p" style="margin-top:24px" id="aboutBtn">View Collection <svg class="ico ico-16"><use href="#ic-arrow-right"/></svg></a>
       </div>
     </div>
   </section>
@@ -2113,35 +1135,27 @@
     <div class="steps-grid">
       <div class="step-card fade-in" style="transition-delay:.05s">
         <div class="step-num">01</div>
-        <div class="step-ico"><svg class="ico ico-22">
-            <use href="#ic-search" />
-          </svg></div>
-        <h3 id="stT1">Choose Your Service</h3>
-        <p id="stD1">Browse our collection and select the perfect interior solution for your space.</p>
+        <div class="step-ico"><svg class="ico ico-22"><use href="#ic-search"/></svg></div>
+        <h3 id="stT1">Choose Your Style</h3>
+        <p id="stD1">Browse our collection and select the perfect curtain style for your space.</p>
       </div>
       <div class="step-card fade-in" style="transition-delay:.12s">
         <div class="step-num">02</div>
-        <div class="step-ico"><svg class="ico ico-22">
-            <use href="#ic-measure" />
-          </svg></div>
+        <div class="step-ico"><svg class="ico ico-22"><use href="#ic-measure"/></svg></div>
         <h3 id="stT2">Custom Measure</h3>
-        <p id="stD2">We take precise measurements to ensure a perfect fit for your furniture and spaces.</p>
+        <p id="stD2">We take precise measurements to ensure a perfect fit for your windows.</p>
       </div>
       <div class="step-card fade-in" style="transition-delay:.2s">
         <div class="step-num">03</div>
-        <div class="step-ico"><svg class="ico ico-22">
-            <use href="#ic-scissors" />
-          </svg></div>
-        <h3 id="stT3">Expert Crafting</h3>
-        <p id="stD3">Our artisans craft your items with premium imported fabrics and meticulous care.</p>
+        <div class="step-ico"><svg class="ico ico-22"><use href="#ic-scissors"/></svg></div>
+        <h3 id="stT3">Professional Make</h3>
+        <p id="stD3">Our artisans craft your curtains with premium fabrics and meticulous care.</p>
       </div>
       <div class="step-card fade-in" style="transition-delay:.28s">
         <div class="step-num">04</div>
-        <div class="step-ico"><svg class="ico ico-22">
-            <use href="#ic-home" />
-          </svg></div>
-        <h3 id="stT4">Delivery & Setup</h3>
-        <p id="stD4">We deliver and install everything perfectly, hassle-free at your location.</p>
+        <div class="step-ico"><svg class="ico ico-22"><use href="#ic-home"/></svg></div>
+        <h3 id="stT4">Free Installation</h3>
+        <p id="stD4">We deliver and install your curtains perfectly, hassle-free.</p>
       </div>
     </div>
   </section>
@@ -2149,9 +1163,9 @@
   <!-- PRODUCTS -->
   <section id="products">
     <div class="prod-head fade-in">
-      <span class="sec-label" id="prodLabel">Services</span>
-      <h2 class="sec-title" id="prodTitle">Our Interior Services</h2>
-      <p class="sec-sub" style="max-width:480px;margin:0 auto;text-align:center" id="prodSub">Premium interior solutions for every corner of your home</p>
+      <span class="sec-label" id="prodLabel">Collection</span>
+      <h2 class="sec-title" id="prodTitle">Our Curtain Collection</h2>
+      <p class="sec-sub" style="max-width:520px;margin:0 auto;text-align:center" id="prodSub">Over 20 styles of premium curtains for every room</p>
     </div>
     <div class="prod-grid" id="prodGrid"></div>
   </section>
@@ -2159,10 +1173,10 @@
   <!-- MARQUEE -->
   <div class="mq-sec">
     <div class="mq-track">
-      <span class="mq-word">WEYNUA INTERIORS</span><span class="mq-word">·</span>
+      <span class="mq-word">SHEGERE CURTAINS</span><span class="mq-word">·</span>
       <span class="mq-word">PREMIUM QUALITY</span><span class="mq-word">·</span>
       <span class="mq-word">CUSTOM DESIGNS</span><span class="mq-word">·</span>
-      <span class="mq-word">WEYNUA INTERIORS</span><span class="mq-word">·</span>
+      <span class="mq-word">SHEGERE CURTAINS</span><span class="mq-word">·</span>
       <span class="mq-word">PREMIUM QUALITY</span><span class="mq-word">·</span>
       <span class="mq-word">CUSTOM DESIGNS</span><span class="mq-word">·</span>
     </div>
@@ -2172,45 +1186,41 @@
   <section id="gallery">
     <div class="gall-head fade-in">
       <span class="sec-label" id="gallLabel">Gallery</span>
-      <h2 class="sec-title" id="gallTitle">Our Work</h2>
-      <p class="sec-sub" style="max-width:480px;margin:0 auto;text-align:center" id="gallSub">See how Weynua transforms real homes</p>
+      <h2 class="sec-title" id="gallTitle">Installation Gallery</h2>
+      <p class="sec-sub" style="max-width:520px;margin:0 auto;text-align:center" id="gallSub">See how our curtains transform real homes</p>
     </div>
     <div class="gall-flex">
       <div class="g-card fade-in">
-        <div class="img-block img-g1 curtain-pattern">
-          <div class="drape"></div>
-        </div>
+        <img src="https://kimi-web-img.moonshot.cn/img/www.voilavoile.com/64c4016fc6f939fc24b3aebd6014aeb9384d2366.jpg" alt="Dark green velvet drapes in living room">
         <div class="g-overlay">
           <div class="g-tag">Living Room</div>
-          <div class="g-name">Arabian Mejlis Design</div>
+          <div class="g-name">Velvet Drapes</div>
         </div>
+        <button class="g-btn" aria-label="View gallery"><svg class="ico ico-20"><use href="#ic-arrow-ne"/></svg></button>
       </div>
       <div class="g-card fade-in" style="transition-delay:.08s">
-        <div class="img-block img-g2 curtain-pattern">
-          <div class="drape"></div>
-        </div>
+        <img src="https://kimi-web-img.moonshot.cn/img/static.asianpaints.com/4f8c9c64767fb2819f07cac88ba70152a0331afa.jpg" alt="Modern bedroom with blue blackout curtains">
         <div class="g-overlay">
           <div class="g-tag">Bedroom</div>
-          <div class="g-name">Luxury Bed Covers</div>
+          <div class="g-name">Blackout Panels</div>
         </div>
+        <button class="g-btn" aria-label="View gallery"><svg class="ico ico-20"><use href="#ic-arrow-ne"/></svg></button>
       </div>
       <div class="g-card fade-in" style="transition-delay:.16s">
-        <div class="img-block img-g3 curtain-pattern">
-          <div class="drape"></div>
-        </div>
+        <img src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/ed5bde044609167d899786b683693f779bcd51cd.jpg" alt="Sheer white curtains in bright living room">
         <div class="g-overlay">
-          <div class="g-tag">Interior</div>
-          <div class="g-name">Modern Lighting & Floors</div>
+          <div class="g-tag">Kitchen</div>
+          <div class="g-name">Sheer Curtains</div>
         </div>
+        <button class="g-btn" aria-label="View gallery"><svg class="ico ico-20"><use href="#ic-arrow-ne"/></svg></button>
       </div>
       <div class="g-card fade-in" style="transition-delay:.24s">
-        <div class="img-block img-g4 curtain-pattern">
-          <div class="drape"></div>
-        </div>
+        <img src="https://kimi-web-img.moonshot.cn/img/www.theshadestore.com/a3fe946ebab1c7ccd77adfd7524a5dac260f1d32.webp" alt="Silk drapery in elegant dining room">
         <div class="g-overlay">
-          <div class="g-tag">Outdoor</div>
-          <div class="g-name">Artificial Grass Setup</div>
+          <div class="g-tag">Dining</div>
+          <div class="g-name">Silk Drapery</div>
         </div>
+        <button class="g-btn" aria-label="View gallery"><svg class="ico ico-20"><use href="#ic-arrow-ne"/></svg></button>
       </div>
     </div>
   </section>
@@ -2220,68 +1230,47 @@
     <div class="ct-grid">
       <div class="fade-l">
         <span class="sec-label" id="ctLabel">Get In Touch</span>
-        <h2 class="sec-title" id="ctTitle">Ready to Transform Your Space?</h2>
-        <p class="sec-sub" id="ctText">Contact us for a free consultation and measurement. Our team is here to help you create the perfect interior for your home.</p>
+        <h2 class="sec-title" id="ctTitle">Ready to Transform Your Windows?</h2>
+        <p class="sec-sub" id="ctText">Contact us for a free consultation and measurement. Our team is here to help you find the perfect curtains for your home.</p>
         <div class="ct-details">
           <div class="ct-item">
-            <div class="ct-ico"><svg class="ico ico-20">
-                <use href="#ic-phone" />
-              </svg></div>
-            <div>
-              <h4 id="ctPhone">Phone</h4><span>+251 911 234 567 / +251 911 234 568</span>
-            </div>
+            <div class="ct-ico"><svg class="ico ico-20"><use href="#ic-phone"/></svg></div>
+            <div><h4 id="ctPhone">Phone</h4><span>+251 911 234 567 / +251 911 234 568</span></div>
           </div>
           <div class="ct-item">
-            <div class="ct-ico"><svg class="ico ico-20">
-                <use href="#ic-mail" />
-              </svg></div>
-            <div>
-              <h4 id="ctEmail">Email</h4><span>info@weynuainteriors.com</span>
-            </div>
+            <div class="ct-ico"><svg class="ico ico-20"><use href="#ic-mail"/></svg></div>
+            <div><h4 id="ctEmail">Email</h4><span>info@shegerecurtains.com</span></div>
           </div>
           <div class="ct-item">
-            <div class="ct-ico"><svg class="ico ico-20">
-                <use href="#ic-pin" />
-              </svg></div>
-            <div>
-              <h4 id="ctAddr">Address</h4><span>Bole Road, Addis Ababa, Ethiopia</span>
-            </div>
+            <div class="ct-ico"><svg class="ico ico-20"><use href="#ic-pin"/></svg></div>
+            <div><h4 id="ctAddr">Address</h4><span>Bole Road, Addis Ababa, Ethiopia</span></div>
           </div>
           <div class="ct-item">
-            <div class="ct-ico"><svg class="ico ico-20">
-                <use href="#ic-clock" />
-              </svg></div>
-            <div>
-              <h4 id="ctHours">Working Hours</h4><span>Mon – Sat: 8:00 AM – 6:00 PM</span>
-            </div>
+            <div class="ct-ico"><svg class="ico ico-20"><use href="#ic-clock"/></svg></div>
+            <div><h4 id="ctHours">Working Hours</h4><span>Mon – Sat: 8:00 AM – 6:00 PM</span></div>
           </div>
         </div>
       </div>
       <div class="fade-r">
         <div class="ct-form">
           <form onsubmit="submitForm(event)">
-            <div class="f-grp"><label id="lName">Full Name</label><input type="text" placeholder="Your name" required>
-            </div>
-            <div class="f-grp"><label id="lEmail">Email Address</label><input type="email" placeholder="your@email.com"
-                required></div>
-            <div class="f-grp"><label id="lPhone">Phone Number</label><input type="tel" placeholder="+251 9XX XXX XXX">
-            </div>
-            <div class="f-grp"><label id="lProduct">Service Interest</label>
+            <div class="f-grp"><label id="lName">Full Name</label><input type="text" placeholder="Your name" required></div>
+            <div class="f-grp"><label id="lEmail">Email Address</label><input type="email" placeholder="your@email.com" required></div>
+            <div class="f-grp"><label id="lPhone">Phone Number</label><input type="tel" placeholder="+251 9XX XXX XXX"></div>
+            <div class="f-grp"><label id="lProduct">Product Interest</label>
               <select>
-                <option value="">Select a service</option>
-                <option>Bed Cover Comfort</option>
-                <option>Curtains</option>
-                <option>Sofa Cover</option>
-                <option>Interior Floors</option>
-                <option>Interior Lights</option>
-                <option>Luxury Arabian Mejlis Design</option>
-                <option>Imported Pillows</option>
-                <option>Under Sofa & Bed Mats</option>
-                <option>Artificial Grass</option>
+                <option value="">Select a product type</option>
+                <option>Velvet Curtains</option>
+                <option>Sheer Curtains</option>
+                <option>Blackout Curtains</option>
+                <option>Linen Curtains</option>
+                <option>Silk Drapes</option>
+                <option>Bamboo Shades</option>
+                <option>Roman Shades</option>
+                <option>Motorized Curtains</option>
               </select>
             </div>
-            <div class="f-grp"><label id="lMsg">Message</label><textarea
-                placeholder="Tell us about your project..."></textarea></div>
+            <div class="f-grp"><label id="lMsg">Message</label><textarea placeholder="Tell us about your project..."></textarea></div>
             <button type="submit" class="f-sub" id="fSubmit">Send Message</button>
           </form>
         </div>
@@ -2294,25 +1283,15 @@
     <div class="f-grid">
       <div class="f-brand">
         <a href="#home" class="logo">
-          <div class="logo-mark"><svg width="16" height="16" fill="var(--lh)" viewBox="0 0 24 24">
-              <use href="#ic-logo" />
-            </svg></div>
-          <span id="footBrand">Weynua</span>
+          <div class="logo-mark"><svg width="16" height="16" fill="var(--lh)" viewBox="0 0 24 24"><use href="#ic-logo"/></svg></div>
+          <span id="footBrand">Shegere</span>
         </a>
-        <p id="footDesc">A passionate team dedicated to creating beautiful, comfortable interior spaces across Ethiopia. From custom covers to luxury lighting, we bring elegance to every home.</p>
+        <p id="footDesc">A team of passionate curtain makers dedicated to creating beautiful window treatments across Ethiopia.</p>
         <div class="f-social">
-          <a href="#" aria-label="Facebook"><svg class="ico ico-16">
-              <use href="#ic-fb" />
-            </svg></a>
-          <a href="#" aria-label="Twitter"><svg class="ico ico-16">
-              <use href="#ic-tw" />
-            </svg></a>
-          <a href="#" aria-label="Instagram"><svg class="ico ico-16">
-              <use href="#ic-ig" />
-            </svg></a>
-          <a href="#" aria-label="WhatsApp"><svg class="ico ico-16">
-              <use href="#ic-wa" />
-            </svg></a>
+          <a href="#" aria-label="Facebook"><svg class="ico ico-16"><use href="#ic-fb"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg class="ico ico-16"><use href="#ic-tw"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="ico ico-16"><use href="#ic-ig"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg class="ico ico-16"><use href="#ic-wa"/></svg></a>
         </div>
       </div>
       <div class="f-col">
@@ -2320,7 +1299,7 @@
         <ul class="f-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#products">Services</a></li>
+          <li><a href="#products">Products</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -2328,51 +1307,38 @@
       <div class="f-col">
         <h4>Services</h4>
         <ul class="f-links">
-          <li><a href="#products">Bed Covers</a></li>
-          <li><a href="#products">Curtains</a></li>
-          <li><a href="#products">Sofa Covers</a></li>
-          <li><a href="#products">Interior Floors</a></li>
-          <li><a href="#products">Interior Lights</a></li>
-          <li><a href="#products">Arabian Mejlis</a></li>
+          <li><a href="#products">Custom Curtains</a></li>
+          <li><a href="#products">Blinds & Shades</a></li>
+          <li><a href="#works">Installation</a></li>
+          <li><a href="#contact">Consultation</a></li>
         </ul>
       </div>
       <div class="f-col">
         <h4>Contact</h4>
         <ul class="f-links">
           <li><a href="tel:+251911234567">+251 911 234 567</a></li>
-          <li><a href="mailto:info@weynuainteriors.com">info@weynuainteriors.com</a></li>
+          <li><a href="mailto:info@shegerecurtains.com">info@shegerecurtains.com</a></li>
           <li><a href="#contact">Addis Ababa, Ethiopia</a></li>
         </ul>
       </div>
     </div>
     <div class="f-bot">
-      <p id="fCopy">© 2024 Weynua Interiors. All rights reserved.</p>
-      <p id="fTag">Designed with passion for beautiful spaces</p>
+      <p id="fCopy">© 2024 Shegere Curtains. All rights reserved.</p>
+      <p id="fTag">Designed with passion for beautiful windows</p>
     </div>
   </footer>
 
   <!-- MOBILE BOTTOM NAV -->
   <nav class="mob-bot-nav">
     <ul>
-      <li><a href="#home" class="mbn act" onclick="setAct(this)"><svg class="ico ico-18">
-            <use href="#ic-nav-home" />
-          </svg><span id="mn1">Home</span></a></li>
-      <li><a href="#about" class="mbn" onclick="setAct(this)"><svg class="ico ico-18">
-            <use href="#ic-nav-info" />
-          </svg><span id="mn2">About</span></a></li>
-      <li><a href="#products" class="mbn" onclick="setAct(this)"><svg class="ico ico-18">
-            <use href="#ic-nav-shop" />
-          </svg><span id="mn3">Services</span></a></li>
-      <li><a href="#gallery" class="mbn" onclick="setAct(this)"><svg class="ico ico-18">
-            <use href="#ic-nav-gallery" />
-          </svg><span id="mn4">Gallery</span></a></li>
-      <li><a href="#contact" class="mbn" onclick="setAct(this)"><svg class="ico ico-18">
-            <use href="#ic-nav-contact" />
-          </svg><span id="mn5">Contact</span></a></li>
+      <li><a href="#home" class="mbn act" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-home"/></svg><span id="mn1">Home</span></a></li>
+      <li><a href="#about" class="mbn" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-info"/></svg><span id="mn2">About</span></a></li>
+      <li><a href="#products" class="mbn" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-shop"/></svg><span id="mn3">Products</span></a></li>
+      <li><a href="#gallery" class="mbn" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-gallery"/></svg><span id="mn4">Gallery</span></a></li>
+      <li><a href="#contact" class="mbn" onclick="setAct(this)"><svg class="ico ico-18"><use href="#ic-nav-contact"/></svg><span id="mn5">Contact</span></a></li>
     </ul>
   </nav>
 
-  <!-- DEFERRED JS — parsed after HTML is rendered -->
   <script>
     /* ── INTERSECTION OBSERVER ── */
     const obs = new IntersectionObserver(entries => {
@@ -2385,31 +1351,39 @@
       });
     }, { threshold: 0.08 });
 
-    /* ── PRODUCTS DATA ── */
+    /* ── PRODUCTS DATA with real images ── */
     const PRODS = [
-      { cls: 'img-p1', badge: 'Popular', name: 'Bed Cover Comfort', desc: 'Premium quality bed covers and bedding sets for ultimate comfort and restful sleep.', price: '$45' },
-      { cls: 'img-p2', badge: 'Bestseller', name: 'Custom Curtains', desc: 'Beautiful, high-quality curtains and window treatments for any room style.', price: '$55' },
-      { cls: 'img-p3', badge: '', name: 'Sofa Covers', desc: 'Custom-fit sofa covers that protect and transform your living room furniture.', price: '$65' },
-      { cls: 'img-p4', badge: 'New', name: 'Interior Floors', desc: 'Modern flooring solutions including vinyl, laminate, and decorative tiles.', price: '$120' },
-      { cls: 'img-p5', badge: 'Premium', name: 'Interior Lights', desc: 'Stylish lighting fixtures and LED solutions to set the perfect ambiance.', price: '$85' },
-      { cls: 'img-p6', badge: 'Luxury', name: 'Arabian Mejlis Design', desc: 'Authentic luxury Arabian mejlis seating with custom covers and cushions.', price: '$350' },
-      { cls: 'img-p7', badge: 'Imported', name: 'Imported Pillows', desc: 'High-quality imported decorative and comfort pillows for sofas and beds.', price: '$25' },
-      { cls: 'img-p8', badge: '', name: 'Under Sofa & Bed Mats', desc: 'Protective and decorative mats designed to fit perfectly under furniture.', price: '$35' },
-      { cls: 'img-p9', badge: 'Trending', name: 'Artificial Grass', desc: 'Realistic artificial grass for balconies, terraces, and interior green spaces.', price: '$75' },
-      { cls: 'img-p10', badge: 'Bundle', name: 'Bedroom Package', desc: 'Complete bedroom set including bed cover, pillows, and under-bed mats.', price: '$150' },
-      { cls: 'img-p11', badge: '', name: 'Living Room Set', desc: 'Full living room package with sofa covers, curtains, and decorative pillows.', price: '$280' },
-      { cls: 'img-p12', badge: 'Special', name: 'Mejlis Full Setup', desc: 'Complete Arabian mejlis with floor seating, covers, lights, and grass base.', price: '$580' },
+      { img: "https://kimi-web-img.moonshot.cn/img/www.anadytop.com/e966a7ee3ebdb74182e29a58d2abf46828f6730a.jpg", badge: "Bestseller", name: "Luxury Velvet Curtains", desc: "Rich, plush velvet drapes that add warmth and sophistication to any living space.", price: "$120" },
+      { img: "https://kimi-web-img.moonshot.cn/img/www.voilavoile.com/487821745ebdbfce83fd5fe64384e4ec51788bc5.jpg", badge: "Popular", name: "Sheer White Curtains", desc: "Light, airy panels that filter natural light while maintaining privacy.", price: "$45" },
+      { img: "https://kimi-web-img.moonshot.cn/img/easeeasecurtains.com/81cea46f72457ade6342814d8d1bf581603191d2.jpg", badge: "", name: "Blackout Bedroom Curtains", desc: "Complete light-blocking panels for restful sleep and energy efficiency.", price: "$85" },
+      { img: "https://kimi-web-img.moonshot.cn/img/forestlandlinen.com/cebabb356711cdd68b8e4f7df9758667a3352814.jpg", badge: "Natural", name: "Natural Linen Curtains", desc: "Breathable, textured linen drapes with a relaxed, organic aesthetic.", price: "$95" },
+      { img: "https://kimi-web-img.moonshot.cn/img/www.theshadestore.com/a3fe946ebab1c7ccd77adfd7524a5dac260f1d32.webp", badge: "Premium", name: "Elegant Silk Drapes", desc: "Luxurious silk panels with a subtle sheen for formal living areas.", price: "$180" },
+      { img: "https://kimi-web-img.moonshot.cn/img/www.theshadestore.com/dc3577ef83a875bb84c5d9d370a970dd064d7b88.webp", badge: "", name: "Bamboo Woven Shades", desc: "Eco-friendly natural bamboo blinds that bring warmth and texture.", price: "$70" },
+      { img: "https://kimi-web-img.moonshot.cn/img/loganovashades.com/a9fb3d38ea8e1f3d18eb424b328cee5b5e8cdc48.webp", badge: "", name: "Fabric Roman Shades", desc: "Classic folded fabric shades that offer a clean, tailored look.", price: "$110" },
+      { img: "https://kimi-web-img.moonshot.cn/img/mobileimages.lowes.com/c75d9b9208f2dc9b068d2bf72699ccb81f85684d.jpg", badge: "Hardware", name: "Gold Curtain Rods", desc: "Elegant brushed gold hardware with decorative finials.", price: "$55" },
+      { img: "https://kimi-web-img.moonshot.cn/img/ae-pic-a1.aliexpress-media.com/afded2d09cf6ea03062baf4857dddebcf2fbd6bb.jpg", badge: "", name: "Decorative Tiebacks", desc: "Beautiful rope and tassel tiebacks to elegantly hold your curtains.", price: "$25" },
+      { img: "https://kimi-web-img.moonshot.cn/img/www.voilavoile.com/e401d73efdcd4c323772bad39ed27ab84dac69aa.jpg", badge: "New", name: "Floral Pattern Curtains", desc: "Vibrant floral prints that bring color and personality to your spaces.", price: "$75" },
+      { img: "https://kimi-web-img.moonshot.cn/img/joydeco.com/67976014ff988b0f28d6b7b0d87781cbf2ea1c81.jpg", badge: "", name: "Modern Gray Curtains", desc: "Sleek, minimalist panels perfect for contemporary interiors.", price: "$65" },
+      { img: "https://kimi-web-img.moonshot.cn/img/loganovashades.com/07181a6d30904115c37b7188c7c694e18a0f8567.webp", badge: "Classic", name: "Curtain Pelmet Valance", desc: "Elegant box valances that add a polished look above your curtains.", price: "$90" },
+      { img: "https://kimi-web-img.moonshot.cn/img/cdn.shopify.com/3ffb177b9b55c18150bac0a909812d76b8fcf6d5.jpg", badge: "", name: "Day & Night Curtains", desc: "Dual-layer system combining sheer and blackout for versatile light control.", price: "$140" },
+      { img: "https://kimi-web-img.moonshot.cn/img/moeshouse.com/e8372e68cb6e2c69deadea73e2ebdc1ae5fa41c7.jpg", badge: "Smart", name: "Motorized Smart Curtains", desc: "Remote-controlled electric curtains compatible with Alexa and Google Home.", price: "$350" },
+      { img: "https://kimi-web-img.moonshot.cn/img/images.thdstatic.com/0937597a77f821d5cf67373881b50ad3255be792.jpg", badge: "", name: "Outdoor Patio Curtains", desc: "Waterproof, UV-resistant curtains for gazebos and outdoor spaces.", price: "$110" },
+      { img: "https://kimi-web-img.moonshot.cn/img/mobileimages.lowes.com/5ce036e347f48e439ca9b387d7042a8c8fad0310.jpg", badge: "Accessory", name: "Metal Curtain Rings", desc: "Durable metal rings with clips for smooth gliding on any rod.", price: "$18" },
+      { img: "https://kimi-web-img.moonshot.cn/img/cdn.shopify.com/c76387b5e7c139c6e8fac207121c325f12dd2499.jpg", badge: "Winter", name: "Thermal Insulated Curtains", desc: "Thick insulated panels that keep your home warm in winter, cool in summer.", price: "$100" },
+      { img: "https://kimi-web-img.moonshot.cn/img/www.voilavoile.com/85202419e820cfd065d39bea980c1b15224e8d35.jpg", badge: "", name: "Ivory Voile Curtains", desc: "Ultra-light voile panels that create an ethereal, dreamy atmosphere.", price: "$40" },
+      { img: "https://kimi-web-img.moonshot.cn/img/www.indigoandluxe.com/7a28720a246d74119e56464b7e7b62daf7be76e1.jpg", badge: "Elegant", name: "Curtain Swags & Jabots", desc: "Ornate waterfall-style swags with jabot side panels for a royal look.", price: "$150" },
+      { img: "https://kimi-web-img.moonshot.cn/img/m.media-amazon.com/8d3a6fc88b3b75987e2525398ec45ff24a9a881e.jpg", badge: "System", name: "Ceiling Curtain Tracks", desc: "Sleek ceiling-mounted rail systems for modern, seamless curtain hanging.", price: "$80" },
     ];
 
     /* ── TRANSLATIONS ── */
     const T = {
-      en: { brandName: 'Weynua Interiors', navAbout: 'About Us', navServices: 'Services', navProducts: 'Services', navContact: 'Contact', heroBtn: 'Explore Services', heroBtn2: 'Free Consultation', hbLbl: 'Happy Clients', aboutLabel: 'About Us', aboutTitle: 'Welcome to Weynua Interiors', aboutText: 'We specialize in transforming living spaces with premium interior solutions. From luxurious Arabian mejlis designs to comfortable bed covers, elegant curtains, and modern interior lighting.', svcT1: 'Bed Cover Comfort', svcD1: 'Premium quality bed covers and bedding sets designed for ultimate comfort and style.', svcT2: 'Sofa & Mejlis Covers', svcD2: 'Custom sofa covers and luxury Arabian mejlis designs with imported fabrics.', aboutBtn: 'View Services', asLbl: 'Years of Excellence', worksLabel: 'Process', worksTitle: 'How It Works', stT1: 'Choose Your Service', stD1: 'Browse our collection and select the perfect interior solution for your space.', stT2: 'Custom Measure', stD2: 'We take precise measurements to ensure a perfect fit for your furniture and spaces.', stT3: 'Expert Crafting', stD3: 'Our artisans craft your items with premium imported fabrics and meticulous care.', stT4: 'Delivery & Setup', stD4: 'We deliver and install everything perfectly, hassle-free at your location.', prodLabel: 'Services', prodTitle: 'Our Interior Services', prodSub: 'Premium interior solutions for every corner of your home', gallLabel: 'Gallery', gallTitle: 'Our Work', gallSub: 'See how Weynua transforms real homes', ctLabel: 'Get In Touch', ctTitle: 'Ready to Transform Your Space?', ctText: 'Contact us for a free consultation and measurement. Our team is here to help you create the perfect interior for your home.', ctPhone: 'Phone', ctEmail: 'Email', ctAddr: 'Address', ctHours: 'Working Hours', lName: 'Full Name', lEmail: 'Email Address', lPhone: 'Phone Number', lProduct: 'Service Interest', lMsg: 'Message', fSubmit: 'Send Message', footBrand: 'Weynua', footDesc: 'A passionate team dedicated to creating beautiful, comfortable interior spaces across Ethiopia. From custom covers to luxury lighting, we bring elegance to every home.', fCopy: '© 2024 Weynua Interiors. All rights reserved.', fTag: 'Designed with passion for beautiful spaces', mn1: 'Home', mn2: 'About', mn3: 'Services', mn4: 'Gallery', mn5: 'Contact', mobHome: 'Home', mobAbout: 'About Us', mobServices: 'Services', mobProducts: 'Services', mobContact: 'Contact', toastSent: 'Message sent successfully!', thDark: 'Dark', thLight: 'Light' },
-      am: { brandName: 'ወይኑዋ ኢንተርየርስ', navAbout: 'ስለኛ', navServices: 'አገልግሎቶች', navProducts: 'አገልግሎቶች', navContact: 'ያግኙን', heroTag: 'የፕሪሚየም ኢንተርየር ዲዛይን', heroH1: 'ቦታዎን በ<em>ወይኑዋ</em> ይቀይሩ', heroPrice: 'ከ <strong>$35</strong> ጀምሮ', heroBtn: 'አገልግሎቶችን ይመልከቱ', heroBtn2: 'ነፃ ምክር', hbLbl: 'ደስተኛ ደንበኞች', aboutLabel: 'ስለኛ', aboutTitle: 'ወደ ወይኑዋ ኢንተርየርስ እንኳን ደህና መጡ', aboutText: 'በፕሪሚየም ኢንተርየር መፍትሄዎች የኑሮ ቦታዎችን መቀየር ላይ እንተኮራለን።', svcT1: 'የመኝታ ጨርቅ እርጥበት', svcD1: 'ለተሟላ ጥራት እና ዘይቤ የተዘጋጁ ፕሪሚየም የመኝታ ጨርቆች።', svcT2: 'ሶፋ እና መጅሊስ ጨርቆች', svcD2: 'ብጁ የሶፋ ጨርቆች እና የአረቢያን መጅሊስ ዲዛይኖች።', aboutBtn: 'አገልግሎቶችን ይመልከቱ', asLbl: 'የብልጽግና ዓመታት', worksLabel: 'ሂደት', worksTitle: 'እንዴት እንደሚሰራ', stT1: 'አገልግሎትዎን ይምረጡ', stD1: 'ክሊክሽናችንን ይመልከቱ እና ትክክለኛውን አገልግሎት ይምረጡ።', stT2: 'ብጁ መለኪያ', stD2: 'ለማብሰሪያዎች እና ቦታዎች ትክክለኛ ቦታ እንዲሆን መለኪያ እንወስዳለን።', stT3: 'የሙያ ስራ', stD3: 'ባለሙያዎቻችን በፕሪሚየም ጨርቆች ይሰራሉ።', stT4: 'ማድረስ እና ተከላ', stD4: 'ሁሉንም በትክክል እና በቀላሉ በቦታዎ እናድርሳለን።', prodLabel: 'አገልግሎቶች', prodTitle: 'የእኛ የኢንተርየር አገልግሎቶች', prodSub: 'ለቤትዎ እያንዳንዱ ጥግ ፕሪሚየም ኢንተርየር መፍትሄዎች', gallLabel: 'ጋለሪ', gallTitle: 'የእኛ ስራ', gallSub: 'ወይኑዋ እንዴት እንደሚቀይሩ ይመልከቱ', ctLabel: 'ያግኙን', ctTitle: 'ቦታዎን ለመቀየር ዝግጁ ነዎት?', ctText: 'ለነፃ ምክር እና መለኪያ ያግኙን።', ctPhone: 'ስልክ', ctEmail: 'ኢሜይል', ctAddr: 'አድራሻ', ctHours: 'የስራ ሰዓታት', lName: 'ሙሉ ስም', lEmail: 'ኢሜይል አድራሻ', lPhone: 'ስልክ ቁጥር', lProduct: 'የአገልግሎት ፍላጎት', lMsg: 'መልእክት', fSubmit: 'መልእክት ይላኩ', footBrand: 'ወይኑዋ', footDesc: 'በኢትዮጵያ ቆንጆ እና ምቹ የኢንተርየር ቦታዎችን ለመፍጠር ቆርጠን የቆምን ቡድን ነን።', fCopy: '© 2024 ወይኑዋ ኢንተርየርስ። ሁሉም መብቶች የተጠበቁ ናቸው።', fTag: 'ለቆንጆ ቦታዎች በፍቅር', mn1: 'መነሻ', mn2: 'ስለኛ', mn3: 'አገልግሎቶች', mn4: 'ጋለሪ', mn5: 'ያግኙን', mobHome: 'መነሻ', mobAbout: 'ስለኛ', mobServices: 'አገልግሎቶች', mobProducts: 'አገልግሎቶች', mobContact: 'ያግኙን', toastSent: 'መልእክት ተልኳል!', thDark: 'ጨለማ', thLight: 'ብርሃን' },
-      om: { brandName: 'Weynua Interiors', navAbout: "Waa'ee Keenya", navServices: 'Tajaajiloota', navProducts: 'Tajaajiloota', navContact: 'Nu Qunnamaa', heroTag: 'Tajaajila Interior', heroH1: 'Bakka <em>Weynuu</em> Waliin Jijjiiraa', heroPrice: '$35 irraa <strong>eegalee</strong>', heroBtn: 'Tajaajila Ilaali', heroBtn2: 'Gorsuu Bilisaa', hbLbl: 'Macaanfa Qabaattoota', aboutLabel: "Waa'ee Keenya", aboutTitle: 'Baga Nagaan Dhuftan Weynua', aboutText: 'Furuu interior olaanaa fayyadamuun manaa jijjiirra.', svcT1: 'Fuudhaa Bireedhaa', svcD1: 'Fuudhaa bireedhaa qulqullina olaanaa qabu.', svcT2: 'Kuffaa Sofaa fi Mejlis', svcD2: 'Kuffaa sofaa dhuunfaa fi qaphxii Mejlis gurguddaa.', aboutBtn: 'Tajaajila Ilaali', asLbl: 'Waggaa Bareedinaa', worksLabel: 'Adeemsa', worksTitle: 'Akkamitti Hoojjeta', stT1: 'Tajaajila Filadhu', stD1: 'Walitti qabaa keenya ilaali fi tajaajila sirrii ta'e filadhu.', stT2: 'Safartuu Dhuunfaa', stD2: "Safartuu sirrii ta'e kan meeshaa keetiif fudhanna.", stT3: 'Hoojjii Ogeessaa', stD3: 'Ogeessota keenyaan meeshaa keetiif hojjeta.', stT4: 'Geesisuu fi Qabachuu', stD4: 'Hundumaa sirrii fi tasgabbiidhaan geesisina.', prodLabel: 'Tajaajiloota', prodTitle: 'Tajaajila Interior Keenya', prodSub: 'Furuu interior olaanaa manakee hundaaf', gallLabel: 'Galerii', gallTitle: 'Hojii Keenya', gallSub: 'Weynua manaa dhugaa akkamitti jijjiiru ilaali', ctLabel: 'Nu Qunnamaa', ctTitle: 'Bakka Kee Jijjiiruu Barbaaddaa?', ctText: 'Gorsuu fi safartuu bilisaa nu qunnamaa.', ctPhone: 'Bilbila', ctEmail: 'Imeelii', ctAddr: 'Teessoo', ctHours: "Sa'aatii Hojii", lName: 'Maqaa Guutuu', lEmail: 'Teessoo Imeelii', lPhone: 'Lakk Bilbila', lProduct: 'Fayyadama Tajaajilaa', lMsg: 'Ergaa', fSubmit: 'Ergaa Ergi', footBrand: 'Weynua', footDesc: 'Daldala interior kan Itoophiyaa keessatti manaa bareedisuuf hojjennu.', fCopy: '© 2024 Weynua Interiors.', fTag: 'Bakka bareedaa jaalalaan', mn1: 'Mana', mn2: "Waa'ee", mn3: 'Tajaajiloota', mn4: 'Galerii', mn5: 'Qunnamtii', mobHome: 'Mana', mobAbout: "Waa'ee Keenya", mobServices: 'Tajaajiloota', mobProducts: 'Tajaajiloota', mobContact: 'Nu Qunnamaa', toastSent: "Ergaan milkaa'eraan ergameera!", thDark: 'Duukkanaa', thLight: 'Iftuu' }
+      en: { brandName: "Shegere", navAbout: "About Us", navServices: "Services", navProducts: "Products", navContact: "Contact", heroTag: "Premium Window Treatments", heroH1: "Elegance<br>for Your <em>Windows</em>", heroPrice: "Starting from <strong>$45</strong>", heroBtn: "Shop Collection", heroBtn2: "Free Consultation", hbLbl: "Happy Clients", aboutLabel: "About Us", aboutTitle: "Welcome to Shegere Curtains", aboutText: "We craft beautiful, high-quality curtains and window treatments that transform your living spaces. From luxurious velvet to sheer elegance.", svcT1: "Custom Measurements", svcD1: "Precise fitting for every window size with professional measurement services.", svcT2: "Free Installation", svcD2: "Expert installation included with every purchase across Addis Ababa.", aboutBtn: "View Collection", asLbl: "Years of Excellence", worksLabel: "Process", worksTitle: "How It Works", stT1: "Choose Your Style", stD1: "Browse and select the perfect curtain style for your space.", stT2: "Custom Measure", stD2: "We take precise measurements to ensure a perfect fit.", stT3: "Professional Make", stD3: "Our artisans craft curtains with premium fabrics and care.", stT4: "Free Installation", stD4: "We deliver and install your curtains perfectly, hassle-free.", prodLabel: "Collection", prodTitle: "Our Curtain Collection", prodSub: "Over 20 styles of premium curtains for every room", gallLabel: "Gallery", gallTitle: "Installation Gallery", gallSub: "See how our curtains transform real homes", ctLabel: "Get In Touch", ctTitle: "Ready to Transform Your Windows?", ctText: "Contact us for a free consultation and measurement.", ctPhone: "Phone", ctEmail: "Email", ctAddr: "Address", ctHours: "Working Hours", lName: "Full Name", lEmail: "Email Address", lPhone: "Phone Number", lProduct: "Product Interest", lMsg: "Message", fSubmit: "Send Message", footBrand: "Shegere", footDesc: "A team of passionate curtain makers dedicated to creating beautiful window treatments across Ethiopia.", fCopy: "© 2024 Shegere Curtains. All rights reserved.", fTag: "Designed with passion for beautiful windows", mn1: "Home", mn2: "About", mn3: "Products", mn4: "Gallery", mn5: "Contact", mobHome: "Home", mobAbout: "About Us", mobServices: "Services", mobProducts: "Products", mobContact: "Contact", toastSent: "Message sent successfully!", thDark: "Dark", thLight: "Light" },
+      am: { brandName: "ሸገሬ", navAbout: "ስለኛ", navServices: "አገልግሎቶች", navProducts: "ምርቶች", navContact: "ያግኙን", heroTag: "የፕሪሚየም መስኮት ዕቃዎች", heroH1: "ለመስኮቶችዎ <em>ውበት</em>", heroPrice: "ከ <strong>$45</strong> ጀምሮ", heroBtn: "ምርቶች ይመልከቱ", heroBtn2: "ነፃ ምክር", hbLbl: "ደስተኛ ደንበኞች", aboutLabel: "ስለኛ", aboutTitle: "ወደ ሸገሬ መጋረጆች እንኳን ደህና መጡ", aboutText: "ቆንጆ፣ ከፍተኛ ጥራት ያላቸውን መጋረጆች እና የመስኮት ዕቃዎችን እንሰራለን።", svcT1: "ብጁ መለኪያዎች", svcD1: "ለማንኛውም የመስኮት መጠን ትክክለኛ መለኪያዎች።", svcT2: "ነፃ መጫኛ", svcD2: "በአዲስ አበባ ውስጥ ከእያንዳንዱ ግዢ ጋር የሙያ መጫኛ።", aboutBtn: "ክሊክሽን ይመልከቱ", asLbl: "የብልጽግና ዓመታት", worksLabel: "ሂደት", worksTitle: "እንዴት እንደሚሰራ", stT1: "ዘይቤዎን ይምረጡ", stD1: "ክሊክሽናችንን ይመልከቱ እና ትክክለኛውን ዘይቤ ይምረጡ።", stT2: "ብጁ መለኪያ", stD2: "ለመስኮቶችዎ ትክክለኛ ቦታ እንዲሆን መለኪያ እንወስዳለን።", stT3: "የሙያ ስራ", stD3: "ባለሙያዎቻችን በፕሪሚየም ጨርቆች ይሰራሉ።", stT4: "ነፃ መጫኛ", stD4: "መጋረጆችዎን በትክክል እና በቀላሉ እንጫናለን።", prodLabel: "ክሊክሽን", prodTitle: "የመጋረጅ ክሊክሽናችን", prodSub: "ለማንኛውም ክፍል ከ20 በላይ ዘይቦች", gallLabel: "ጋለሪ", gallTitle: "የመጫኛ ጋለሪ", gallSub: "መጋረጆቻችን እንዴት እንደሚቀይሩ ይመልከቱ", ctLabel: "ያግኙን", ctTitle: "መስኮቶችዎን ለመቀየር ዝግጁ ነዎት?", ctText: "ለነፃ ምክር እና መለኪያ ያግኙን።", ctPhone: "ስልክ", ctEmail: "ኢሜይል", ctAddr: "አድራሻ", ctHours: "የስራ ሰዓታት", lName: "ሙሉ ስም", lEmail: "ኢሜይል አድራሻ", lPhone: "ስልክ ቁጥር", lProduct: "የምርት ፍላጎት", lMsg: "መልእክት", fSubmit: "መልእክት ይላኩ", footBrand: "ሸገሬ", footDesc: "በኢትዮጵያ ቆንጆ መጋረጆችን ለመስራት ቆርጠን የቆምን ቡድን ነን።", fCopy: "© 2024 ሸገሬ። ሁሉም መብቶች የተጠበቁ ናቸው።", fTag: "ለቆንጆ መስኮቶች በፍቅር", mn1: "መነሻ", mn2: "ስለኛ", mn3: "ምርቶች", mn4: "ጋለሪ", mn5: "ያግኙን", mobHome: "መነሻ", mobAbout: "ስለኛ", mobServices: "አገልግሎቶች", mobProducts: "ምርቶች", mobContact: "ያግኙን", toastSent: "መልእክት ተልኳል!", thDark: "ጨለማ", thLight: "ብርሃን" },
+      om: { brandName: "Shegere", navAbout: "Waa'ee Keenya", navServices: "Tajaajiloota", navProducts: "Oomishoota", navContact: "Nu Qunnamaa", heroTag: "Tajaajila Foddaa", heroH1: "Bareedina <em>Foddaa</em> Keef", heroPrice: "$45 irraa <strong>eegalee</strong>", heroBtn: "Walitti Qabaa", heroBtn2: "Gorsuu Bilisaa", hbLbl: "Macaanfa Qabaattoota", aboutLabel: "Waa'ee Keenya", aboutTitle: "Baga Nagaan Dhuftan Shegere", aboutText: "Kurtiin bareedaa, qulqullina olaanaa qabu hojjenna.", svcT1: "Safartuu Dhuunfaa", svcD1: "Safartuu sirrii ta'e kan foddaa hundaaf.", svcT2: "Maxxansuu Bilisaa", svcD2: "Maxxansuu ogeessaa kan bita hunda waliin.", aboutBtn: "Walitti Qabaa Ilaali", asLbl: "Waggaa Bareedinaa", worksLabel: "Adeemsa", worksTitle: "Akkamitti Hoojjeta", stT1: "Stiilii Filadhu", stD1: "Walitti qabaa keenya ilaali fi stiilii sirrii ta'e filadhu.", stT2: "Safartuu Dhuunfaa", stD2: "Safartuu sirrii ta'e kan foddaa keetiif fudhanna.", stT3: "Hoojjii Ogeessaa", stD3: "Ogeessota keenyaan kurtiin keetiif hojjeta.", stT4: "Maxxansuu Bilisaa", stD4: "Kurtiin kee sirrii fi tasgabbiidhaan maxxansina.", prodLabel: "Walitti Qabaa", prodTitle: "Walitti Qabaa Kurtiin Keenyaa", prodSub: "Kurtiin 20 ol kan manakee hundaaf", gallLabel: "Galerii", gallTitle: "Galerii Maxxansuu", gallSub: "Kurtiin keenya manaa dhugaa akkamitti jijjiiru ilaali", ctLabel: "Nu Qunnamaa", ctTitle: "Foddaa Kee Jijjiiruu Barbaaddaa?", ctText: "Gorsuu fi safartuu bilisaa nu qunnamaa.", ctPhone: "Bilbila", ctEmail: "Imeelii", ctAddr: "Teessoo", ctHours: "Sa'aatii Hojii", lName: "Maqaa Guutuu", lEmail: "Teessoo Imeelii", lPhone: "Lakk Bilbila", lProduct: "Fayyadama Oomishaa", lMsg: "Ergaa", fSubmit: "Ergaa Ergi", footBrand: "Shegere", footDesc: "Daldala kurtiin kan Itoophiyaa keessatti manaa bareedisuuf hojjennu.", fCopy: "© 2024 Shegere Curtains.", fTag: "Foddaa bareedaa jaalalaan", mn1: "Mana", mn2: "Waa'ee", mn3: "Oomishoota", mn4: "Galerii", mn5: "Qunnamtii", mobHome: "Mana", mobAbout: "Waa'ee Keenya", mobServices: "Tajaajiloota", mobProducts: "Oomishoota", mobContact: "Nu Qunnamaa", toastSent: "Ergaan milkaa'eraan ergameera!", thDark: "Duukkanaa", thLight: "Iftuu" }
     };
 
-    /* ── ARROW ICON SNIPPET ── */
     const arrowIco = `<svg class="ico ico-16" style="stroke:currentColor;fill:none"><use href="#ic-arrow-ne"/></svg>`;
+    const heartIco = `<svg class="ico ico-16"><use href="#ic-heart"/></svg>`;
 
     /* ── STATE ── */
     let lang = 'en', dark = false, slide = 0, menuOpen = false, counted = false;
@@ -2418,20 +1392,27 @@
     /* ── BUILD PRODUCT CARDS ── */
     (function () {
       const frag = document.createDocumentFragment();
-      PRODS.forEach(p => {
+      PRODS.forEach((p, i) => {
         const div = document.createElement('div');
         div.className = 'p-card fade-in';
+        div.style.transitionDelay = `${(i % 4) * 0.08}s`;
         div.innerHTML = `
-      <div class="p-img ${p.cls} curtain-pattern"><div class="drape"></div><div class="sheen"></div>${p.badge ? `<span class="p-badge">${p.badge}</span>` : ''}</div>
+      <div class="p-img">
+        <img src="${p.img}" alt="${p.name}" loading="lazy">
+        ${p.badge ? `<span class="p-badge">${p.badge}</span>` : ''}
+        <button class="p-wish" onclick="toggleWish(this)" aria-label="Add to wishlist">${heartIco}</button>
+      </div>
       <div class="p-body">
         <h3>${p.name}</h3><p>${p.desc}</p>
         <div class="p-foot"><div class="p-price">${p.price}</div><button class="p-arrow" aria-label="View product">${arrowIco}</button></div>
       </div>`;
         frag.appendChild(div);
       });
-      const grid = document.getElementById('prodGrid');
-      grid.appendChild(frag);
+      document.getElementById('prodGrid').appendChild(frag);
     })();
+
+    /* ── WISHLIST ── */
+    function toggleWish(btn) { btn.classList.toggle('active'); }
 
     /* ── COUNTER ── */
     function startCounter() {
@@ -2440,11 +1421,9 @@
       const t = setInterval(() => { n += 5; if (n >= 500) { n = 500; clearInterval(t); } el.textContent = n + '+'; }, 16);
     }
 
-    /* ── OBSERVE ALL ANIMATED ELEMENTS ── */
+    /* ── OBSERVE ── */
     document.querySelectorAll('#home .fade-l, #home .fade-r').forEach(el => el.classList.add('vis'));
-    document.querySelectorAll('.fade-in,.fade-l,.fade-r,.step-card').forEach(el => {
-      if (!el.classList.contains('vis')) obs.observe(el);
-    });
+    document.querySelectorAll('.fade-in,.fade-l,.fade-r,.scale-in').forEach(el => { if (!el.classList.contains('vis')) obs.observe(el); });
 
     /* ── NAVBAR SCROLL ── */
     const navbar = document.getElementById('navbar');
@@ -2473,7 +1452,7 @@
         document.querySelector('#themeIco').setAttribute('href', '#ic-sun');
       } else {
         r.setProperty('--lh3', '#f3eefd'); r.setProperty('--w', '#fdfcff');
-        r.setProperty('--bd', 'rgba(54,37,92,.12)'); r.setProperty('--td', '#1a1124'); r.setProperty('--tm', '#5e4d7a');
+        r.setProperty('--bd', 'rgba(54,37,92,.10)'); r.setProperty('--td', '#1a1124'); r.setProperty('--tm', '#5e4d7a');
         document.querySelector('#themeIco').setAttribute('href', '#ic-moon');
       }
       document.getElementById('themeLabel').textContent = dark ? T[lang].thLight : T[lang].thDark;
@@ -2485,15 +1464,15 @@
 
     function setLang(l) {
       lang = l; const t = T[l];
-      const textIds = ['brandName', 'navAbout', 'navServices', 'navProducts', 'navContact', 'heroBtn', 'heroBtn2', 'hbLbl',
-        'aboutLabel', 'aboutTitle', 'aboutText', 'svcT1', 'svcD1', 'svcT2', 'svcD2', 'aboutBtn', 'asLbl',
-        'worksLabel', 'worksTitle', 'stT1', 'stD1', 'stT2', 'stD2', 'stT3', 'stD3', 'stT4', 'stD4',
-        'prodLabel', 'prodTitle', 'prodSub', 'gallLabel', 'gallTitle', 'gallSub',
-        'ctLabel', 'ctTitle', 'ctText', 'ctPhone', 'ctEmail', 'ctAddr', 'ctHours',
-        'lName', 'lEmail', 'lPhone', 'lProduct', 'lMsg', 'fSubmit', 'footBrand', 'footDesc', 'fCopy', 'fTag',
-        'mn1', 'mn2', 'mn3', 'mn4', 'mn5', 'mobHome', 'mobAbout', 'mobServices', 'mobProducts', 'mobContact'];
+      const textIds = ['brandName','navAbout','navServices','navProducts','navContact','heroBtn','heroBtn2','hbLbl',
+        'aboutLabel','aboutTitle','aboutText','svcT1','svcD1','svcT2','svcD2','aboutBtn','asLbl',
+        'worksLabel','worksTitle','stT1','stD1','stT2','stD2','stT3','stD3','stT4','stD4',
+        'prodLabel','prodTitle','prodSub','gallLabel','gallTitle','gallSub',
+        'ctLabel','ctTitle','ctText','ctPhone','ctEmail','ctAddr','ctHours',
+        'lName','lEmail','lPhone','lProduct','lMsg','fSubmit','footBrand','footDesc','fCopy','fTag',
+        'mn1','mn2','mn3','mn4','mn5','mobHome','mobAbout','mobServices','mobProducts','mobContact'];
       textIds.forEach(id => { const el = document.getElementById(id); if (el && t[id] != null) el.textContent = t[id]; });
-      ['heroTag', 'heroH1', 'heroPrice'].forEach(id => { const el = document.getElementById(id); if (el && t[id]) el.innerHTML = t[id]; });
+      ['heroTag','heroH1','heroPrice'].forEach(id => { const el = document.getElementById(id); if (el && t[id]) el.innerHTML = t[id]; });
       document.querySelectorAll('.lang-opt').forEach(o => o.classList.toggle('active', o.dataset.l === l));
       document.getElementById('curLang').textContent = { en: 'English', am: 'Amharic', om: 'Afaan Oromo' }[l];
       document.getElementById('langDrop').classList.remove('open');
@@ -2521,7 +1500,12 @@
 
     /* ── FORM ── */
     function submitForm(e) { e.preventDefault(); showToast(T[lang].toastSent); e.target.reset(); }
-    function showToast(m) { const t = document.getElementById('toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 3000); }
+    function showToast(m) {
+      const t = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = m;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3000);
+    }
 
     /* ── SMOOTH SCROLL ── */
     document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function (e) {
@@ -2533,5 +1517,4 @@
     startCounter();
   </script>
 </body>
-
 </html>
